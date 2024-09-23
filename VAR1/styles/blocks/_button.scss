@@ -1,0 +1,39 @@
+// --button-height-base-deckstop: 62px;
+// --button-height-hero-deckstop: 59px;
+// --button-height-get-deckstop: 53px;
+
+.button {
+    font-family: var(--font-family-inter);
+    font-weight: 700;
+
+    @include flex-center(true);
+    
+    height: var(--button-height-base-deckstop);
+    padding-inline: 26px;
+    font-size: 17px;
+    color: var(--color-white);
+    background-color: var(--color-fiolet-main);
+    border: var(--border);
+    border-radius: var(--border-radius-buttom-top);
+
+    @include hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    }
+
+    &-login {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: var(--color-white);
+    margin-left: auto;
+    width: 121px;
+
+
+    @include hover {
+        color: var(--color-white);
+        background-color: var(--color-fiolet-main);
+        }
+    }
+
+
+}

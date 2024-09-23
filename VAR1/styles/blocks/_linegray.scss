@@ -1,0 +1,30 @@
+.line-gray1 {
+    &::after {
+        display: flex;
+        content: "";
+        position: relative;
+        top: 25px;
+        left: 3%;
+        width: 95%;
+        height: 2px;
+        background-color: var(--color-grey);
+    }
+}
+.line-gray2 {
+    &::after {
+        content: "";
+        display: flex;
+        position: relative;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        height: 2px;
+        background-color: var(--color-grey);
+
+        @include mobile {
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+    }
+}

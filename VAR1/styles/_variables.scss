@@ -1,0 +1,155 @@
+:root {
+    //page 1 - собирать переменные по страницам
+    // 1 Home
+    // 2 Menu
+    // 3 Menu resturent
+    // 4 Menu map
+    // 5 Pricing
+    // 6 Blog
+    // 7 Blog artical
+    // 8 Contact us
+    // 9 Sign Up зарегистрироваться
+    // 10 Sign Up Active
+    // 11 Sign In войти
+    // 12 Sign In Active
+    // 13 Forget Password
+
+    --color-fiolet-main: #5C4EAE;
+    --color-fiolet-medium: #A596FF;
+    --color-fiolet-light: #C5BFED;
+    --color-black: #000000;
+    --color-black2: #323142;
+    --color-black3: #0C0C0D;
+    --color-black4: #1A202C;
+    --color-white: #FFFFFF;
+    --color-grey: #cbcbcb;
+    --color-orange: #ffe9bf;
+    --color-orange-light: #FBAD18;
+
+
+    --color-fiolet-text: #6C5FBC;
+    --color-orange-text: #DAA31A;
+    --color-grey-text: #8E97A6;
+    --colog-grey-middle-text: #999999;
+    --color-grey-light-text: #878787;
+    --color-grey-light-text2: #676767;
+    --color-grey-alt-text: #B6B6B6;
+    --color-green-text: #309D5B;
+    --color-red-text: #FB471D;
+
+    --color-grey-contur: #ACADB9;
+    --color-grey-contur2: #f7f7f7;
+    --color-black-contur: #000000;
+    --color-beige-contur: #F7EDD0;
+    --color-green-contur: #d2f5e0;
+    --color-green-contur2: #F2FDF6;
+    --color-pinc-contur: #F7C5BA;
+    --color-fiolet-light-contur: #F4F0FF;
+    --color-fiolet-middle-contur: #DBD9EE;
+
+    --color-dark: #1C186C;
+
+    --color-white: #FFFFFF;
+    --color-white-grey: #F9F9F9;
+    --color-grey2: #C5C5C5;
+    --color-grey3: #A0AEC0;
+    --color-grey-light: #878787;
+    --colog-grey-darck: #999999;
+    --color-green: #00B67A;
+    --color-fiolet: #6C5FBC;
+
+    --border: 2px solid var(--color-fiolet);
+
+    --border-mobile: 1.2px solid var(--color-fiolet);
+
+    --border-radius-forms: 17px;
+    --border-radius-forms-mobile: 11px;
+    --border-radius-buttom-mobile: 10px;
+    --border-radius-buttom-forms: 16px;
+    --border-radius-buttom-top: 18px;
+    --border-radius-buttom-top-tablet: 13px;
+
+    --border-radius-buttom-middle: 12.5px;
+    --border-radius-buttom-middle-tablet: 9px;
+    --border-radius-buttom-middle2: 15px;
+
+    --border-radius-cart-top: 30px;
+    --border-radius-cart-top-mobile: 24px;
+    --border-radius-cart-top-tablet: 21px;
+
+    --border-radius-cart-middle: 35px;
+    --border-radius-cart-middle-mobile: 23px;
+    --border-radius-cart-middle-tablet: 25px;
+
+    --border-radius-cart-order: 12px;
+
+    --border-radius-index: 25px;
+    --border-radius-index-mobile: 15px;
+    --border-radius-index-tablet: 18px;
+
+    --border-radius-control: 12px;
+    --border-radius-control-mobile: 8px;
+    --border-radius-control-tablet: 9px;
+
+    --border-radius-customer-say: 21px;
+    --border-radius-customer-say-mobile: 12.5px;
+    --border-radius-customer-say-tablet: 15px;
+
+    --border-radius-get: 30px;
+    --border-radius-get-mobile: 15px;
+    --border-radius-get-tablet: 21px;
+
+    --border-radius-search: 20px;
+    --border-radius-category: 23px;
+    --border-radius-map: 39px;
+    --border-radius-map-position: 25px;
+    --border-radius-apply: 10px;
+    --border-radius-pricing: 15px;
+    --border-radius-password: 12px;
+
+    --shadow-deckstop: 6px 71px 36px 0 #e5e5e5b3;
+    --shadow-tablet: 4px 51px 25px 0 #e5e5e5b3;
+    --shadow-mobile: 4px 36px 28px 0 #e5e5e5b3;
+
+    --shadow-block-deckstop: 0 4px 47px 0 #e5e5e5b3;
+    --shadow-block-tablet: 4px 51px 25px 0 #e5e5e5b3;
+    --shadow-block-mobile: 4px 36px 28px 0 #c5c5c540;
+
+    --font-family-poppins: "Poppins", sans-serif;
+    --font-family-inter: "Inter", sans-serif;
+    --font-family-manrope: "Manrope", sans-serif;
+    --font-family-roboto: "Roboto", sans-serif;
+    --font-family-public: "Public Sans", sans-serif;
+    --font-family-quicksand: "Quicksand", sans-serif;
+    --font-family-jakarta: "Plus Jakarta Sans", sans-serif;
+
+    --container-base-deckstop: 1248px;
+    --container-hero-deckstop: 1285px;
+    --container-download-deckstop: 1262px;
+    --container-custom-deckstop: 1722px;
+    --container-get-deckstop: 1214px;
+
+    --container-base-tablet: 888px;
+
+    --container-download-tablet: 897px;
+    --container-custom-tablet: 1224px;
+    --container-get-tablet: 869px;
+
+    --container-base-mobile: 314px;
+    --container-second-mobile: 333px;
+    --container-custom-mobile: 342px;
+
+    --container-padding-x-deckstop: 30px;
+
+    --section-padding-base-y-deckstop: 100px;
+    --section-padding-get-top-y-deckstop: 182px;
+    --section-padding-get-down-y-deckstop: 156px;
+
+    --button-height-base-deckstop: 62px;
+    --button-height-hero-deckstop: 59px;
+    --button-height-get-deckstop: 53px;
+
+    --transition-duration: 0.2s;
+
+
+}

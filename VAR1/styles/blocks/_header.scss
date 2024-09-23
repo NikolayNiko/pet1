@@ -1,0 +1,71 @@
+.header {
+    padding-top: 60px;
+    margin: 0 100px;
+    
+    @include desktop {
+        padding-top: 34px;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 54px;
+
+        @include tablet {
+            column-gap: 38px;
+        }
+    }
+
+    &__menu {
+        margin-right: auto;
+        font-size: 18px;
+        font-family: var(--font-family-inter);
+        font-weight: 400;
+
+        @include desktop {
+            font-size: 13px;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 53px;
+
+            @include tablet {
+                column-gap: 38px;
+            }
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            height: 42px;
+            
+            @include hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition-duration: inherit;
+            }
+        }
+    }
+}
