@@ -321,6 +321,7 @@ svg * {
   --color-fiolet-light-contur: #F4F0FF;
   --color-fiolet-middle-contur: #DBD9EE;
   --color-dark: #1C186C;
+  --color-dark2: #5E5D5D;
   --color-white: #FFFFFF;
   --color-white-grey: #F9F9F9;
   --color-grey2: #C5C5C5;
@@ -2230,8 +2231,32 @@ h4, .h4 {
   align-items: flex-start;
   column-gap: 54px;
   width: 118%;
-  margin-left: 104px;
-  margin-bottom: 255px;
+  left: 104px;
+  position: absolute;
+}
+.customer__list > *:first-child::before {
+  content: "";
+  display: inline-block;
+  margin-left: 15px;
+  width: 40.56%;
+  height: 11px;
+  border-radius: 50px;
+  background-color: var(--color-fiolet-light);
+  position: absolute;
+  bottom: 0;
+  left: calc(31.2% + 54px - 15px);
+}
+.customer__list > *:first-child::after {
+  content: "";
+  display: inline-block;
+  margin-left: 15px;
+  width: 13.52%;
+  height: 11px;
+  border-radius: 50px;
+  background-color: var(--color-fiolet);
+  position: absolute;
+  bottom: 0;
+  left: calc(31.2% + 54px - 15px);
 }
 .customer__list-item {
   display: flex;
@@ -2268,6 +2293,13 @@ h4, .h4 {
   font-family: var(--font-family-poppins);
   font-size: 21px;
   font-weight: 500;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
+}
+.customer__list-item-time_with_us {
+  font-family: var(--font-family-quicksand);
+  font-size: 16.7px;
+  font-weight: 500;
+  color: var(--color-dark2);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
 }
 .customer__list-item-stars {
