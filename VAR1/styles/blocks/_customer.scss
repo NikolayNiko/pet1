@@ -33,6 +33,8 @@
         // overflow: hidden;
 
         &-item {
+
+            
             @include flex-center;
             flex-direction: column;
             border-radius: 21px;
