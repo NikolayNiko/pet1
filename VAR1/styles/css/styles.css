@@ -2224,12 +2224,18 @@ h4, .h4 {
 .customer__title-span {
   color: var(--color-fiolet-text);
 }
+@media (max-width: 1023px) {
+  .customer__title {
+    font-size: 32px;
+    margin: 82px auto 56px;
+  }
+}
 .customer__list {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
   align-items: flex-start;
-  column-gap: 54px;
   width: 118%;
   left: 104px;
   position: absolute;
@@ -2266,6 +2272,11 @@ h4, .h4 {
   border-radius: 21px;
   width: 31.2%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 1023px) {
+  .customer__list-item {
+    border-radius: 15px;
+  }
 }
 .customer__list-item-item:first-child {
   content: "";

@@ -1,7 +1,4 @@
 .customer {
-
-    
-
     &__title {
         @include flex-center;
         column-gap: 15px;
@@ -10,7 +7,6 @@
         font-family: var(--font-family-poppins);
         line-height: 26px;
         color: var(--color-black2);
-        
         margin: 116px auto 80px;
         text-shadow: 0 4px 4px #00000040;
 
@@ -18,13 +14,19 @@
             color: var(--color-fiolet-text);
         }
 
+        @include tablet {
+            font-size: 32px;
+            margin: 82px auto 56px;
+
+        }
 
     }
 
     &__list {
         @include flex-center;
+        justify-content: space-between;
         align-items: flex-start;
-        column-gap: 54px;
+        // column-gap: 54px;
         width: 118%;
         left: 104px;
         position: absolute;
@@ -63,7 +65,10 @@
             border-radius: 21px;
             width: 31.2%;
             box-shadow: 0 4px 4px #00000040;
-            // position: absolute;
+            
+            @include tablet {
+                border-radius: 15px;
+            }
         
             &-item:first-child {
                 content: '';
