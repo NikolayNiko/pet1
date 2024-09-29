@@ -2319,4 +2319,13 @@ h4, .h4 {
   margin-bottom: 20px;
 }
 
+.get50__main {
+  width: 80%;
+  height: 200px;
+  background: url(../../images/MaskGroup.svg);
+  border-color: var(--color-fiolet-text);
+  border-radius: 21px;
+  margin: 500px auto 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
