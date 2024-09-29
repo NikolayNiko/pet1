@@ -17,7 +17,10 @@
         @include tablet {
             font-size: 32px;
             margin: 82px auto 56px;
+        }
 
+        @include mobile {
+            font-size: 30px;
         }
 
     }
@@ -26,7 +29,6 @@
         @include flex-center;
         justify-content: space-between;
         align-items: flex-start;
-        // column-gap: 54px;
         width: 118%;
         left: 104px;
         position: absolute;
@@ -42,6 +44,10 @@
             position: absolute;
             bottom: 0;
             left: calc(31.2% + 54px - 15px);
+
+            @include mobile {
+                left: 0;
+            }
             
         }
 
@@ -56,6 +62,10 @@
             position: absolute;
             bottom: 0;
             left: calc(31.2% + 54px - 15px);
+
+            @include mobile {
+                left: 0;
+            }
             
         }
 
