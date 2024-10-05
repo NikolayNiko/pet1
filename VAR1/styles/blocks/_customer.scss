@@ -65,9 +65,17 @@
 
             @include mobile {
                 left: 0;
+                margin-left: 0;
+                bottom: -50px;
             }
             
         }
+
+        @include mobile {
+            & > *:nth-child(2),
+            & > *:nth-child(3){
+                display: none;
+            }
 
         &-item {
             @include flex-center;
@@ -78,6 +86,9 @@
             
             @include tablet {
                 border-radius: 15px;
+            }
+
+            
             }
         
             &-item:first-child {

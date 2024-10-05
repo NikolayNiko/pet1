@@ -55,17 +55,20 @@
                 }
             }
 
-            &::after {
-                content: '';
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                translate: -50%;
-                width: 0;
-                height: 2px;
-                background-color: currentColor;
-                transition-duration: inherit;
-            }
+
         }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        margin: 0 auto;
+        translate: -50%;
+        width: 85%;
+        height: 2px;
+        background-color: var(--color-grey);
+        transition-duration: inherit;
     }
 }
