@@ -647,6 +647,12 @@ h4, .h4 {
   background-color: var(--color-grey);
   transition-duration: inherit;
 }
+@media (max-width: 480px) {
+  .header::after {
+    top: 100px;
+    width: 90%;
+  }
+}
 
 .cross-button {
   padding: 0;

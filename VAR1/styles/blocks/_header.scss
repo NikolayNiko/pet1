@@ -1,7 +1,7 @@
 .header {
     padding-top: 60px;
     margin: 0 100px;
-    
+
     @include desktop {
         padding-top: 34px;
     }
@@ -17,9 +17,8 @@
         justify-content: space-between;
         align-items: center;
         column-gap: 54px;
-
         @include tablet {
-            column-gap: 38px;
+        column-gap: 38px;
         }
     }
 
@@ -37,9 +36,8 @@
             display: flex;
             align-items: center;
             column-gap: 53px;
-
             @include tablet {
-                column-gap: 38px;
+            column-gap: 38px;
             }
         }
 
@@ -54,8 +52,6 @@
                     width: 100%;
                 }
             }
-
-
         }
     }
 
@@ -70,5 +66,13 @@
         height: 2px;
         background-color: var(--color-grey);
         transition-duration: inherit;
+    }
+
+    @include mobile-s {
+        &::after {
+            top: 100px;
+            width: 90%;
+            
+        }
     }
 }
