@@ -936,7 +936,6 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .features {
-    background-image: url(../../images/BG_mobile_features.svg);
     background-size: cover;
     height: 748px;
     margin-top: 75px;
