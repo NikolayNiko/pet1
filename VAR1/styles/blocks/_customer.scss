@@ -1,4 +1,9 @@
 .customer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    // 
+
     &__title {
         @include flex-center;
         column-gap: 15px;
@@ -28,21 +33,23 @@
         @include flex-center;
         justify-content: space-between;
         align-items: flex-start;
-        width: 118%;
+        width: 93%;
         left: 104px;
+        // margin-left: 100px;
         position: absolute;
+        overflow: hidden;
 
         & > *:first-child::before{
             content: "";
             display: inline-block;
             margin-left: 15px;
-            width: calc(31.2% * 1.3);
+            width: 100%;
             height: 11px;
             border-radius: 50px;
             background-color: var(--color-fiolet-light);
             position: absolute;
             bottom: 0;
-            left: calc(31.2% + 54px - 15px);
+            left: calc(100% + 54px - 15px);
 
             @include mobile {
                 left: 0;
@@ -56,13 +63,13 @@
             content: "";
             display: inline-block;
             margin-left: 15px;
-            width: calc(31.2% * 1.3 / 3);
+            width: calc(100% * 1.3 / 3);
             height: 11px;
             border-radius: 50px;
             background-color: var(--color-fiolet);
             position: absolute;
             bottom: 0;
-            left: calc(31.2% + 54px - 15px);
+            left: calc(100% + 54px - 15px);
 
             @include mobile {
                 left: 0;
@@ -73,9 +80,20 @@
             
         }
 
+        & > *:nth-child(3){
+            // position: relative;
+            margin-right: -15%;
+            // transform: translateX(50%);
+            // right: -20%;
+        }
+
+        @include tablet {
+            left: 75px;
+        }
+
         @include mobile {
 
-            
+            width: 100%;
 
             & > *:nth-child(2),
             & > *:nth-child(3){
@@ -91,8 +109,13 @@
             border-radius: 21px;
             border: 0.01px solid #707070;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
-            width: 31.2%;
+            // width: 31.2%;
+            flex: 1 1 16%; 
+            position: relative;
+            margin-right: 45px; 
+
             box-shadow: 0 4px 4px #00000040;
+            // overflow-x: hidden;
             
             @include tablet {
                 border-radius: 15px;
@@ -100,6 +123,8 @@
 
             @include mobile {
                 width: 62%;
+                flex: auto;
+                margin-right: 130px;
             }
 
             
@@ -132,10 +157,14 @@
 
             &-name {
                 font-family: var(--font-family-poppins);
-                    font-size: 21px;
-                    font-weight: 500;
-                    
-                    text-shadow: 0 4px 4px #00000040;
+                font-size: 21px;
+                font-weight: 500;
+                text-shadow: 0 4px 4px #00000040;
+
+                @include tablet {
+                    font-size: 15px;
+                }
+
             }
 
             &-time_with_us {
@@ -144,6 +173,16 @@
                 font-weight: 500;
                 color: var(--color-dark2);
                 text-shadow: 0 4px 4px #00000040;
+
+                @include tablet {
+                    font-size: 12px;
+                }
+
+            }
+
+            &-image_right {
+                width: 41px;
+                height: 31px;
             }
 
             &-stars {
