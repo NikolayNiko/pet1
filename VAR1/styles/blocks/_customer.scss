@@ -81,10 +81,7 @@
         }
 
         & > *:nth-child(3){
-            // position: relative;
             margin-right: -15%;
-            // transform: translateX(50%);
-            // right: -20%;
         }
 
         @include tablet {
@@ -92,7 +89,6 @@
         }
 
         @include mobile {
-
             width: 100%;
 
             & > *:nth-child(2),
@@ -108,17 +104,14 @@
             flex-direction: column;
             border-radius: 21px;
             border: 0.01px solid #707070;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
-            // width: 31.2%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922), 0 22px 29px  rgba(0, 0, 0, 0.16);
             flex: 1 1 16%; 
             position: relative;
             margin-right: 45px; 
-
             box-shadow: 0 4px 4px #00000040;
-            // overflow-x: hidden;
-            
             @include tablet {
                 border-radius: 15px;
+                margin-right: 33px;
             }
 
             @include mobile {
@@ -138,10 +131,18 @@
                 width: 100%;
                 padding: 44px 40px 28px;
 
+                @include tablet {
+                    padding: 27px 35px 10px 30px;
+                }
             }
 
             &-face {
                 margin: 0 auto;
+
+                @include tablet {
+                    width: 50px;
+                    height: 50px;
+                }
 
             }
             &-name-time {
@@ -181,14 +182,35 @@
             }
 
             &-image_right {
-                width: 41px;
-                height: 31px;
+
+                @include tablet {
+                    width: 41px;
+                    height: 31px;
+                }
+                
+            }
+
+            &-discription blockquote{
+
+                @include tablet {
+                    font-size: 13px;
+                    margin: 20px 30px 10px;
+                }
             }
 
             &-stars {
                 align-self: flex-start;
                 margin-left: 44px;
                 margin-bottom: 20px;
+                @include tablet {
+                    margin-left: 27px;
+                }
+            }
+
+            &-image_bottom {
+                @include tablet {
+                    width: 98px;
+                }
             }
         }
     }

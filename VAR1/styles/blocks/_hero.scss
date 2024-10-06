@@ -10,6 +10,7 @@
         display: flex;
         justify-content: space-between;
         align-items: start;
+        justify-content: space-evenly;
 
         @include mobile {
             flex-direction: column;

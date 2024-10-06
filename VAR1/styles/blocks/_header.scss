@@ -1,9 +1,20 @@
 .header {
+
     padding-top: 60px;
-    margin: 0 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 
     @include desktop {
         padding-top: 34px;
+    }
+
+    &__logo {
+        margin-right: 100px;
+
+        @include tablet {
+            margin-right: 75px;
+        }
     }
 
     &__button{
@@ -16,20 +27,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        column-gap: 54px;
+        width: 75%;
+        // column-gap: 54px;
         @include tablet {
         column-gap: 38px;
         }
     }
 
     &__menu {
-        margin-right: auto;
+        display: flex;
+        margin-right: 150px;
         font-size: 18px;
         font-family: var(--font-family-inter);
         font-weight: 400;
 
         @include desktop {
             font-size: 13px;
+            margin-right: 75px;
         }
 
         &-list {
