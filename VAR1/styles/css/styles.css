@@ -2223,9 +2223,10 @@ h4, .h4 {
 }
 
 .customer {
-  width: 100%;
   height: auto;
-  position: relative;
+  position: relative; /* Добавляем для правильного позиционирования дочерних элементов */
+  overflow: hidden; /* Отключаем горизонтальный скролл */
+  width: 100%; /* Полная ширина экрана */
 }
 .customer__title {
   display: flex;
@@ -2260,10 +2261,14 @@ h4, .h4 {
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
-  width: 93%;
-  left: 104px;
-  position: absolute;
-  overflow: hidden;
+  width: 120%; /* Контейнер больше экрана на один блок */
+  gap: 45px;
+  left: 0; /* Выравниваем контейнер по левому краю */
+  margin-left: 105px;
+  position: relative; /* Обеспечиваем нормальное выравнивание */
+  /* Отступ между первым и вторым элементом */
+  /* Отступ между вторым и третьим элементом */
+  /* Исправлено: убран отрыв блоков */
 }
 .customer__list > *:first-child::before {
   content: "";
@@ -2305,23 +2310,8 @@ h4, .h4 {
     width: 30%;
   }
 }
-.customer__list > *:nth-child(3) {
-  margin-right: -15%;
-}
-@media (max-width: 1023px) {
-  .customer__list {
-    left: 75px;
-  }
-}
-@media (max-width: 767px) {
-  .customer__list {
-    width: 100%;
-  }
-  .customer__list > *:nth-child(2), .customer__list > *:nth-child(3) {
-    display: none;
-  }
-}
 .customer__list-item {
+  width: 33.33%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2329,10 +2319,7 @@ h4, .h4 {
   border-radius: 21px;
   border: 0.01px solid #707070;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922), 0 22px 29px rgba(0, 0, 0, 0.16);
-  flex: 1 1 16%;
   position: relative;
-  margin-right: 45px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
 }
 @media (max-width: 1023px) {
   .customer__list-item {
@@ -2347,9 +2334,6 @@ h4, .h4 {
     margin-right: 130px;
   }
 }
-.customer__list-item-item:first-child {
-  content: "";
-}
 .customer__list-item-top {
   display: flex;
   justify-content: center;
@@ -2360,15 +2344,6 @@ h4, .h4 {
 @media (max-width: 1023px) {
   .customer__list-item-top {
     padding: 27px 35px 10px 30px;
-  }
-}
-.customer__list-item-face {
-  margin: 0 auto;
-}
-@media (max-width: 1023px) {
-  .customer__list-item-face {
-    width: 50px;
-    height: 50px;
   }
 }
 .customer__list-item-name-time {
@@ -2403,18 +2378,6 @@ h4, .h4 {
     font-size: 12px;
   }
 }
-@media (max-width: 1023px) {
-  .customer__list-item-image_right {
-    width: 41px;
-    height: 31px;
-  }
-}
-@media (max-width: 1023px) {
-  .customer__list-item-discription blockquote {
-    font-size: 13px;
-    margin: 20px 30px 10px;
-  }
-}
 .customer__list-item-stars {
   align-self: flex-start;
   margin-left: 44px;
@@ -2423,11 +2386,6 @@ h4, .h4 {
 @media (max-width: 1023px) {
   .customer__list-item-stars {
     margin-left: 27px;
-  }
-}
-@media (max-width: 1023px) {
-  .customer__list-item-image_bottom {
-    width: 98px;
   }
 }
 
@@ -2439,7 +2397,7 @@ h4, .h4 {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 21px;
-  margin: 500px auto 0;
+  margin: 215px auto 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
