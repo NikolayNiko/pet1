@@ -1,5 +1,5 @@
 .customer {
-    height: auto;
+    height: 550px;
     position: relative; /* Добавляем для правильного позиционирования дочерних элементов */
     overflow: hidden; /* Отключаем горизонтальный скролл */
     width: 100%; /* Полная ширина экрана */
@@ -38,8 +38,15 @@
         left: 0; /* Выравниваем контейнер по левому краю */
         margin-left: 105px;
         position: relative; /* Обеспечиваем нормальное выравнивание */
+
+        @include tablet {
+        gap: 0;
+        margin-left: 30px;
+
+        }
         
-        /* Отступ между первым и вторым элементом */
+
+        
         & > *:first-child::before {
             content: "";
             display: inline-block;
@@ -94,6 +101,13 @@
             @include tablet {
                 border-radius: 15px;
                 margin-right: 33px;
+            }
+
+            @include mobile {
+            
+                &:not(:first-child) {
+                    display: none;
+                }
             }
 
             @include mobile {

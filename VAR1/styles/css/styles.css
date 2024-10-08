@@ -2223,7 +2223,7 @@ h4, .h4 {
 }
 
 .customer {
-  height: auto;
+  height: 550px;
   position: relative; /* Добавляем для правильного позиционирования дочерних элементов */
   overflow: hidden; /* Отключаем горизонтальный скролл */
   width: 100%; /* Полная ширина экрана */
@@ -2266,9 +2266,14 @@ h4, .h4 {
   left: 0; /* Выравниваем контейнер по левому краю */
   margin-left: 105px;
   position: relative; /* Обеспечиваем нормальное выравнивание */
-  /* Отступ между первым и вторым элементом */
   /* Отступ между вторым и третьим элементом */
   /* Исправлено: убран отрыв блоков */
+}
+@media (max-width: 1023px) {
+  .customer__list {
+    gap: 0;
+    margin-left: 30px;
+  }
 }
 .customer__list > *:first-child::before {
   content: "";
@@ -2325,6 +2330,11 @@ h4, .h4 {
   .customer__list-item {
     border-radius: 15px;
     margin-right: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .customer__list-item:not(:first-child) {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2392,7 +2402,7 @@ h4, .h4 {
 .get50__main {
   width: 80%;
   height: 200px;
-  background: url(../../images/MaskGroup.svg);
+  background: url(../../images/MaskGroup1.svg);
   background-color: var(--color-fiolet-text);
   background-repeat: no-repeat;
   background-size: cover;
