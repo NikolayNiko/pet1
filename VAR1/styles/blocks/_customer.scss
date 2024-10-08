@@ -62,8 +62,10 @@
             @include mobile {
                 left: 0;
                 margin-left: 0;
+                margin-right: 29.25vw;
+
                 bottom: -50px;
-                width: 62%;
+                width: 100%;
             }
         }
 
@@ -84,7 +86,7 @@
                 left: 0;
                 margin-left: 0;
                 bottom: -50px;
-                width: 30%;
+                width: 43.5%;
             }
         }
 
@@ -104,16 +106,15 @@
             }
 
             @include mobile {
-            
+                width: 62%;
+                flex: auto;
+                // margin-right: 130px;
+
+                margin-right: 29.25vw;
+
                 &:not(:first-child) {
                     display: none;
                 }
-            }
-
-            @include mobile {
-                width: 62%;
-                flex: auto;
-                margin-right: 130px;
             }
 
             &-top {
