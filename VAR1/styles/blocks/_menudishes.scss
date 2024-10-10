@@ -53,6 +53,7 @@
             flex: 1 1 calc(20% - 16px);
             position: relative;
             box-sizing: border-box;
+            background-color: white;
             @include tablet {
                 border-radius: 25px;
             }
