@@ -162,14 +162,15 @@
         @include mobile {
             display: block;
             position: absolute;
-            top: 35%;
-            right: 15%;
+            top: 40%;
+            right: 10%;
             transform: rotate(265deg); 
 
         }
 
-        @include mobile-s {
-            right: 10%;
+        @include mobile-s1 {
+            top: 40%;
+            right: 0;
         }
     }
 
