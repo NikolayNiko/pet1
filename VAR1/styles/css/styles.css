@@ -2403,13 +2403,19 @@ h4, .h4 {
 
 .get50__main {
   width: 80%;
-  height: 200px;
+  height: 280px;
   background: url(../../images/MaskGroup1.svg);
   background-color: var(--color-fiolet-text);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 21px;
-  margin: 215px auto 0;
+  margin: 215px auto 200px;
+  position: relative;
+}
+.get50__main-imagemain {
+  top: 25%;
+  right: -60%;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
