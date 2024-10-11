@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3  # Обновили версию
 
     - name: Install Sass
       run: sudo apt-get install -y sassc
@@ -19,10 +19,10 @@ jobs:
     - name: Compile SCSS to CSS
       run: sass --no-source-map VAR1/styles/styles.scss VAR1/styles/css/styles.css
 
-    - name: Commit CSS
+    - name: Commit compiled CSS
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
         git add VAR1/styles/css/styles.css
-        git commit -m 'Compile SCSS to CSS'
+        git commit -m 'Automatically compiled SCSS to CSS'
         git push
