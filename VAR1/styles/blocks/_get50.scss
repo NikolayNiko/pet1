@@ -97,7 +97,7 @@
                     }
 
                     @include mobile {
-                        font-size: .8rem;
+                        font-size: .7rem;
                         
                     }
                 }
@@ -116,6 +116,11 @@
                 color: white;
                 border: none;
                 letter-spacing: 5px;
+                
+                display: inline-block;  // или block/flex, в зависимости от контекста
+                text-align: center;     // Центрируем текст по горизонтали
+                // padding: 10px 20px;
+                padding-left: 7px;
 
                 @include tablet {
                     font-size: 12px;

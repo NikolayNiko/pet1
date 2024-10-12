@@ -1815,6 +1815,7 @@ h4, .h4 {
   align-items: center;
   margin: 100px 50px;
   position: relative;
+  gap: 140px;
 }
 @media (max-width: 1023px) {
   .control {
@@ -1837,6 +1838,7 @@ h4, .h4 {
   align-items: start;
   height: 466px;
   margin-left: 25px;
+  flex: 0 1 calc(45% - 55px);
 }
 @media (max-width: 1023px) {
   .control__left {
@@ -1998,6 +2000,8 @@ h4, .h4 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
+  width: inherit;
+  flex: 0 1 calc(45% - 55px);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
   padding: 46px 38px;
   background-color: #fff;
@@ -2014,6 +2018,7 @@ h4, .h4 {
   .control__right {
     border-radius: 15px;
     padding: 24px 27px;
+    width: 80%;
   }
 }
 .control__right-select {
@@ -2093,6 +2098,7 @@ h4, .h4 {
   .control__right-title {
     font-size: 17px;
     margin-bottom: 22px;
+    margin-right: 10px;
   }
 }
 .control__right-list {
@@ -2119,7 +2125,7 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .control__right-list-item-title {
-    font-size: 11px;
+    font-size: 1.5rem;
   }
 }
 .control__right-list-item-discription {
@@ -2351,6 +2357,7 @@ h4, .h4 {
   .customer__list-item {
     width: 62%;
     flex: auto;
+    margin-right: 0;
     margin-right: 29.25vw;
   }
   .customer__list-item:not(:first-child) {
@@ -2517,7 +2524,7 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .get50__main-formfield-input::placeholder {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 .get50__main-formfield-btn {
@@ -2533,6 +2540,9 @@ h4, .h4 {
   color: white;
   border: none;
   letter-spacing: 5px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 7px;
 }
 @media (max-width: 1023px) {
   .get50__main-formfield-btn {

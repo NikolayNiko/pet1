@@ -1,8 +1,9 @@
 .control {
     @include flex-center;
-    
+    // width: 100%;
     margin: 100px 50px;
     position: relative;
+    gap: 140px;
 
 
     @include tablet {
@@ -24,6 +25,8 @@
         // min-width: 534px;
         height: 466px;
         margin-left: 25px;
+        flex: 0 1 calc(45% - 55px); 
+        
 
         @include tablet {
             height: 327px;
@@ -190,6 +193,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: start;
+        width: inherit;
+        flex: 0 1 calc(45% - 55px); 
         
         box-shadow: 0 4px 4px #00000040;
         padding: 46px 38px;
@@ -205,6 +210,7 @@
         @include mobile {
             border-radius: 15px;
             padding: 24px 27px;
+            width: 80%;
         }
 
         &-select{
@@ -297,6 +303,7 @@
             @include mobile {
                 font-size: 17px;
                 margin-bottom: 22px;
+                margin-right: 10px;
             }
 
         }
@@ -322,7 +329,7 @@
                     color: var(--color-black4);
 
                     @include mobile {
-                        font-size: 11px;
+                        font-size: 1.5rem;
                     }
 
 
