@@ -2441,6 +2441,11 @@ h4, .h4 {
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 1023px) {
+  .get50__main-formfield {
+    margin-left: 25px;
+  }
+}
 .get50__main-formfield-input {
   flex: 0 1 calc(75% - 5px);
   margin-left: 10px;

@@ -25,6 +25,7 @@
             left: 47px;
             top: 26px;
         }
+
         }
 
         &-formfield {
@@ -36,6 +37,10 @@
             background-color: var(--color-fiolet-light);
             @include flex-center;
             gap: 10px;
+
+            @include tablet {
+                margin-left: 25px;
+            }
 
             &-input {
                 flex: 0 1 calc(75% - 5px);
