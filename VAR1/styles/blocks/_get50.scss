@@ -1,6 +1,6 @@
 .get50 {
     &__main {
-        width: 80%;
+        width: 81%;
         height: 280px;
         background: url(../../images/MaskGroup1.svg);
         background-color: var(--color-fiolet-text);
@@ -12,12 +12,70 @@
 
         &-title{
         color: white;
+        font-weight: 800;
+        font-family: var(--font-family-poppins);
+        opacity: .8;
+        font-size: 70px;
+        position: relative;
+        left: 66px;
+        top: 37px;
+
+        @include tablet {
+            font-size: 50px;
+            left: 47px;
+            top: 26px;
+        }
+        }
+
+        &-formfield {
+            width: 55%;
+            height: 68px;
+            margin-top: 50px;
+            margin-left: 65px;
+            border-radius: 14px;
+            background-color: var(--color-fiolet-light);
+            @include flex-center;
+            gap: 10px;
+
+            &-input {
+                flex: 0 1 calc(75% - 5px);
+                margin-left: 10px;
+                height: 53px;
+                border: none;
+                background-color: var(--color-fiolet-light);
+
+                &::placeholder {
+                    color: var(--color-grey-light-text);
+                    font-size: 16px;
+                    font-family: var(--font-family-poppins);
+                    font-weight: normal; // Регулярный шрифт
+                    letter-spacing: 3.5px;
+                }
+            }
+
+            &-btn {
+                // width: 132px;
+                height: 53px;
+                flex: 0 1 calc(25% - 5px);
+                margin-right: 10px;
+                border-radius: 11px;
+                font-family: var(--font-family-poppins);
+                font-weight: 500;
+                font-size: 15px;
+                background-color: var(--color-fiolet-text);
+                opacity: .8;
+                color: white;
+                border: none;
+                letter-spacing: 5px;
+
+            }
         }
 
         &-imagemain{
-            top: 25%;
-            right: -60%;
             position: relative;
+            top: -55%;
+            right: -65%;
+            
         }
     }
 

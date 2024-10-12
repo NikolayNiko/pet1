@@ -707,7 +707,29 @@
         <section class="get50">
             <div class="get50__main">
                 <div class="get50__main-title">GET 50%</div>
-                <div class="get50__main-input"></div>
+                
+                <form 
+                    action="#" 
+                    method="post"
+                    class="get50__main-formfield">
+                    <label 
+                        for="inputEmail"
+                        class="get50__main-formfield-label">
+                    </label>
+                    <input 
+                        type="email" 
+                        id="inputEmail"
+                        name="user-email"
+                        required
+                        placeholder="Enter Your Email Address"
+                        inputmode="email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        oninvalid="this.setCustomValidity('Пожалуйста, введите корректный email')" 
+                        oninput="this.setCustomValidity('')"
+                        class="get50__main-formfield-input">
+                    <button class="get50__main-formfield-btn">SUBSCRIBE</button>
+                </form>
+                
                 <img 
                     src="./VAR1/images/Food_Image3.svg" 
                     alt="About folowers" 

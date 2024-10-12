@@ -2402,7 +2402,7 @@ h4, .h4 {
 }
 
 .get50__main {
-  width: 80%;
+  width: 81%;
   height: 280px;
   background: url(../../images/MaskGroup1.svg);
   background-color: var(--color-fiolet-text);
@@ -2412,10 +2412,67 @@ h4, .h4 {
   margin: 215px auto 200px;
   position: relative;
 }
-.get50__main-imagemain {
-  top: 25%;
-  right: -60%;
+.get50__main-title {
+  color: white;
+  font-weight: 800;
+  font-family: var(--font-family-poppins);
+  opacity: 0.8;
+  font-size: 70px;
   position: relative;
+  left: 66px;
+  top: 37px;
+}
+@media (max-width: 1023px) {
+  .get50__main-title {
+    font-size: 50px;
+    left: 47px;
+    top: 26px;
+  }
+}
+.get50__main-formfield {
+  width: 55%;
+  height: 68px;
+  margin-top: 50px;
+  margin-left: 65px;
+  border-radius: 14px;
+  background-color: var(--color-fiolet-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.get50__main-formfield-input {
+  flex: 0 1 calc(75% - 5px);
+  margin-left: 10px;
+  height: 53px;
+  border: none;
+  background-color: var(--color-fiolet-light);
+}
+.get50__main-formfield-input::placeholder {
+  color: var(--color-grey-light-text);
+  font-size: 16px;
+  font-family: var(--font-family-poppins);
+  font-weight: normal;
+  letter-spacing: 3.5px;
+}
+.get50__main-formfield-btn {
+  height: 53px;
+  flex: 0 1 calc(25% - 5px);
+  margin-right: 10px;
+  border-radius: 11px;
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
+  font-size: 15px;
+  background-color: var(--color-fiolet-text);
+  opacity: 0.8;
+  color: white;
+  border: none;
+  letter-spacing: 5px;
+}
+.get50__main-imagemain {
+  position: relative;
+  top: -55%;
+  right: -65%;
 }
 
 /*# sourceMappingURL=styles.css.map */
