@@ -5,9 +5,7 @@
 .button {
     font-family: var(--font-family-inter);
     font-weight: 700;
-
     @include flex-center(true);
-    
     height: var(--button-height-base-deckstop);
     padding-inline: 26px;
     font-size: 17px;
@@ -27,7 +25,6 @@
     border: var(--color-white);
     margin-left: auto;
     width: 121px;
-
 
     @include hover {
         color: var(--color-white);

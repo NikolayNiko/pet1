@@ -1,5 +1,28 @@
 .footer {
+    @include flex-center;
+    flex-direction: column;
     background-color: var(--color-footer);
     height: 345px;
-    
+
+    &__top {
+        @include flex-center;
+        justify-content: space-between;
+        width: 80%;
+
+        &-nav-list {
+            @include flex-center;
+            gap: 70px;
+        }
+    }
+
+    &__bottom {
+        @include flex-center;
+        justify-content: space-between;
+        width: 80%;
+
+        &-social-list {
+            @include flex-center;
+            gap: 54px;
+        }
+    }
 }

@@ -1,6 +1,10 @@
 .hero {
     padding: 49px 51px 85px 103px;
 
+    @include tablet {
+        margin-top: 25px;
+    }
+
     @include mobile {
         padding: 0;
     
