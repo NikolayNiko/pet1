@@ -302,6 +302,7 @@ svg * {
   --color-grey: #cbcbcb;
   --color-orange: #ffe9bf;
   --color-orange-light: #FBAD18;
+  --color-footer: #eaeaea;
   --color-fiolet-text: #6C5FBC;
   --color-orange-text: #DAA31A;
   --color-grey-text: #8E97A6;
@@ -2574,6 +2575,11 @@ h4, .h4 {
     top: 10%;
     right: 0;
   }
+}
+
+.footer {
+  background-color: var(--color-footer);
+  height: 345px;
 }
 
 /*# sourceMappingURL=styles.css.map */
