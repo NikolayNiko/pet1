@@ -11,6 +11,8 @@
 
     &__logo {
         margin-right: 100px;
+        width: 100%;
+        max-width: none;
 
         @include tablet {
             margin-right: 75px;
@@ -25,7 +27,7 @@
 
     &__inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         width: 75%;
         // column-gap: 54px;
