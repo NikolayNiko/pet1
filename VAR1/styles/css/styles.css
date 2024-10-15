@@ -1642,6 +1642,11 @@ h4, .h4 {
     max-width: 95%;
   }
 }
+@media (max-width: 767px) {
+  .menudishes__list-card-image {
+    margin: 0;
+  }
+}
 .menudishes__list-card-title {
   font-family: var(--font-family-poppins);
   font-weight: 600;
@@ -1656,7 +1661,7 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .menudishes__list-card-title {
-    font-size: 36px;
+    font-size: 16px;
   }
 }
 .menudishes__list-card-discription {
