@@ -158,13 +158,13 @@
                 }
 
                 @include mobile {
-                    font-size: 15px;
+                    font-size: 36px;
                 }
             }
 
             &-discription {
-                margin-left: 25px;
-                width: 100%;
+                margin-left: 15px;
+                width: 110%;
             }
 
             &-top {
@@ -179,7 +179,8 @@
                 }
 
                 @include mobile {
-                    font-size: 7.5px;
+                    font-size: 15px;
+                    font-weight: 500;
                 }
             }
 
@@ -206,7 +207,7 @@
                 color: var(--color-black2);  
 
                 @include mobile {
-                    font-size: 17px;
+                    font-size: 36px;
                 }
             }
 

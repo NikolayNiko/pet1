@@ -938,7 +938,7 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .hero__image {
-    max-width: 95%;
+    max-width: 94%;
     margin-top: 47px;
   }
 }
@@ -1656,12 +1656,12 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .menudishes__list-card-title {
-    font-size: 15px;
+    font-size: 36px;
   }
 }
 .menudishes__list-card-discription {
-  margin-left: 25px;
-  width: 100%;
+  margin-left: 15px;
+  width: 110%;
 }
 .menudishes__list-card-top {
   font-size: 11.5px;
@@ -1677,7 +1677,8 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .menudishes__list-card-top {
-    font-size: 7.5px;
+    font-size: 15px;
+    font-weight: 500;
   }
 }
 .menudishes__list-card-bottom {
@@ -1707,7 +1708,7 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .menudishes__list-card-price-big {
-    font-size: 17px;
+    font-size: 36px;
   }
 }
 .menudishes__list-card-price-little {
