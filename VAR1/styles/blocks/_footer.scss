@@ -16,7 +16,9 @@
 
     @include mobile {
         flex-direction: row;
+        align-items: stretch;
         font-size: 14px;
+        height: 426px;
     }
 
     &__top {
@@ -26,10 +28,12 @@
 
         @include mobile {
             flex-direction: column;
+            justify-content: space-around;
             align-items: flex-start;
             width: 30%;
             // margin-top: 55px;
             margin-left: 30px;
+
         }
 
         &-logo-image {
@@ -38,7 +42,7 @@
             }
         }
 
-
+        
         &-nav-list {
             @include flex-center;
             gap: 70px;
@@ -72,13 +76,23 @@
             }
         }
 
-        &-social-list {
-            @include flex-center;
-            gap: 54px;
+        &-social {
 
             @include mobile {
-                margin-right: 30px;
+                margin-top: 15px;
+            }
+            
+            
+            &-list {
+                @include flex-center;
+                gap: 54px;
+
+                @include mobile {
+                    margin-right: 30px;
+                    gap: 20px;
+                }
             }
         }
+
     }
 }
