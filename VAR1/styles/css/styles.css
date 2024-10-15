@@ -2621,7 +2621,7 @@ h4, .h4 {
 @media (max-width: 767px) {
   .footer__top {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     width: 30%;
     margin-left: 30px;
@@ -2663,13 +2663,14 @@ h4, .h4 {
 @media (max-width: 767px) {
   .footer__bottom-left {
     position: absolute;
-    top: 783%;
+    top: 680%;
     right: 50%;
+    max-width: 100%;
   }
 }
 @media (max-width: 767px) {
   .footer__bottom-social {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }
 .footer__bottom-social-list {
