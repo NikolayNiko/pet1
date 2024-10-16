@@ -1520,6 +1520,7 @@ h4, .h4 {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
+  width: 70%;
 }
 @media (max-width: 767px) {
   .menudishes__list {
@@ -1538,7 +1539,6 @@ h4, .h4 {
   background-color: white;
   border-radius: 35px;
   overflow: hidden;
-  max-width: calc(17vw - 1rem);
   flex: 1 1 calc(20% - 16px);
   position: relative;
   box-sizing: border-box;
@@ -1640,6 +1640,7 @@ h4, .h4 {
 @media (max-width: 1280px) {
   .menudishes__list-card-image {
     max-width: 95%;
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) {

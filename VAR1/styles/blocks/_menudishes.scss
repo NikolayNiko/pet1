@@ -33,6 +33,8 @@
     &__list {
         @include flex-center;
         column-gap: 20px;
+        width: 70%;
+
         @include mobile {
             flex-wrap: wrap;
             column-gap: 20px;
@@ -52,7 +54,7 @@
             background-color: white;
             border-radius: 35px;
             overflow: hidden;
-            max-width: calc((85vw/5) - 1rem);
+            // max-width: calc((85vw/5) - 1rem);
             flex: 1 1 calc(20% - 16px);
             position: relative;
             box-sizing: border-box;
@@ -143,6 +145,7 @@
 
                 @include desktop {
                     max-width: 95%;
+                    margin-top: 0;
                 }
 
                 @include mobile {
