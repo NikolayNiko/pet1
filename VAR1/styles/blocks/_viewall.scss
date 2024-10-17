@@ -18,17 +18,18 @@
         margin-bottom: 65px;
     }
 
-
-}
-
-.viewall::after {
-    content: "";
-    display: inline-block;
-    margin-left: 15px;
-    width: 27px;
-    height: 22px;
-    background-color: var(--color-grey-contur); // Цвет стрелочки
-    mask-image: url('../../images/Arrow.svg');
-    mask-repeat: no-repeat;
-    
+    &::after {
+        content: "";
+        display: inline-block;
+        margin-left: 15px;
+        width: 27px;
+        height: 22px;
+        background-color: var(--color-grey-contur); // Цвет стрелочки
+        mask-image: url('../../images/Arrow.svg');
+        mask-repeat: no-repeat;
+        transition: transform 0.5s;
+    }
+    &:hover::after {
+        transform: translateX(20px); 
+    }
 }

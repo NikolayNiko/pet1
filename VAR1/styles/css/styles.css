@@ -1844,7 +1844,6 @@ h4, .h4 {
     margin-bottom: 65px;
   }
 }
-
 .viewall::after {
   content: "";
   display: inline-block;
@@ -1854,6 +1853,10 @@ h4, .h4 {
   background-color: var(--color-grey-contur);
   mask-image: url("../../images/Arrow.svg");
   mask-repeat: no-repeat;
+  transition: transform 0.5s;
+}
+.viewall:hover::after {
+  transform: translateX(20px);
 }
 
 .control {
