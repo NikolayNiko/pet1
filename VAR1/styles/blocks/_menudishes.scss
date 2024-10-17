@@ -33,8 +33,12 @@
     &__list {
         @include flex-center;
         column-gap: 20px;
-        width: 70%;
+        width: 90%;
 
+        @include desktop{
+            width: 90%;
+        }
+        
         @include mobile {
             flex-wrap: wrap;
             column-gap: 20px;
@@ -45,7 +49,6 @@
             
             @include flex-center;
             flex-direction: column;
-            align-items: flex-start;
             box-shadow: 
                 25px 100px 40px #e5e5e5b3,
                 0 4px 4px #00000040,
@@ -54,7 +57,6 @@
             background-color: white;
             border-radius: 35px;
             overflow: hidden;
-            // max-width: calc((85vw/5) - 1rem);
             flex: 1 1 calc(20% - 16px);
             position: relative;
             box-sizing: border-box;
@@ -145,12 +147,9 @@
 
                 @include desktop {
                     max-width: 95%;
-                    margin-top: 0;
+                    margin-top: 25px;
                 }
 
-                @include mobile {
-                    margin: 0;
-                }
             }
 
             &-title {
@@ -171,7 +170,10 @@
 
             &-discription {
                 margin-left: 15px;
-                width: 110%;
+                width: 95%;
+                @include mobile {
+                    width: 70%;
+                }
             }
 
             &-top {
@@ -232,7 +234,6 @@
                 font-weight: 700;
                 width: 40px;
                 height: 40px;
-                // padding-inline: 26px;
                 font-size: 20px;
                 color: var(--color-white);
                 background-color: var(--color-black);
@@ -241,7 +242,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 0; 
+                padding: 0;
+                margin-right: -15px;
             
                 @include hover {
                 background-color: var(--color-white);
@@ -249,7 +251,6 @@
 
                 &::after{
                     background-color: var(--color-black);
-                    // margin: 9px 4px 9px 6px;
                     }
                 }
     
