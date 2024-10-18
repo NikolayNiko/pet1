@@ -2726,4 +2726,87 @@ h4, .h4 {
   }
 }
 
+.get50off__main {
+  width: 50%;
+  height: 251px;
+  background: url(../../images/MaskGroup1.svg);
+  background-color: var(--color-fiolet-text);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 21px;
+  margin: 120px 110px 50px 100px;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .get50off__main {
+    height: 200px;
+    margin: 165px auto 150px;
+  }
+}
+@media (max-width: 767px) {
+  .get50off__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 257px;
+    margin-top: 0;
+  }
+}
+.get50off__main-title {
+  width: auto;
+  color: white;
+  font-weight: 800;
+  font-family: var(--font-family-poppins);
+  opacity: 0.9;
+  font-size: 70px;
+  position: relative;
+  left: 5%;
+  top: 15%;
+}
+@media (max-width: 1023px) {
+  .get50off__main-title {
+    font-size: 50px;
+    left: 47px;
+    top: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .get50off__main-title {
+    font-size: 41.5px;
+    margin-top: 47px;
+    left: 0;
+  }
+}
+.get50off__main-discription {
+  color: white;
+  font-weight: 800;
+  font-family: var(--font-family-poppins);
+  opacity: 0.4;
+  font-size: 88px;
+  position: relative;
+  left: 5%;
+  top: -10%;
+}
+.get50off__main-imagemain {
+  width: 256px;
+  position: relative;
+  top: -75%;
+  right: -60%;
+}
+@media (max-width: 1023px) {
+  .get50off__main-imagemain {
+    width: 194px;
+    height: 194px;
+  }
+}
+@media (max-width: 767px) {
+  .get50off__main-imagemain {
+    width: 170px;
+    height: 170px;
+    top: 10%;
+    right: 0;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
