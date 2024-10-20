@@ -34,11 +34,6 @@
             flex: 0 1 calc(50% - 55px); 
         }
 
-        // @include mobile {
-        //     margin-bottom: 100px;
-        // }
-        
-
         &-title {
             font-family: var(--font-family-poppins);
             font-size: 51px;
@@ -169,7 +164,6 @@
         @include mobile {
             display: block;
             position: relative;
-            // top: 40%;
             right: -25%;
             bottom: 50px;
             transform: rotate(265deg); 
@@ -181,10 +175,10 @@
             right: -35%;
         }
 
-        @include mobile-s1 {
-            top: 40%;
-            right: 0;
-        }
+        // @include mobile-s1 {
+        //     top: 40%;
+        //     right: 0;
+        // }
     }
 
     &__right {
@@ -384,6 +378,7 @@
 
                     @include mobile {
                         justify-content: center;
+                        margin-left: 10px;
                     }
 
                 }
@@ -400,9 +395,12 @@
                         background-position: center;
                         background-repeat: no-repeat;
                         margin-left: 25px;
-                        // margin-right: 25px;
                         border-radius: 50%;
                         border: none;
+
+                        @include mobile {
+                            margin-left: 10px;
+                        }
                     }
                 }
 
@@ -420,6 +418,10 @@
                         margin-left: 25px;
                         border-radius: 50%;
                         border: none;
+
+                        @include mobile {
+                            margin-left: 10px;
+                        }
                     }
                 }
 

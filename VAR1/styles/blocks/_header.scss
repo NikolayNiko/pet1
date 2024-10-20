@@ -35,6 +35,14 @@
         @include tablet {
         column-gap: 10px;
         }
+
+        @include mobile {
+            column-gap: 3em;
+        }
+
+        // @include mobile-s {
+        //     column-gap: 100px;
+        // }
     }
 
     &__menu {
@@ -112,7 +120,7 @@
 
     @include mobile-s {
         &::after {
-            top: 100px;
+            // top: 100px;
             width: 90%;
         }
     }

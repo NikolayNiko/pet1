@@ -1,18 +1,86 @@
 .accordion {
-    width: 95%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 0 auto 165px;
+
+    @include tablet {
+        margin-bottom: 120px;
+    }
     
+    &-title {
+        font-family: var(--font-family-poppins);
+        font-size: 45px;
+        width: 408px;
+        margin: 100px auto 90px;
+        text-align: center;
+        position: relative;
+
+        @include tablet {
+            margin-bottom: 65px;
+            font-size: 32px;
+        }
+
+        @include mobile {
+            font-size: 24px;
+            width: 55%;
+        }
+
+        &-span {
+            color: var(--color-fiolet);
+            
+        }
+    }
+
+    &-title::before{
+        content: "";
+        position: relative;
+        font-size: 38px;
+        width: 40px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/VAR1/images/Illustration01.svg);
+        color: var(--color-fiolet);
+        right: -400px;
+        top: 0;
+
+        @include tablet {
+            right: -350px;
+        }
+
+        @include mobile {
+            right: -260px;
+        }
+
+    }
+
+    &-details {
+        &:first-of-type .accordion-summary {
+            border-top: none; // убираем border у первого summary в первом details
+        }
+    }
+
     &-details p {
         padding: 10px;
+        height: 105px;
+        font-family: var(--font-family-poppins);
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--color-grey-answer);
         margin: 0;
-        background-color: #f1f1f1;
-        border: 1px solid #ddd;
-        border-top: none;
-        opacity: 0;
-        max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease, opacity 0.3s ease;
+
+        @include tablet {
+            font-size: 14px;
+        }
+
+        @include mobile {
+            font-size: 11px;
+        }
     }
+
+
 
     &-details[open] p {
         opacity: 1;
@@ -26,19 +94,29 @@
     &-summary{
         list-style: none;
         outline: none;
-
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        font-weight: bold;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
+        font-family: var(--font-family-poppins);
+        font-size: 24px;
+        font-weight: 600;
+        height: 105px;
+        // background-color: #f9f9f9;
+        border-top: 1px solid grey;
         transition: background-color 0.3s ease;
 
         &::marker {
             display: none;  /* Убираем встроенный маркер (треугольник) */
+        }
+
+        @include tablet {
+            font-size: 16px;
+        }
+
+        @include mobile {
+            font-size: 12px;
         }
     }
     &-summary::after {
@@ -49,9 +127,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #007bff; /* Синий фон кружка */
-        color: white; /* Цвет плюсика */
+        background-color: var(--color-fiolet); /* Синий фон кружка */
+        color: var(--color-white); /* Цвет плюсика */
+        font-weight: 100;
         border-radius: 50%; /* Круглая форма */
         transition: transform 0.3s ease;
     }
-}
+
+    }

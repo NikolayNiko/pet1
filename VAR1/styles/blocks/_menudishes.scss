@@ -35,14 +35,11 @@
         column-gap: 20px;
         width: 90%;
 
-        @include desktop{
-            width: 90%;
-        }
-        
         @include mobile {
             flex-wrap: wrap;
             column-gap: 20px;
             flex: 1 1 calc(50% - 20px);
+            width: 100%;
         }
         
         &-card {
@@ -172,7 +169,7 @@
                 margin-left: 15px;
                 width: 95%;
                 @include mobile {
-                    width: 70%;
+                    width: 90%;
                 }
             }
 
