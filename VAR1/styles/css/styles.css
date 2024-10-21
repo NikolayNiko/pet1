@@ -325,7 +325,6 @@ svg * {
   --color-fiolet-middle-contur: #DBD9EE;
   --color-dark: #1C186C;
   --color-dark2: #5E5D5D;
-  --color-white: #FFFFFF;
   --color-white-grey: #F9F9F9;
   --color-grey2: #C5C5C5;
   --color-grey3: #A0AEC0;
@@ -333,6 +332,14 @@ svg * {
   --colog-grey-darck: #999999;
   --color-green: #00B67A;
   --color-fiolet: #6C5FBC;
+  --color-category-pizza: #ffde8a;
+  --color-category-pizza1: #D69900;
+  --color-category-asian: #F7C5BA;
+  --color-category-asian1: #FB471D;
+  --color-category-donat: #EDB66B;
+  --color-category-donat1: #E28B14;
+  --color-category-ice: #5A85FF;
+  --color-category-ice1: #002073;
   --border: 2px solid var(--color-fiolet);
   --border-mobile: 1.2px solid var(--color-fiolet);
   --border-radius-forms: 17px;
@@ -573,9 +580,9 @@ h4, .h4 {
 
 .header {
   padding-top: 60px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1280px) {
   .header {
@@ -600,27 +607,19 @@ h4, .h4 {
   }
 }
 .header__inner {
+  width: 90%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-}
-@media (max-width: 1023px) {
-  .header__inner {
-    column-gap: 10px;
-  }
-}
-@media (max-width: 767px) {
-  .header__inner {
-    column-gap: 3em;
-  }
+  justify-content: space-around;
 }
 .header__menu {
   display: flex;
   margin-right: 150px;
+  margin-left: 50px;
   font-size: 18px;
   font-family: var(--font-family-inter);
   font-weight: 400;
-  margin-left: 50px;
 }
 @media (max-width: 1023px) {
   .header__menu {
@@ -744,8 +743,13 @@ h4, .h4 {
   font-size: 48px;
   letter-spacing: 0.4rem;
   text-decoration: underline var(--color-fiolet-main) 4px;
-  padding-top: 34px;
   padding-right: 30px;
+}
+.mobile-overlay__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .mobile-overlay:modal {
   max-width: 100%;
@@ -766,7 +770,10 @@ h4, .h4 {
 .mobile-overlay__button {
   background-color: var(--color-fiolet-medium);
   margin-bottom: 30px;
-  min-height: 2rem;
+  min-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-overlay__button-login {
   background-color: var(--color-fiolet-light);
@@ -1731,7 +1738,12 @@ h4, .h4 {
   justify-content: space-between;
   font-family: var(--font-family-manrope);
   margin-bottom: 30px;
-  width: 77%;
+  width: 85%;
+}
+@media (max-width: 1023px) {
+  .menudishes__list-card-priceadd {
+    width: 80%;
+  }
 }
 @media (max-width: 767px) {
   .menudishes__list-card-priceadd {
@@ -2814,6 +2826,76 @@ h4, .h4 {
     top: 10%;
     right: 0;
   }
+}
+.get50off__main-apply {
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 25px 100px 40px rgba(229, 229, 229, 0.7019607843), 0 4px 4px rgba(0, 0, 0, 0.2509803922), 0 0 5px 0.2px rgba(0, 0, 0, 0.2), 0 0 5px 0.5px #F4F4F6;
+  width: 30%;
+  top: -300px;
+  right: -62%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.get50off__main-apply-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.get50off__main-apply-category-title {
+  font-family: var(--font-family-poppins);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 32px auto 17px 35px;
+}
+.get50off__main-apply-category-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 13px;
+  width: 90%;
+}
+.get50off__main-apply-category-items {
+  border-radius: 15px;
+  width: 20%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: var(--font-family-poppins);
+  font-size: 12px;
+  font-weight: 500;
+}
+.get50off__main-apply-category-items[data-category=pizza] {
+  background-color: var(--color-category-pizza);
+  color: var(--color-category-pizza1);
+}
+.get50off__main-apply-category-items[data-category=asian] {
+  background-color: var(--color-category-asian);
+  color: var(--color-category-asian1);
+}
+.get50off__main-apply-category-items[data-category=donat] {
+  background-color: var(--color-category-donat);
+  color: var(--color-category-donat1);
+}
+.get50off__main-apply-category-items[data-category=icecream] {
+  background-color: var(--color-category-ice);
+  color: var(--color-category-ice1);
+}
+.get50off__main-apply-sort-title {
+  font-family: var(--font-family-poppins);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.action-category-menu {
+  border: 3px solid #FB471D;
 }
 
 .accordion {

@@ -1,8 +1,7 @@
 .header {
     padding-top: 60px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    // margin: 0 auto;
+    @include flex-center;
 
     @include desktop {
         padding-top: 34px;
@@ -29,30 +28,23 @@
     }
 
     &__inner {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        @include tablet {
-        column-gap: 10px;
-        }
+        
+        width: 90%;
+        @include flex-center;
+        justify-content: space-around;
 
-        @include mobile {
-            column-gap: 3em;
-        }
+        
 
-        // @include mobile-s {
-        //     column-gap: 100px;
-        // }
     }
 
     &__menu {
         display: flex;
         margin-right: 150px;
+        margin-left: 50px;
         font-size: 18px;
         font-family: var(--font-family-inter);
         font-weight: 400;
-        margin-left: 50px;
-
+        
         @include tablet{
             margin-left: 10px;
             margin-right: 10px;

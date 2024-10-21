@@ -8,8 +8,13 @@
     font-size: 48px;
     letter-spacing: .4rem;
     text-decoration: underline var(--color-fiolet-main) 4px;
-    padding-top: 34px;
+    // padding-top: 34px;
     padding-right: 30px;
+
+    &__top{
+        @include flex-center;
+        justify-content: space-between;
+    }
 
     &:modal {
         max-width: 100%;
@@ -23,17 +28,16 @@
 
     &__list {
         @include flex-center;
-
         flex-direction: column;
         row-gap: 30px;
         min-height: 50vh;
-
     }
 
     &__button {
         background-color: var(--color-fiolet-medium);
         margin-bottom: 30px;
-        min-height: 2rem;
+        min-height: 7rem;
+        @include flex-center;
 
         &-login {
             background-color: var(--color-fiolet-light);
