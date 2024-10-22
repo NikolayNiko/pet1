@@ -144,13 +144,35 @@
             }
 
             &-sort {
+                @include flex-center;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 80%;
+
                 &-title {
                     font-family: var(--font-family-poppins);
                     font-size: 22px;
                     font-weight: 600;
+                    margin-top: 25px;
+                }
+
+                &-list{
+
+                }
+                &-leftlist{
+
+                }
+
+                &-rightlist{
+
                 }
             }
+
+            &-price {
+
+            }
         }
+
     }
 
 }
