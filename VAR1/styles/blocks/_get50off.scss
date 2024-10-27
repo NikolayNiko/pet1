@@ -5,6 +5,7 @@
         font-family: var(--font-family-poppins);
 
     &__main {
+        // @include flex-center;
         width: 65%;
         height: 251px;  
         background: url(../../images/MaskGroup1.svg);
@@ -37,7 +38,7 @@
         font-size: 70px;
         position: relative;
         left: 5%;
-        top: 15%;
+        // top: 15%;
 
         @include tablet {
             font-size: 50px;
@@ -60,7 +61,7 @@
             font-size: 88px;
             position: relative;
             left: 5%;
-            top: -10%;
+            top: -20%;
         }
 
         &-imagemain{
@@ -82,6 +83,25 @@
                 right: 0;
             }
             
+        }
+
+        &-slider{
+            width: 136px;
+            height: 6px;
+            @include flex-center;
+            column-gap: 8px;
+            position: relative;
+            top: -100%;
+            left: 25%;
+            
+            
+            &-s1, &-s2, &-s3 {
+                background-color: var(--color-fiolet-middle-contur);
+                border-radius: 55px;
+                width: 30px;
+                height: 100%;
+
+            }
         }
 
         &-apply {
@@ -198,17 +218,114 @@
 
                 &-range {
                     width: 100%;
-                    background-color: var(--color-fiolet);
+                    // background-color: var(--color-fiolet);
+                    // color: var(--color-fiolet);
+
+                    &-list {
+                        @include flex-center;
+                        justify-content: space-between;
+                        font-weight: 500;
+                        font-size: 11px;
+                        color: var(--color-grey-contur);
+                        // padding-right: 5px;
+                        // column-gap: 1.1em;
+                        // width: 105%;
+                    }
+                }
+            }
+            &-button {
+                width: 90%;
+                color: #fff;
+                background-color: var(--color-fiolet);
+                border-radius: 14px;
+                margin: 40px auto;
+                color: var(--color-apply);
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        &-search {
+            // @include flex-center;
+            
+            width: 65%;
+            margin-top: 145px;
+
+            &-form {
+                @include flex-center;
+                flex-direction: column;
+                width: 100%;
+
+                &-input {
+                    width: 100%;
+                    height: 75px;
+                    background-color: var(--color-grey-search);
+                    border-radius: 20px;
+                    border: none;
                 }
             }
         }
 
     }
-
+    &__main::before {
+        content: "";
+        position: relative;
+        font-size: 38px;
+        width: 40px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/VAR1/images/Illustration01.svg);
+        color: var(--color-fiolet);
+        top: -15%;
+        left: 100%;
+    }
 }
 
 .action-category-menu{
     border: 3px solid #FB471D;
 }
 
+input[type=range]  {
+    // width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 9px;
+    height: 6px;
+    background-color: var(--color-fiolet);
+}
+input[type=range]::-webkit-slider-thumb {
+    background: var(--color-fiolet);
+    border: 5px solid var(--color-fiolet-border);
+    border-radius: 50%;
+    cursor: pointer;
+    width:25px;
+    height: 25px;
+    -webkit-appearance: none;
+    margin-top: -10px;
+}
+input[type=range]::-moz-range-track {
+    border-radius: 9px;
+    height: 6px;
+    background-color: var(--color-fiolet);
+}
+input[type=range]::-moz-range-thumb {
+    background: var(--color-fiolet);
+    border: 5px solid var(--color-fiolet-border);
+    border-radius: 50%;
+    cursor: pointer;
+    width:25px;
+    height: 25px;
+    // -webkit-appearance: none;
+    margin-top: -10px;
+}
+
+.slider-active {
+    background-color: var(--color-fiolet);
+    width: 62px;
+}
 
