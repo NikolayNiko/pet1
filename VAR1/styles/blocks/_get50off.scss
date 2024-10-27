@@ -1,21 +1,30 @@
 .get50off {
+        margin: 10% 5% 3% 5%;
+        position: relative;
+        height: 600px;
+        font-family: var(--font-family-poppins);
+
     &__main {
-        width: 50%;
-        height: 251px;
+        width: 65%;
+        height: 251px;  
         background: url(../../images/MaskGroup1.svg);
         background-color: var(--color-fiolet-text);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 21px;
-        margin: 120px 110px 50px 100px;
+        // margin: 10% 5% 3% 5%;
         position: relative;
+
+
         @include tablet {
+            
             height: 200px;
-            margin: 165px auto 150px;
+            // margin: 165px auto 150px;
         }
         @include mobile {
             @include flex-center;
             flex-direction: column;
+            width: 95%;
             height: 257px;
             margin-top: 0;
         }
@@ -23,7 +32,7 @@
         width: auto;
         color: white;
         font-weight: 800;
-        font-family: var(--font-family-poppins);
+        // font-family: var(--font-family-poppins);
         opacity: .9;
         font-size: 70px;
         position: relative;
@@ -46,7 +55,7 @@
         &-discription {
             color: white;
             font-weight: 800;
-            font-family: var(--font-family-poppins);
+            // font-family: var(--font-family-poppins);
             opacity: .4;
             font-size: 88px;
             position: relative;
@@ -76,7 +85,7 @@
         }
 
         &-apply {
-            position: relative;
+            position: absolute;
             border-radius: 24px;
             box-shadow: 
             25px 100px 40px #e5e5e5b3,
@@ -84,8 +93,8 @@
             0 0 5px .2px #00000033,
             0 0 5px .5px #F4F4F6;
             width: 30%;
-            top: -300px;
-            right: -62%;
+            top: 0;
+            right: 0;
 
             @include flex-center;
             flex-direction: column;
@@ -97,10 +106,10 @@
                 
 
                 &-title{
-                    font-family: var(--font-family-poppins);
+                    
                     font-size: 22px;
                     font-weight: 600;
-                    margin: 32px auto 17px 35px;
+                    margin: 32px auto 17px 15px;
                     
                 }
 
@@ -118,7 +127,7 @@
                     @include flex-center;
                     flex-direction: column;
                     justify-content: space-evenly;
-                    font-family: var(--font-family-poppins);
+                    // font-family: var(--font-family-poppins);
                     font-size: 12px;
                     font-weight: 500;
 
@@ -147,29 +156,50 @@
                 @include flex-center;
                 flex-direction: column;
                 align-items: flex-start;
-                width: 80%;
+                width: 90%;
+                position: relative;
+                // font-family: var(--font-family-poppins);
 
                 &-title {
-                    font-family: var(--font-family-poppins);
+                    
                     font-size: 22px;
                     font-weight: 600;
                     margin-top: 25px;
+                    margin-bottom: 10px;
                 }
+                
 
                 &-list{
-
-                }
-                &-leftlist{
+                    font-weight: 500;
+                    font-size: 11px;
+                    color: var(--color-grey-contur);
+                    line-height: 25px;
 
                 }
 
                 &-rightlist{
-
+                    align-self: flex-end;
+                    position: relative;
+                    top: -50px;
+                    font-size: 11px;
+                    color: var(--color-fiolet);
+                    font-weight: 600;
                 }
             }
 
             &-price {
+                width: 90%;
 
+                &-title {
+                    font-weight: 600;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+
+                &-range {
+                    width: 100%;
+                    background-color: var(--color-fiolet);
+                }
             }
         }
 

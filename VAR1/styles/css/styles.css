@@ -2745,21 +2745,25 @@ h4, .h4 {
   }
 }
 
+.get50off {
+  margin: 10% 5% 3% 5%;
+  position: relative;
+  height: 600px;
+  font-family: var(--font-family-poppins);
+}
 .get50off__main {
-  width: 50%;
+  width: 65%;
   height: 251px;
   background: url(../../images/MaskGroup1.svg);
   background-color: var(--color-fiolet-text);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 21px;
-  margin: 120px 110px 50px 100px;
   position: relative;
 }
 @media (max-width: 1023px) {
   .get50off__main {
     height: 200px;
-    margin: 165px auto 150px;
   }
 }
 @media (max-width: 767px) {
@@ -2768,6 +2772,7 @@ h4, .h4 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 95%;
     height: 257px;
     margin-top: 0;
   }
@@ -2776,7 +2781,6 @@ h4, .h4 {
   width: auto;
   color: white;
   font-weight: 800;
-  font-family: var(--font-family-poppins);
   opacity: 0.9;
   font-size: 70px;
   position: relative;
@@ -2800,7 +2804,6 @@ h4, .h4 {
 .get50off__main-discription {
   color: white;
   font-weight: 800;
-  font-family: var(--font-family-poppins);
   opacity: 0.4;
   font-size: 88px;
   position: relative;
@@ -2828,12 +2831,12 @@ h4, .h4 {
   }
 }
 .get50off__main-apply {
-  position: relative;
+  position: absolute;
   border-radius: 24px;
   box-shadow: 25px 100px 40px rgba(229, 229, 229, 0.7019607843), 0 4px 4px rgba(0, 0, 0, 0.2509803922), 0 0 5px 0.2px rgba(0, 0, 0, 0.2), 0 0 5px 0.5px #F4F4F6;
   width: 30%;
-  top: -300px;
-  right: -62%;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2847,10 +2850,9 @@ h4, .h4 {
   width: 100%;
 }
 .get50off__main-apply-category-title {
-  font-family: var(--font-family-poppins);
   font-size: 22px;
   font-weight: 600;
-  margin: 32px auto 17px 35px;
+  margin: 32px auto 17px 15px;
 }
 .get50off__main-apply-category-list {
   display: flex;
@@ -2868,7 +2870,6 @@ h4, .h4 {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  font-family: var(--font-family-poppins);
   font-size: 12px;
   font-weight: 500;
 }
@@ -2894,14 +2895,42 @@ h4, .h4 {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  width: 80%;
+  width: 90%;
+  position: relative;
 }
 .get50off__main-apply-sort-title {
-  font-family: var(--font-family-poppins);
   font-size: 22px;
   font-weight: 600;
   margin-top: 25px;
+  margin-bottom: 10px;
 }
+.get50off__main-apply-sort-list {
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--color-grey-contur);
+  line-height: 25px;
+}
+.get50off__main-apply-sort-rightlist {
+  align-self: flex-end;
+  position: relative;
+  top: -50px;
+  font-size: 11px;
+  color: var(--color-fiolet);
+  font-weight: 600;
+}
+.get50off__main-apply-price {
+  width: 90%;
+}
+.get50off__main-apply-price-title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.get50off__main-apply-price-range {
+  width: 100%;
+  background-color: var(--color-fiolet);
+}
+
 .action-category-menu {
   border: 3px solid #FB471D;
 }
