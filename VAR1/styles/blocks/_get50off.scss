@@ -113,6 +113,7 @@
             0 0 5px .2px #00000033,
             0 0 5px .5px #F4F4F6;
             width: 30%;
+            height: 97%;
             top: 0;
             right: 0;
 
@@ -262,7 +263,50 @@
                     background-color: var(--color-grey-search);
                     border-radius: 20px;
                     border: none;
+                    position: relative;
                 }
+                
+                &-input::before {
+                    content: "";
+                    background-image: url(../../images/Search.svg);
+                    background-color: #FB471D;
+                    width: 21px;
+                    height: 21px;
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+
+
+                &-buttons{
+                    @include flex-center;
+                    height: 75px;
+                    width: 100%;
+                    margin-top: 35px;
+                    font-family: var(--font-family-poppins);
+                    font-weight: 500;
+                    font-size: 20px;
+
+                }
+
+                &-button-left, &-button-right{ /*active-button-fiolet по єтому классу переключать*/
+                    border: 3px solid var(--color-fiolet);
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    height: 75px;
+                    width: 50%;
+                    background-color: var(--color-white);
+                    color: var(--color-fiolet);
+                }
+
+                &-button-right {
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+
             }
         }
 
@@ -329,3 +373,7 @@ input[type=range]::-moz-range-thumb {
     width: 62px;
 }
 
+.active-button-fiolet {
+    background-color: var(--color-fiolet);
+    color: var(--color-white);
+}
