@@ -6,6 +6,15 @@
     justify-content: center;
     align-items: center;
 
+    &-pagemenu {
+        @include tablet {
+            height: 500px;
+        }
+        @include mobile {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
 
     @include mobile {
         height: auto;
@@ -242,3 +251,8 @@
         }
     }
 }
+
+.menu-menueatly__restaurants-title {
+    margin-top: 0;
+}
+
