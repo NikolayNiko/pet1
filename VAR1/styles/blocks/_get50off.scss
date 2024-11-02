@@ -266,7 +266,7 @@
                     position: relative;
                 }
                 
-                &-input::before {
+                &-input:placeholder-shown::before {
                     content: "";
                     background-image: url(../../images/Search.svg);
                     background-color: #FB471D;

@@ -55,6 +55,8 @@
         &-list {
             @include flex-center;
             column-gap: 30px;
+            margin: 0 auto;
+            width: 95vw;
 
             @include tablet {
                 column-gap: 22px;

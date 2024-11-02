@@ -1332,6 +1332,8 @@ h4, .h4 {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
+  margin: 0 auto;
+  width: 95vw;
 }
 @media (max-width: 1023px) {
   .menueatly__restaurants-list {
@@ -2987,7 +2989,7 @@ h4, .h4 {
   border: none;
   position: relative;
 }
-.get50off__main-search-form-input::before {
+.get50off__main-search-form-input:placeholder-shown::before {
   content: "";
   background-image: url(../../images/Search.svg);
   background-color: #FB471D;
