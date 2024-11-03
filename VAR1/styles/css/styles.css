@@ -2779,101 +2779,6 @@ h4, .h4 {
   height: 600px;
   font-family: var(--font-family-poppins);
 }
-.get50off__main {
-  width: 65%;
-  height: 251px;
-  background: url(../../images/MaskGroup1.svg);
-  background-color: var(--color-fiolet-text);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 21px;
-  position: relative;
-}
-@media (max-width: 1023px) {
-  .get50off__main {
-    height: 200px;
-  }
-}
-@media (max-width: 767px) {
-  .get50off__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 95%;
-    height: 257px;
-    margin-top: 0;
-  }
-}
-.get50off__main-title {
-  width: auto;
-  color: white;
-  font-weight: 800;
-  opacity: 0.9;
-  font-size: 70px;
-  position: relative;
-  left: 5%;
-}
-@media (max-width: 1023px) {
-  .get50off__main-title {
-    font-size: 50px;
-    left: 47px;
-    top: 26px;
-  }
-}
-@media (max-width: 767px) {
-  .get50off__main-title {
-    font-size: 41.5px;
-    margin-top: 47px;
-    left: 0;
-  }
-}
-.get50off__main-discription {
-  color: white;
-  font-weight: 800;
-  opacity: 0.4;
-  font-size: 88px;
-  position: relative;
-  left: 5%;
-  top: -20%;
-}
-.get50off__main-imagemain {
-  width: 256px;
-  position: relative;
-  top: -75%;
-  right: -60%;
-}
-@media (max-width: 1023px) {
-  .get50off__main-imagemain {
-    width: 194px;
-    height: 194px;
-  }
-}
-@media (max-width: 767px) {
-  .get50off__main-imagemain {
-    width: 170px;
-    height: 170px;
-    top: 10%;
-    right: 0;
-  }
-}
-.get50off__main-slider {
-  width: 136px;
-  height: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 8px;
-  position: relative;
-  top: -100%;
-  left: 25%;
-}
-.get50off__main-slider-s1, .get50off__main-slider-s2, .get50off__main-slider-s3 {
-  background-color: var(--color-fiolet-middle-contur);
-  border-radius: 55px;
-  width: 30px;
-  height: 100%;
-}
 .get50off__main-apply {
   position: absolute;
   border-radius: 24px;
@@ -2995,7 +2900,7 @@ h4, .h4 {
 }
 .get50off__main-search {
   width: 65%;
-  margin-top: 145px;
+  margin-top: -100px;
 }
 .get50off__main-search-form {
   display: flex;
@@ -3048,20 +2953,6 @@ h4, .h4 {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-.get50off__main::before {
-  content: "";
-  position: relative;
-  font-size: 38px;
-  width: 40px;
-  height: 43px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/VAR1/images/Illustration01.svg);
-  color: var(--color-fiolet);
-  top: -15%;
-  left: 100%;
 }
 
 .action-category-menu {
@@ -3245,6 +3136,83 @@ input[type=range]::-moz-range-thumb {
   font-weight: 100;
   border-radius: 50%; /* Круглая форма */
   transition: transform 0.3s ease;
+}
+
+.get50off__slider::before {
+  content: "";
+  position: relative;
+  font-size: 38px;
+  width: 40px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/VAR1/images/Illustration01.svg);
+  color: var(--color-fiolet);
+  top: 0;
+  left: 100%;
+}
+.get50off__slider {
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+.get50off_navigation {
+  position: relative;
+  bottom: 20%;
+  left: 85%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.get50off_bar {
+  width: 30px;
+  height: 8px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #000;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.get50off_bar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.get50off input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+.get50off__slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.get50off__slides-img {
+  width: 100%;
+  height: 100%;
+}
+.get50off__slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+
+#get50off_r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#get50off_r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#get50off_r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+.middle {
+  position: relative;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=styles.css.map */
