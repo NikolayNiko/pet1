@@ -11,9 +11,9 @@
         align-items: center;
         background-image: url(/VAR1/images/Illustration01.svg);
         color: var(--color-fiolet);
-        top: 0;
-        left:100%;
-
+        top: 10%;
+        left:95%;
+        overflow: visible;
     }
 
     &__slider {
@@ -37,9 +37,9 @@
         height: 8px;
         margin: 6px;
         cursor: pointer;
-        background-color: #000;
-        opacity: .5;
-        border-radius: 10px;
+        background-color: var(--color-fiolet-middle-contur);
+        // opacity: .5;
+        border-radius: 55px;
         transition: all 0.4s ease;
     }
     
@@ -47,6 +47,15 @@
         opacity: 1;
         transform:scale(1.1);
     }
+
+    &_bar:active {
+        opacity: 1;
+        transform:scale(1.1);
+        background-color: var(--color-fiolet);
+        width: 60px;
+    }
+
+
     
     input[name="r"] {
         position: absolute;

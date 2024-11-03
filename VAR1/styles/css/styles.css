@@ -3149,8 +3149,9 @@ input[type=range]::-moz-range-thumb {
   align-items: center;
   background-image: url(/VAR1/images/Illustration01.svg);
   color: var(--color-fiolet);
-  top: 0;
-  left: 100%;
+  top: 10%;
+  left: 95%;
+  overflow: visible;
 }
 .get50off__slider {
   width: 800px;
@@ -3169,14 +3170,19 @@ input[type=range]::-moz-range-thumb {
   height: 8px;
   margin: 6px;
   cursor: pointer;
-  background-color: #000;
-  opacity: 0.5;
-  border-radius: 10px;
+  background-color: var(--color-fiolet-middle-contur);
+  border-radius: 55px;
   transition: all 0.4s ease;
 }
 .get50off_bar:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+.get50off_bar:active {
+  opacity: 1;
+  transform: scale(1.1);
+  background-color: var(--color-fiolet);
+  width: 60px;
 }
 .get50off input[name=r] {
   position: absolute;
