@@ -1,8 +1,12 @@
 .get50off {
-        margin: 10% 5% 3% 5%;
+        margin: 10% 5% 10% 5%;
         position: relative;
         height: 600px;
         font-family: var(--font-family-poppins);
+
+        @include tablet {
+            margin-bottom: 12%;
+        }
 
     &__main {
 
@@ -114,12 +118,17 @@
             0 0 5px .2px #00000033,
             0 0 5px .5px #F4F4F6;
             width: 30%;
-            height: 97%;
+            height: 114%;
             top: 0;
             right: 0;
 
             @include flex-center;
             flex-direction: column;
+
+            @include mobile{
+                width: 100%;
+                top: 100%;
+            }
 
             &-category{
                 @include flex-center;
@@ -240,10 +249,12 @@
                 color: #fff;
                 background-color: var(--color-fiolet);
                 border-radius: 14px;
-                margin: 40px auto;
+                // margin: 40px auto;
                 color: var(--color-apply);
                 font-weight: 600;
                 font-size: 14px;
+                height: 10%;
+                margin: auto;
             }
         }
 
@@ -252,7 +263,7 @@
             
             width: 65%;
             // margin-top: 145px;
-            margin-top:  -100px;;
+            // margin-top:  -100px;
 
             &-form {
                 @include flex-center;

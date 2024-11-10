@@ -2,7 +2,7 @@
 
     &__slider::before {
         content: "";
-        position: relative;
+        // position: relative;
         font-size: 38px;
         width: 40px;
         height: 43px;
@@ -11,9 +11,14 @@
         align-items: center;
         background-image: url(/VAR1/images/Illustration01.svg);
         color: var(--color-fiolet);
-        top: 10%;
-        left:95%;
+        // top: 8%;
+        // left:100%;
         overflow: visible;
+        margin: 0 0 0 auto;
+
+        @include tablet {
+            margin-top: 3%;
+        }
     }
 
     &__slider {
@@ -26,7 +31,7 @@
 
     &_navigation {
         position: relative;
-        bottom: 20%;
+        bottom: 15%;
         left: 85%;
         transform: translateX(-50%);
         display: flex;
@@ -85,6 +90,8 @@
     margin-left: 0;
 }
 
+
+
 #get50off_r2:checked ~ .s1 {
     margin-left: -25%;
 }
@@ -93,11 +100,32 @@
     margin-left: -50%;
 }
 
+// #get50off_r1:checked ~ .get50off_navigation label[for="get50off_r1"],
+// #get50off_r2:checked ~ .get50off_navigation label[for="get50off_r2"],
+// #get50off_r3:checked ~ .get50off_navigation label[for="get50off_r3"] 
+
+.get50off_navigation label[for="get50off_r1"]:has(#get50off_r1:checked),
+.get50off_navigation label[for="get50off_r2"]:has(#get50off_r2:checked),
+.get50off_navigation label[for="get50off_r3"]:has(#get50off_r3:checked){
+  background-color: var(--color-fiolet-main); /* Темнее */
+  width: 60px; /* Шире */
+}
+
 .middle {
     position: relative;
-    top: 30%;
+    top: 35%;
     left: 30%;
     transform: translate(-50%, -50%);
+    width: 60%;
+    // overflow: visible;
+
+    @include mobile {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
 }
 
 
