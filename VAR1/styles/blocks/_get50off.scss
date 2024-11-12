@@ -127,7 +127,13 @@
 
             @include mobile{
                 width: 100%;
-                top: 100%;
+                top: 125%;
+                box-shadow: none;
+                box-shadow: 
+                25px 35px 40px #e5e5e5b3,
+                0 4px 4px #00000040,
+                0 0 5px .2px #00000033,
+                0 0 5px .5px #F4F4F6;
             }
 
             &-category{
@@ -148,7 +154,9 @@
                     @include flex-center;
                     column-gap: 13px;
                     width: 90%;
-
+                    @include mobile {
+                        width: 100%;
+                    }
                 }
 
                 &-items {
@@ -265,6 +273,13 @@
             // margin-top: 145px;
             // margin-top:  -100px;
 
+            @include mobile {
+                width: 100%;
+                margin-top: calc(905px - 2vw);
+
+                
+            }
+
             &-form {
                 @include flex-center;
                 flex-direction: column;
@@ -276,20 +291,25 @@
                     background-color: var(--color-grey-search);
                     border-radius: 20px;
                     border: none;
-                    position: relative;
+                    // position: relative;
+                    background-image: url(../../images/Search.svg);
+                    // background-color: #FB471D;
+                    background-repeat: no-repeat;
+                    background-position: 3% center;
+                    padding-left: 10%;
                 }
                 
-                &-input:placeholder-shown::before {
-                    content: "";
-                    background-image: url(../../images/Search.svg);
-                    background-color: #FB471D;
-                    width: 21px;
-                    height: 21px;
-                    position: absolute;
-                    left: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
+                // &-input:placeholder-shown::before {
+                //     content: "";
+                //     background-image: url(../../images/Search.svg);
+                //     background-color: #FB471D;
+                //     width: 21px;
+                //     height: 21px;
+                //     position: absolute;
+                //     left: 10px;
+                //     top: 50%;
+                //     transform: translateY(-50%);
+                // }
 
 
                 &-buttons{
