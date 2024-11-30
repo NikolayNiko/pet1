@@ -1898,7 +1898,7 @@ h4, .h4 {
 }
 
 .menu-viewall {
-  margin-top: 0;
+  margin-top: 3vh;
 }
 
 .control {
@@ -3265,6 +3265,7 @@ input[type=range]::-moz-range-thumb {
   box-shadow: 6px 71px 36px rgba(229, 229, 229, 0.7019607843);
   border-radius: 30px;
   overflow: hidden;
+  margin-top: 6rem;
 }
 .mainviewall__popular__title {
   margin-top: 100px;
@@ -3329,6 +3330,11 @@ input[type=range]::-moz-range-thumb {
 @media (max-width: 767px) {
   .mainviewall__popular__list-card:last-child {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mainviewall__popular__list-card-last__chickenvegetables {
+    display: block;
   }
 }
 .mainviewall__popular__list-card-time {
@@ -3544,6 +3550,19 @@ input[type=range]::-moz-range-thumb {
   background-color: var(--color-white);
   mask-image: url("../../images/addplus.svg");
   mask-repeat: no-repeat;
+}
+.mainviewall__popular__list__chickenvegetables {
+  width: 40%;
+}
+@media (max-width: 767px) {
+  .mainviewall__popular__list__chickenvegetables {
+    width: 100%;
+  }
+}
+
+.about__map {
+  width: 85%;
+  margin: 6rem auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,6 +6,7 @@
         box-shadow: 6px 71px 36px rgba(229, 229, 229, 0.7019607843);
         border-radius: 30px;
         overflow: hidden;
+        margin-top: 6rem;
 
     }
     &__popular{
@@ -31,16 +32,13 @@
             @include flex-center;
             column-gap: 20px;
             width: 100%;
-    
             @include mobile {
                 flex-wrap: wrap;
                 column-gap: 20px;
                 flex: 1 1 calc(50% - 20px);
                 width: 100%;
             }
-            
             &-card {
-                
                 @include flex-center;
                 flex-direction: column;
                 box-shadow: 
@@ -63,10 +61,20 @@
                     margin-bottom: 20px;
                     max-width: calc(47% - 20px);
                 }
+                // &-last__chickenvegetables {
+                //     @include mobile {
+                //         display: block;
+                //     }
+                // }
                 &:last-child {
                         @include mobile {
                             display: none;
                         }
+                }
+                &-last__chickenvegetables {
+                    @include mobile {
+                        display: block;
+                    }
                 }
                 &-time{
                     font-family: var(--font-family-manrope);
@@ -260,6 +268,13 @@
                         mask-image: url('../../images/addplus.svg');
                         mask-repeat: no-repeat;
                     }
+                }
+            }
+            &__chickenvegetables {
+                width: 40%;
+
+                @include mobile {
+                    width: 100%;
                 }
             }
         }
