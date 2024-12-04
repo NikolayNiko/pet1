@@ -1,0 +1,13 @@
+.sign {
+
+    display: flex;
+    flex: 50%;
+
+    &__right {
+        height: 100%;
+        background-image: url(/VAR1/images/bgsign.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}

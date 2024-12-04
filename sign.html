@@ -10,53 +10,20 @@
 <body>
     <main class="content sign">
         <div class="sign__left">
-            <header class="header line-gray1">
+            <header class="header">
                 <div class="header__inner">
                     <a href="index.html" class="header__logo logo">
                         <img 
-                        src="./VAR1/images/logo.svg" 
-                        alt="eatly" 
+                        src="./VAR1/images/logomin.svg" 
+                        alt="eatly logo to minimum" 
                         class="logo__image"
-                        width="112"
-                        height="42"
+                        width="41"
+                        height="35"
                         loading="lazy"
                         >
                     </a>
-        
                     <nav class="header__menu">
-        
-                        <ul class="header__menu-list hidden-mobile">
-                            <li class="header__menu-item"
-                                >
-                                <a href="menu.html" class="header__menu-link">Menu</a>
-                            </li>
-                            <li class="header__menu-item"
-                                >
-                                <a href="/" class="header__menu-link">Blog</a>
-                            </li>
-                            <li class="header__menu-item"
-                                >
-                                <a href="/" class="header__menu-link">Pricing</a>
-                            </li>
-                            <li class="header__menu-item"
-                                >
-                                <a href="about.html" class="header__menu-link">Contact</a>
-                            </li>
-                        </ul>
                     </nav>
-        
-                    <button 
-                        class="header__button button button-login hidden-mobile"
-                        title="Name of button in header for login"
-                        type="button"
-                        >Login
-                    </button>
-                    <button
-                        class="header__button button button-signup hidden-mobile"
-                        title="Name of button in header for signup"
-                        type="button"
-                        >Sign Up
-                    </button>
                     <button 
                         class="button__burger-menu burger-button visible-mobile"
                         title="Buton to turn of button"
@@ -152,7 +119,8 @@
         
             </footer>
         </div>
-        <div class="sign__right">            
+        <div class="sign__right">       
+            <p></p>
         </div>
     </main>
     <dialog 
@@ -206,12 +174,16 @@
                 class="mobile-overlay mobile-overlay__button mobile-overlay__button-login"
                 title="Mobile overlay button for login"
                 type="button"
+                onclick="location.href='/sign.html'" 
+                aria-label="Перейти к форме входа"
                 >Login
             </button>
             <button
                 class="mobile-overlay mobile-overlay__button mobile-overlay__button-signup"
                 title="Mobile overlay button for signup"
                 type="button"
+                onclick="location.href='/sign.html'" 
+                aria-label="Перейти к форме входа"
                 >Sign Up
             </button>
         </div>
