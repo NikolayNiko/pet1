@@ -3564,5 +3564,10 @@ input[type=range]::-moz-range-thumb {
   width: 85%;
   margin: 6rem auto;
 }
+.about__map-image {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
 
 /*# sourceMappingURL=styles.css.map */
