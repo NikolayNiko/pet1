@@ -1,42 +1,35 @@
 .header {
-    padding-top: 60px;
-    // margin: 0 auto;
+    padding-top: 4rem;
+    position: relative;
+
     @include flex-center;
+    flex-direction: column;
 
-    @include desktop {
-        padding-top: 34px;
-    }
-
+    // @include desktop {
+    //     // padding-top: 34px;
+    // }
     &__logo {
         max-width: none;
     }
-
     &__logo img {
-        // width: 100%;
         max-width: none;
     }
-
     &__button{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-right: 20px;
-
         @include tablet {
             margin-right: 0;
         }
     }
-
     &__inner {
-        
         width: 90%;
         @include flex-center;
         justify-content: space-around;
-
-        
-
+        position: relative;
+        margin-bottom: 3rem;
     }
-
     &__menu {
         display: flex;
         margin-right: 150px;
@@ -44,13 +37,10 @@
         font-size: 18px;
         font-family: var(--font-family-inter);
         font-weight: 400;
-        
         @include tablet{
             margin-left: 10px;
             margin-right: 10px;
         }
-
-
         &-list {
             display: flex;
             align-items: center;
@@ -59,29 +49,23 @@
             column-gap: 38px;
             }
         }
-
         &-link {
             position: relative;
             display: inline-flex;
             align-items: center;
             height: 42px;
-            
             @include hover {
                 color: var(--color-fiolet-main);
                 font-weight: 800;
-                
                 &::after {
                     width: 100%;
                 }
             }
-
             &:hover:before {
                 transform: scaleX(1);
                 transform-origin: left;
                 transition: transform 0.3s;
-
             }
-            
             &:before {
                 content: '';
                 width: 100%;
@@ -97,18 +81,18 @@
         }
     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 150px;
-        left: 50%;
-        margin: 0 auto;
-        translate: -50%;
-        width: 85%;
-        height: 2px;
-        background-color: var(--color-grey);
-        transition-duration: inherit;
-    }
+    // &::after { // проба серой     линии
+    //     content: '';
+    //     position: absolute;
+    //     top: 150px;
+    //     left: 50%;
+    //     margin: 0 auto;
+    //     translate: -50%;
+    //     width: 85%;
+    //     height: 2px;
+    //     background-color: var(--color-grey);
+    //     transition-duration: inherit;
+    // }
 
     @include mobile-s {
         &::after {

@@ -1,10 +1,17 @@
 .sign {
 
     display: flex;
-    flex: 50%;
+    // flex: 50%;
+    height: 1024px;
+
+    &__left {
+        height: 1024px;
+        width: 50%;
+    }
 
     &__right {
-        height: 100%;
+        height: 1024px;
+        width: 50%;
         background-image: url(/VAR1/images/bgsign.svg);
         background-size: cover;
         background-repeat: no-repeat;
