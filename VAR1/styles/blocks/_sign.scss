@@ -7,6 +7,10 @@
     &__left {
         height: 1024px;
         width: 50%;
+
+        &-header__inner {
+            justify-content: start;
+        }
     }
 
     &__right {

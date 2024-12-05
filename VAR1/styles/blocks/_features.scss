@@ -4,32 +4,25 @@
     color: var(--color-white);
     height: 220px;
     @include flex-center;
-
     @include mobile {
-        // background-image: url(../../images/BG_mobile_features.svg);
         background-size: cover;
         height: 748px;
         margin-top: 75px;
     }
-
     &__list{
         @include flex-center;
         position: relative;
         column-gap: 15vw;
-
-
         @include tablet {
             column-gap: 10vw;
         }
-        
-        @include mobile {
+            @include mobile {
             flex-direction: column;
             justify-content: space-around;
             max-width: 100%;
             column-gap: 120px;
             height: 566px;
         }
-
         &-item:not(:first-child)::before {
             content: "";
             position: absolute;
@@ -40,7 +33,6 @@
             background-color: var(--color-grey2);
             transform: translateY(-50%);
             opacity: 0.25;
-
             @include mobile {
                 left: 0;
                 top: 67%;
@@ -48,7 +40,6 @@
                 height: 2px;
             }
         }
-
         &-item:not(:first-child)::after {
             content: "";
             position: absolute;
@@ -59,8 +50,6 @@
             background-color: var(--color-grey2);
             transform: translateY(-50%);
             opacity: 0.25;
-
-
             @include mobile {
                 left: 0;
                 top: 33%;
@@ -68,26 +57,20 @@
                 height: 2px;
             }
         }
-
         &-item {
             @include flex-center;
             flex-direction: column;
             max-width: 263px;
             text-align: center;
-            // padding-left: 100px;
-            // padding-right: 100px;
-            
             @include mobile {
                 column-gap: 56px;
             }
         }
-
         &-count {
             font-family: var(--font-family-public);
             font-weight: 700;
             font-size: 43px;
         }
-
         &-discription {
             font-family: var(--font-family-inter);
             font-weight: 400;

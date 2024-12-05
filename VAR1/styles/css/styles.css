@@ -2320,9 +2320,9 @@ h4, .h4 {
   border-radius: inherit;
 }
 
-.customer {
-  height: 550px;
-  position: relative; /* Добавляем для правильного позиционирования дочерних элементов */
+.customer { /*єтот блок для не знаю чего
+height: 550px;
+position: relative; /* Добавляем для правильного позиционирования дочерних элементов */
   overflow: hidden; /* Отключаем горизонтальный скролл */
   width: 100%; /* Полная ширина экрана */
 }
@@ -2337,7 +2337,7 @@ h4, .h4 {
   line-height: 26px;
   color: var(--color-black2);
   margin: 116px auto 80px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 0 4px 4px hwb(0 0% 100%/0.251);
 }
 .customer__title-span {
   color: var(--color-fiolet-text);
@@ -2365,7 +2365,6 @@ h4, .h4 {
   margin-left: 105px;
   position: relative; /* Обеспечиваем нормальное выравнивание */
   /* Отступ между вторым и третьим элементом */
-  /* Исправлено: убран отрыв блоков */
 }
 @media (max-width: 1023px) {
   .customer__list {
@@ -3563,6 +3562,9 @@ input[type=range]::-moz-range-thumb {
 .sign__left {
   height: 1024px;
   width: 50%;
+}
+.sign__left-header__inner {
+  justify-content: start;
 }
 .sign__right {
   height: 1024px;

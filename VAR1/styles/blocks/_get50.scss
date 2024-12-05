@@ -9,47 +9,37 @@
         border-radius: 21px;
         margin: 215px auto 200px;
         position: relative;
-        
-
         @include tablet {
             height: 200px;
             margin: 165px auto 150px;
         }
-
         @include mobile {
             @include flex-center;
             flex-direction: column;
             height: 257px;
             margin-top: 0;
-
         }
-
         &-title{
             width: auto;
-        color: white;
-        font-weight: 800;
-        font-family: var(--font-family-poppins);
-        opacity: .8;
-        font-size: 70px;
-        position: relative;
-        left: 66px;
-        top: 37px;
-
-        @include tablet {
-            font-size: 50px;
-            left: 47px;
-            top: 26px;
+            color: white;
+            font-weight: 800;
+            font-family: var(--font-family-poppins);
+            opacity: .8;
+            font-size: 70px;
+            position: relative;
+            left: 66px;
+            top: 37px;
+            @include tablet {
+                font-size: 50px;
+                left: 47px;
+                top: 26px;
+            }
+            @include mobile {
+                font-size: 41.5px;
+                margin-top: 47px;
+                left: 0;
+            }
         }
-
-        @include mobile {
-            font-size: 41.5px;
-            margin-top: 47px;
-            left: 0;
-
-        }
-
-        }
-
         &-formfield {
             width: 55%;
             height: 68px;
@@ -59,51 +49,41 @@
             background-color: var(--color-fiolet-light);
             @include flex-center;
             gap: 10px;
-
             @include tablet {
                 margin-left: 25px;
                 height: 60px;
                 width: 65%;
-
             }
-
             @include mobile {
                 height: 48px;
                 width: 90%;
                 margin-left: 0;
             }
-
             &-input {
                 flex: 0 1 calc(75% - 5px);
                 margin-left: 10px;
                 height: 53px;
                 border: none;
                 background-color: var(--color-fiolet-light);
-                
                 @include mobile {
                     height: 48px;
                     width: inherit;
                 }
-
                 &::placeholder {
                     color: var(--color-grey-light-text);
                     font-size: 16px;
                     font-family: var(--font-family-poppins);
                     font-weight: normal; // Регулярный шрифт
                     letter-spacing: 3.5px;
-
                     @include tablet {
                         letter-spacing: 1px;
                         font-size: 1.2rem;
                     }
-
                     @include mobile {
                         font-size: .7rem;
-                        
                     }
                 }
             }
-
             &-btn {
                 height: 53px;
                 flex: 0 1 calc(25% - 5px);
@@ -117,45 +97,35 @@
                 color: white;
                 border: none;
                 letter-spacing: 5px;
-                
                 display: inline-block;  // или block/flex, в зависимости от контекста
                 text-align: center;     // Центрируем текст по горизонтали
-                // padding: 10px 20px;
                 padding-left: 7px;
-
                 @include tablet {
                     font-size: 12px;
                     letter-spacing: 2.5px;
                     height: 45px;
                 }
-
                 @include mobile {
                     font-size: 9px;
                     letter-spacing: 1px;
                     height: 35px;
                 }
-
             }
         }
-
         &-imagemain{
             position: relative;
             top: -55%;
             right: -70%;
-            
             @include tablet {
                 width: 194px;
                 height: 194px;
             }
-
             @include mobile {
                 width: 170px;
                 height: 170px;
                 top: 10%;
                 right: 0;
             }
-            
         }
     }
-
 }
