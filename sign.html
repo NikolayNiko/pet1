@@ -10,8 +10,7 @@
 <body>
     <main class="content sign">
         <div class="sign__left">
-            <header class="header">
-                <div class="header__inner sign__left-header__inner">
+                <header class="header__inner sign__left-header__inner">
                     <a href="index.html" class="header__logo logo sign__logo">
                         <img 
                         src="./VAR1/images/logomin.svg" 
@@ -32,96 +31,74 @@
                         >
                         <span class="visually-hidden">Open navigation menu</span>
                     </button>
-                </div>
-        
-            </header>
+                </header>
             <h1 class="sign__title">Sign Up To eatly</h1>
-            <footer class="footer sign__footer">
-                <div class="footer__top">
-                    <div class="footer__top-logo">
-                        <a href="index.html">
+            <div class="sign__forms">
+                <div class="sign__forms-social">
+                    <button 
+                            class="sign__forms-social-google"
+                            title="Registration via Google account">
+                            <span class="visually-hidden">Registration via Google account</span>
                             <img 
-                                src="./VAR1/images/logo.svg" 
-                                alt="Icon to Home Page" 
-                                class="footer__top-logo-image"
-                                width="151"
-                                height="57"
-                                loading="lazy"
+                            class="sign__forms-social-google-image"
+                            src="./VAR1/images/socialcon/icongoogle.svg" 
+                            alt="icon of google" 
+                            width="27"
+                            height="44"
+                            loading="lazy"
                             >
-                        </a>
-                    </div>
-                    <nav class="footer__top-nav">
-                        <ul class="footer__top-nav-list">
-                            <li class="footer__top-nav-list-item"><a href="/">Blog</a></li>
-                            <li class="footer__top-nav-list-item"><a href="/">Pricing</a></li>
-                            <li class="footer__top-nav-list-item"><a href="about.html">About Us</a></li>
-                            <li class="footer__top-nav-list-item"><a href="about.html">Contact</a></li>
-                        </ul>
-                    </nav>
+                    </button>
+                    <button 
+                            class="sign__forms-social-apple"
+                            title="Registration via Apple account">
+                            <span class="visually-hidden">Registration via Apple account</span>
+                            <img 
+                            src="./VAR1/images/socialcon/iconapple.svg" 
+                            alt="icon of google" 
+                            class="sign__forms-social-apple-image"
+                            width="26"
+                            height="30"
+                            loading="lazy"
+                            >
+                    </button>
                 </div>
-                <div class="line-gray2 menudishes-line-gray2"> </div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom-left"><a href="/">2023 EATLY All Rights Reserved.</a></div>
-                    <div class="footer__bottom-social">
-                        <ul class="footer__bottom-social-list">
-                            <li class="footer__bottom-social-list-item">
-                                <a href="#">
-                                    <img 
-                                        src="./VAR1/images/socialcon/iconInstagramm.svg" 
-                                        alt="Icon to Instagramm" 
-                                        class="footer__bottom-social-list-item-icon"
-                                        width="22"
-                                        height="22"
-                                        loading="lazy"
-                                    >
-                                </a>
-                            </li>
-                            <li class="footer__bottom-social-list-item">
-                                <a href="#">
-                                    <img 
-                                        src="./VAR1/images/socialcon/iconLincendin.svg" 
-                                        alt="Icon to Lincendin" 
-                                        class="footer__bottom-social-list-item-icon"
-                                        width="22"
-                                        height="21"
-                                        loading="lazy"
-                                    >
-                                </a>
-                            </li>
-                            <li class="footer__bottom-social-list-item">
-                                <a href="#">
-                                    <img 
-                                        src="./VAR1/images/socialcon/iconFacebook.svg" 
-                                        alt="Icon to Facebook" 
-                                        class="footer__bottom-social-list-item-icon"
-                                        width="10"
-                                        height="22"
-                                        loading="lazy"
-                                    >
-                                </a>
-                            </li>
-                            <li class="footer__bottom-social-list-item">
-                                <a href="#">
-                                    <img 
-                                        src="./VAR1/images/socialcon/iconTwitter.svg" 
-                                        alt="Icon to Twitter" 
-                                        class="footer__bottom-social-list-item-icon"
-                                        width="22"
-                                        height="18"
-                                        loading="lazy"
-                                    >
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                </div>
-        
+                <form class="sign__forms-input">
+                    <input 
+                        type="text"
+                        class="sign__forms-input-name sign__forms-input-item"
+                        placeholder="Tom Hillson">
+                    <input 
+                        type="email"
+                        class="sign__forms-input-email sign__forms-input-item"
+                        placeholder="TomHill@Mail.com">
+                    <input 
+                        type="password"
+                        class="sign__forms-input-password sign__forms-input-item"
+                        placeholder="...........">
+                    <button
+                        class="sign__forms-btn"
+                        title="Sign up">
+                        SIGN UP
+                    </button>
+                    <p class="sign__text">
+                        Already Have An Account? 
+                        <a href="/" class="sign__text-tolincassount">Log In</a>
+                    </p>
+                </form>
+
+            </div>
+            <footer class="sign__footer">
+                <a 
+                    href="/privacypolicy.html" 
+                    class="sign__footer-privacypolicy">Privacy Policy</a>
+                <a 
+                    href="/" 
+                    class="sign__footer-copyrighting">Copyright 2022</a>
             </footer>
         </div>
         <div class="sign__right">       
-            <p></p>
         </div>
+
     </main>
     <dialog 
         class="mobile-overlay visible-mobile" 

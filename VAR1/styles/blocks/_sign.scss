@@ -2,23 +2,98 @@
 
     display: flex;
     // flex: 50%;
-    height: 1024px;
+    // height: 100vh;
 
     &__left {
-        height: 1024px;
+        // height: 100vh;
         width: 50%;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &-header__inner {
             justify-content: start;
+            margin: 2rem auto auto 3rem;
+            
         }
     }
-
     &__right {
-        height: 1024px;
+        // height: 100vh;
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: ;
         background-image: url(/VAR1/images/bgsign.svg);
-        background-size: cover;
+        background-color: var(--color-fiolet);
+        background-size: auto;
         background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__title {
+        margin: 6.5rem auto auto;
+        font-size: 36px;
+        font-family: var(--font-family-poppins);
+        font-weight: 600;
+        letter-spacing: -4%;
+        line-height: 125%;
+        color: var(--color-black2);
+        text-shadow: 0 4px 4px var(--color-black);
+    }
+    &__forms {
+        // width: 35%;
+            &-social {
 
+                // width: 40%;
+                @include flex-center;
+                column-gap: 1.3rem;
+                margin: 3rem auto;
+                max-width: 25vw;
+                
+
+                &-google, &-apple {
+                    min-height: 3rem;
+                    width: 33vw;
+                    @include flex-center;
+                    width: 33vw;
+                    height: 3.5rem;
+                    background-color: var(--color-grey-forms2);
+                    border: none;
+                    border-radius: 14px;
+                    cursor: pointer;
+                    box-shadow: 6px 7px 7px rgba(229, 229, 229, 0.7019607843);
+                }
+
+                &-apple-image{
+                    margin-top: -5px;
+                }
+            }
+            &-input {
+                @include flex-center;
+                flex-direction: column;
+                gap: 25px;
+
+                &-item {
+                    width: 25vw;
+                    background-color: var(--color-grey-forms2);
+                    border: none;
+                    border-radius: 14px;
+                    cursor: pointer;
+                    min-height: 3rem;
+                    box-shadow: 6px 7px 6px rgba(229, 229, 229, 0.7019607843);
+
+                }
+                &-item::placeholder {
+                    opacity: 35%;
+                    font-family: var(--font-family-poppins);
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+
+            }
+    }
+    &__footer {
+        @include flex-center;
+        justify-content: space-between;
+        margin: 6rem 8rem 3rem;
     }
 }

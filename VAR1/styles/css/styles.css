@@ -300,6 +300,8 @@ svg * {
   --color-black4: #1A202C;
   --color-white: #FFFFFF;
   --color-grey: #cbcbcb;
+  --color-grey-forms1: #C2C3CB;
+  --color-grey-forms2: #f5f5f5;
   --color-orange: #ffe9bf;
   --color-orange-light: #FBAD18;
   --color-footer: #eaeaea;
@@ -3557,21 +3559,97 @@ input[type=range]::-moz-range-thumb {
 
 .sign {
   display: flex;
-  height: 1024px;
 }
 .sign__left {
-  height: 1024px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .sign__left-header__inner {
   justify-content: start;
+  margin: 2rem auto auto 3rem;
 }
 .sign__right {
-  height: 1024px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
   background-image: url(/VAR1/images/bgsign.svg);
-  background-size: cover;
+  background-color: var(--color-fiolet);
+  background-size: auto;
   background-repeat: no-repeat;
+  background-position: center;
+}
+.sign__title {
+  margin: 6.5rem auto auto;
+  font-size: 36px;
+  font-family: var(--font-family-poppins);
+  font-weight: 600;
+  letter-spacing: -4%;
+  line-height: 125%;
+  color: var(--color-black2);
+  text-shadow: 0 4px 4px var(--color-black);
+}
+.sign__forms-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.3rem;
+  margin: 3rem auto;
+  max-width: 25vw;
+}
+.sign__forms-social-google, .sign__forms-social-apple {
+  min-height: 3rem;
+  width: 33vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  height: 3.5rem;
+  background-color: var(--color-grey-forms2);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 6px 7px 7px rgba(229, 229, 229, 0.7019607843);
+}
+.sign__forms-social-apple-image {
+  margin-top: -5px;
+}
+.sign__forms-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.sign__forms-input-item {
+  width: 25vw;
+  background-color: var(--color-grey-forms2);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  min-height: 3rem;
+  box-shadow: 6px 7px 6px rgba(229, 229, 229, 0.7019607843);
+}
+.sign__forms-input-item::placeholder {
+  opacity: 35%;
+  font-family: var(--font-family-poppins);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.sign__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6rem 8rem 3rem;
+}
+
+.pp {
+  font-family: var(--font-family-poppins);
+}
+.pp__main {
+  margin: 3rem 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
