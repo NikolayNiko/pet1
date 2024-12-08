@@ -103,12 +103,10 @@
             margin-right: 18px;
             width: 156px;
             border-radius: var(--border-radius-buttom-middle);
-    
             @include hover {
                 color: var(--color-fiolet-main);
                 background-color: var(--color-white);
                 }
-    
             @include tablet {
                 padding-inline: 0;
                 height: 41px;
@@ -118,17 +116,14 @@
             @include mobile {
                 border-radius: var(--border-radius-buttom-mobile);
             }
-
         }
-    
         &-go {
                 color: var(--color-fiolet-main);
                 background-color: var(--color-white);
                 border: 1px solid var(--color-fiolet-main);
                 width: 156px;
                 border-radius: var(--border-radius-buttom-middle);
-                            
-                @include hover {
+                    @include hover {
                     color: var(--color-white);
                     background-color: var(--color-fiolet-main);
                     }
@@ -136,31 +131,24 @@
                     height: 41px;
                     font-size: 12px;
                     width: 110px;
-        
                 }
                 @include mobile {
                     border-radius: var(--border-radius-buttom-mobile);
                 }
-
         }
     }
-
-
     &__body-stars{
         @include flex-center;
         justify-content: start;
         margin-top: 33px;
-
         @include tablet {
             margin-top: 10px;
         }
-
         &-green {
             margin-right: 20px;
         }
         &-gold {
             margin-right: 9px;
-
         }
         &-text {
             font-family: var(--font-family-jakarta);
@@ -176,7 +164,6 @@
         max-width: 47%;
 
         @include tablet {
-            // max-width: 40%;
             height: auto;
             margin: auto;
         }
