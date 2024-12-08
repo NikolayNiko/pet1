@@ -2,7 +2,8 @@
 
     display: flex;
     // flex: 50%;
-    // height: 100vh;
+    
+    height: 100vh;
 
     &__left {
         // height: 100vh;
@@ -33,7 +34,6 @@
         font-size: 36px;
         font-family: var(--font-family-poppins);
         font-weight: 600;
-        letter-spacing: -4%;
         line-height: 125%;
         color: var(--color-black2);
         text-shadow: 0 4px 4px var(--color-black);
@@ -95,5 +95,13 @@
         @include flex-center;
         justify-content: space-between;
         margin: 6rem 8rem 3rem;
+        font-family: var(--font-family-poppins);
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--color-grey-pp);
+        line-height: 150%;
+        text-shadow: 0 4px 4px rgba(229, 229, 229, 0.7019607843);
+    
+
     }
 }
