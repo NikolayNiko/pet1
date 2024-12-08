@@ -10,10 +10,18 @@
         &-header__inner {
             justify-content: start;
             margin: 2rem auto auto 3rem;
+            @include mobile {
+                margin: 0 auto;
+            }
         }
         @include mobile {
             width: 100%;
+            margin-bottom: 0;
+            justify-content: flex-start;
         }
+    }
+    &-button__burger-menu {
+        margin: 0 0 0 auto;
     }
     &__right {
         width: 50%;
@@ -35,6 +43,9 @@
         line-height: 125%;
         color: var(--color-black2);
         text-shadow: 0 4px 4px var(--color-black);
+        @include mobile {
+            margin: 3.5rem auto;
+        }
     }
     &__forms {
         &-social {
@@ -127,7 +138,7 @@
             font-family: var(--font-family-poppins);
             font-size: 1.1rem;
             font-weight: 600;
-            letter-spacing: 3%;
+            letter-spacing: 0.01rem;
         }
     }
     &__footer {
@@ -140,13 +151,17 @@
         color: var(--color-grey-pp);
         line-height: 150%;
         text-shadow: 0 4px 4px rgba(229, 229, 229, 0.7019607843);
+        @include mobile {
+            margin: 2rem;
+        }
     }
     &__text {
         font-family: var(--font-family-poppins);
         font-weight: 400;
         font-size: 1.2rem;
-        letter-spacing: 1%;
+        letter-spacing: 0.01rem;
         color: var(--color-grey-pp);
+
         &-to_link_account {
             font-weight: 800;
             color: var(--color-fiolet);
