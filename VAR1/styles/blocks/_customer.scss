@@ -1,9 +1,6 @@
-.customer {/*єтот блок для не знаю чего
-    height: 550px;
-    position: relative; /* Добавляем для правильного позиционирования дочерних элементов */
+.customer {
     overflow: hidden; /* Отключаем горизонтальный скролл */
     width: 100%; /* Полная ширина экрана */
-
     &__title {
         @include flex-center;
         column-gap: 15px;
@@ -105,7 +102,6 @@
                     padding: 27px 35px 10px 30px;
                 }
             }
-
             &-name-time {
                 @include flex-center;
                 flex-direction: column;
@@ -113,30 +109,25 @@
                 width: 100%;
                 margin-left: 21px;
             }
-
             &-name {
                 font-family: var(--font-family-poppins);
                 font-size: 21px;
                 font-weight: 500;
                 text-shadow: 0 4px 4px #00000040;
-
                 @include tablet {
                     font-size: 15px;
                 }
             }
-
             &-time_with_us {
                 font-family: var(--font-family-quicksand);
                 font-size: 16.7px;
                 font-weight: 500;
                 color: var(--color-dark2);
                 text-shadow: 0 4px 4px #00000040;
-
                 @include tablet {
                     font-size: 12px;
                 }
             }
-
             &-stars {
                 align-self: flex-start;
                 margin-left: 44px;

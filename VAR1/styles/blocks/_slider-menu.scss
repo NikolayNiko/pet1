@@ -1,8 +1,6 @@
 .get50off {
-
     &__slider::before {
         content: "";
-        // position: relative;
         font-size: 38px;
         width: 40px;
         height: 43px;
@@ -11,24 +9,17 @@
         align-items: center;
         background-image: url(/VAR1/images/Illustration01.svg);
         color: var(--color-fiolet);
-        // top: 8%;
-        // left:100%;
         overflow: visible;
         margin: 0 0 0 auto;
-
         @include tablet {
             margin-top: 3%;
         }
     }
-
     &__slider {
         width: 800px;
         height: 500px;
         overflow: hidden;
     }
-
-        
-
     &_navigation {
         position: relative;
         bottom: 15%;
@@ -36,88 +27,64 @@
         transform: translateX(-50%);
         display: flex;
     }
-    
     &_bar {
         width: 30px;
         height: 8px;
         margin: 6px;
         cursor: pointer;
         background-color: var(--color-fiolet-middle-contur);
-        // opacity: .5;
         border-radius: 55px;
         transition: all 0.4s ease;
     }
-    
     &_bar:hover {
         opacity: 1;
         transform:scale(1.1);
     }
-
     &_bar:active {
         opacity: 1;
         transform:scale(1.1);
         background-color: var(--color-fiolet);
         width: 60px;
     }
-
-
-    
     input[name="r"] {
         position: absolute;
         visibility: hidden;
     }
-    
     &__slides {
         width: 400%;
         height: 100%;
         display: flex;
-
         &-img {
             width: 100%;
             height: 100%;
         }
     }
-    
     &__slide {
         width: 25%;
         transition: all 0.6s ease;
     }
-
-
 }
-
 #get50off_r1:checked ~ .s1 {
     margin-left: 0;
 }
-
-
-
 #get50off_r2:checked ~ .s1 {
     margin-left: -25%;
 }
-
 #get50off_r3:checked ~ .s1 {
     margin-left: -50%;
 }
-
-// #get50off_r1:checked ~ .get50off_navigation label[for="get50off_r1"],
-// #get50off_r2:checked ~ .get50off_navigation label[for="get50off_r2"],
-// #get50off_r3:checked ~ .get50off_navigation label[for="get50off_r3"] 
-
 .get50off_navigation label[for="get50off_r1"]:has(#get50off_r1:checked),
 .get50off_navigation label[for="get50off_r2"]:has(#get50off_r2:checked),
 .get50off_navigation label[for="get50off_r3"]:has(#get50off_r3:checked){
   background-color: var(--color-fiolet-main); /* Темнее */
   width: 60px; /* Шире */
 }
-
 .middle {
     position: relative;
     top: 35%;
     left: 30%;
     transform: translate(-50%, -50%);
     width: 60%;
-    // overflow: visible;
 
     @include mobile {
         width: 100%;

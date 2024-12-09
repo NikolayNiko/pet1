@@ -16,12 +16,9 @@
         display: flex;
         position: relative;
         width: 90%;
-        // left: 5%;
-        // right: 5%;
         height: 2px;
         background-color: var(--color-grey);
         margin: 0 auto;
-
         @include mobile {
             width: 100%;
             left: 0;

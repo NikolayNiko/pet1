@@ -1,13 +1,8 @@
 .header {
     padding-top: 4rem;
     position: relative;
-
     @include flex-center;
     flex-direction: column;
-
-    // @include desktop {
-    //     // padding-top: 34px;
-    // }
     &__logo {
         max-width: none;
     }
@@ -20,7 +15,7 @@
         align-items: center;
         margin-right: 20px;
         @include tablet {
-            margin-right: 0;
+        margin-right: 0;
         }
     }
     &__inner {
@@ -80,20 +75,6 @@
             }
         }
     }
-
-    // &::after { // проба серой     линии
-    //     content: '';
-    //     position: absolute;
-    //     top: 150px;
-    //     left: 50%;
-    //     margin: 0 auto;
-    //     translate: -50%;
-    //     width: 85%;
-    //     height: 2px;
-    //     background-color: var(--color-grey);
-    //     transition-duration: inherit;
-    // }
-
     @include mobile-s {
         &::after {
             // top: 100px;

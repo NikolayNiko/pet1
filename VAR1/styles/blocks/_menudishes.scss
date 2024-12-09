@@ -34,16 +34,13 @@
         @include flex-center;
         column-gap: 20px;
         width: 90%;
-
         @include mobile {
             flex-wrap: wrap;
             column-gap: 20px;
             flex: 1 1 calc(50% - 20px);
             width: 100%;
         }
-        
         &-card {
-            
             @include flex-center;
             flex-direction: column;
             box-shadow: 
@@ -118,9 +115,7 @@
                     font-size: 13px;
                 }
             }
-
             &-like {
-                
                 position: absolute;
                 top: 21px;
                 right: 23px;
@@ -129,42 +124,33 @@
                 cursor: pointer;
                 padding: 0;
                 outline: none;
-
                 &-svg {
                     transition: transform 0.3s ease;
                 }
-
                 &-svg:hover {
                     transform: scale(1.2);
                 }
             }
-
             &-image {
                 margin: 26px auto 0;
-
                 @include desktop {
                     max-width: 95%;
                     margin-top: 25px;
                 }
-
             }
-
             &-title {
                 font-family: var(--font-family-poppins);
                 font-weight: 600;
                 font-size: 23px;
                 color: var(--color-black2);
                 text-shadow: 0 4px 4px #00000040;
-
                 @include tablet {
                     font-size: 16.4px;
                 }
-
                 @include mobile {
                     font-size: 16px;
                 }
             }
-
             &-discription {
                 margin-left: 15px;
                 width: 95%;
@@ -172,36 +158,30 @@
                     width: 90%;
                 }
             }
-
             &-top {
                 font-size: 11.5px;
                 padding: 3px 8px 2px;
                 border-radius: 5px;
-                
                 @include tablet {
                     font-size: 8px;
                     padding: 3px 6px 2px;
                     border-radius: 4px;
                 }
-
                 @include mobile {
                     font-size: 15px;
                     font-weight: 500;
                 }
             }
-
             &-bottom {
                 @include flex-center;
                 justify-content: start;
             }
-
             &-priceadd {
                 @include flex-center;
                 justify-content: space-between;
                 font-family: var(--font-family-manrope);
                 margin-bottom: 30px;
                 width: 85%;
-
                 @include tablet {
                     width: 80%;
                 }
@@ -209,17 +189,14 @@
                     margin-bottom: 20px;
                 }
             }
-
             &-price-big{
                 font-weight: 700;
                 font-size: 26px;
                 color: var(--color-black2);  
-
                 @include mobile {
                     font-size: 36px;
                 }
             }
-
             &-price-little{
                 font-weight: 700;
                 font-size: 19px;
@@ -228,7 +205,6 @@
                     font-size: 12px;
                 }
             }
-
             &-add {
                 font-family: var(--font-family-inter);
                 font-weight: 700;
@@ -244,16 +220,13 @@
                 justify-content: center;
                 padding: 0;
                 margin-right: -15px;
-            
                 @include hover {
                 background-color: var(--color-white);
                 border: 2px solid var(--color-black);
-
                 &::after{
                     background-color: var(--color-black);
                     }
                 }
-    
                 &::after {
                     content: "";
                     display: inline-block;
@@ -267,7 +240,6 @@
         }
     }
 }
-
 .menu-menudishes__title {
     margin-top: 0;
 }

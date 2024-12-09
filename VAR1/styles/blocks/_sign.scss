@@ -10,9 +10,9 @@
         &-header__inner {
             justify-content: start;
             margin: 2rem auto auto 3rem;
-            @include mobile {
-                margin: 0 auto;
-            }
+                @include mobile {
+                    margin: 0 auto;
+                }
         }
         @include mobile {
             width: 100%;
@@ -33,7 +33,6 @@
         @include mobile {
             display: none;
         }
-
     }
     &__title {
         margin: 6.5rem auto auto;
@@ -53,7 +52,6 @@
             column-gap: 1.3rem;
             margin: 3rem auto;
             max-width: 25vw;
-
             @include mobile {
                 max-width: 100vw;
             }
@@ -105,7 +103,6 @@
                 filter: grayscale(2);
                 opacity: 0.6;
             }
-
             &-item {
                 width: 25vw;
                 background-color: var(--color-grey-forms2);

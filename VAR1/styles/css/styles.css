@@ -2126,7 +2126,6 @@ h4, .h4 {
   background-color: #070707;
   top: 15px;
   right: 20px;
-  /* Снимаем клик с треугольника */
   pointer-events: none;
 }
 .control__right-shadow {
@@ -2325,9 +2324,7 @@ h4, .h4 {
   border-radius: inherit;
 }
 
-.customer { /*єтот блок для не знаю чего
-height: 550px;
-position: relative; /* Добавляем для правильного позиционирования дочерних элементов */
+.customer {
   overflow: hidden; /* Отключаем горизонтальный скролл */
   width: 100%; /* Полная ширина экрана */
 }
@@ -3755,6 +3752,15 @@ input[type=range]::-moz-range-thumb {
 }
 .pp__main {
   margin: 3rem 4rem;
+}
+
+.pricing__top {
+  background-image: url(/VAR1/images/BG.svg);
+  width: 1500px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
