@@ -3755,12 +3755,26 @@ input[type=range]::-moz-range-thumb {
 }
 
 .pricing__top {
-  background-image: url(/VAR1/images/BG.svg);
-  width: 1500px;
-  height: 200px;
-  background-size: cover;
+  margin: 4rem auto -3rem;
+  background-image: url(/VAR1/images/ourpricing.svg);
+  height: 64.5vw;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.pricing__price {
+  margin: 0 auto;
+  background-image: url(/VAR1/images/pricecard.svg);
+  height: 112vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pricing__control {
+  margin-top: -8rem;
+}
+.pricing__customer {
+  margin-bottom: 8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
