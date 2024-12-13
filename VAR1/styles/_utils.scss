@@ -1,9 +1,3 @@
-// .container {
-//     max-width: calc(var(--container-base-deckstop) + var(--container-padding-x-deckstop) * 2);
-//     margin-inline: auto;
-//     padding-inline: var(--container-padding-x-deckstop);
-// }
-
 .visually-hidden {
     @include visually-hidden;
 }

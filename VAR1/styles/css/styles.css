@@ -2339,7 +2339,7 @@ h4, .h4 {
   line-height: 26px;
   color: var(--color-black2);
   margin: 116px auto 80px;
-  text-shadow: 0 4px 4px hwb(0 0% 100%/0.251);
+  text-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.251);
 }
 .customer__title-span {
   color: var(--color-fiolet-text);
