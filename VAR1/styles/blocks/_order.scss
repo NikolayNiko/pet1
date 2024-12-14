@@ -1,0 +1,5 @@
+.order {
+    margin: 0 auto;
+    @include flex-center;
+    flex-direction: column;
+}

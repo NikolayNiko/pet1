@@ -2903,6 +2903,7 @@ h4, .h4 {
   font-size: 14px;
   height: 10%;
   margin: auto;
+  border: none;
 }
 .get50off__main-search {
   width: 65%;
@@ -3826,6 +3827,18 @@ input[type=range]::-moz-range-thumb {
 }
 .pricing__customer {
   margin-bottom: 8rem;
+}
+
+.review_payment {
+  margin: 0 auto;
+}
+
+.order {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
