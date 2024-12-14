@@ -1,12 +1,16 @@
 .pricing{
     &__top {
-        margin: 4rem auto -3rem;
+        margin: 2rem auto -3rem;
         background-image: url(/VAR1/images/ourpricing.svg);
-        // width: 85vw;
         height: 64.5vw;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        @include mobile {
+            background-image: url(/VAR1/images/bg_mobile_Pricing.svg);
+            background-position: right;
+            height: 115vw;
+        }
     }
 
     &__price {
@@ -14,12 +18,40 @@
         background-image: url(/VAR1/images/pricecard.svg);
         height: 112vw;
         background-size: contain;
-        
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
+
+
+
+        &-btn-block {
+            @include flex-center;
+            justify-content: flex-end;
+            position: relative;
+            top: 87vw;
+            // margin: auto auto 0;
+            height: 5vw;
+            gap: 15vw;
+            right: 15vw;
+
+
+        }
+
+        &-btn-item {
+            width: 15vw;
+            background-color: var(--color-fiolet);
+            border-radius: 12.5px;
+            color: var(--color-white-grey);
+            font-family: var(--font-family-poppins);
+            font-weight: 500;
+            font-size: 1rem;
+            @include flex-center;
+            height: 100%;
+            
+        }
     }
     &__control {
-        margin-top: -8rem;
+        margin-top: -2rem;
     }
     &__customer {
         margin-bottom: 8rem;

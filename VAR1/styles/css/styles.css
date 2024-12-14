@@ -3548,6 +3548,25 @@ input[type=range]::-moz-range-thumb {
   }
 }
 
+.about__payment {
+  width: 100%;
+}
+.about__payment-list {
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+.about__payment-list-item {
+  width: 100%;
+}
+.about__payment-adds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 3rem;
+  margin-left: auto;
+}
 .about__map {
   width: 85%;
   margin: 6rem auto;
@@ -3755,12 +3774,19 @@ input[type=range]::-moz-range-thumb {
 }
 
 .pricing__top {
-  margin: 4rem auto -3rem;
+  margin: 2rem auto -3rem;
   background-image: url(/VAR1/images/ourpricing.svg);
   height: 64.5vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 767px) {
+  .pricing__top {
+    background-image: url(/VAR1/images/bg_mobile_Pricing.svg);
+    background-position: right;
+    height: 115vw;
+  }
 }
 .pricing__price {
   margin: 0 auto;
@@ -3769,9 +3795,34 @@ input[type=range]::-moz-range-thumb {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+.pricing__price-btn-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  top: 87vw;
+  height: 5vw;
+  gap: 15vw;
+  right: 15vw;
+}
+.pricing__price-btn-item {
+  width: 15vw;
+  background-color: var(--color-fiolet);
+  border-radius: 12.5px;
+  color: var(--color-white-grey);
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .pricing__control {
-  margin-top: -8rem;
+  margin-top: -2rem;
 }
 .pricing__customer {
   margin-bottom: 8rem;

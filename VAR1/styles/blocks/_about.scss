@@ -1,4 +1,30 @@
 .about {
+    // width: 50%;
+    
+
+    &__payment {
+        width: 100%;
+        
+        
+
+        &-list {
+            align-items: center;
+            margin: 0 auto;
+            width: 50%;
+            &-item {
+                width: 100%;
+            }
+        }
+
+        &-adds {
+            @include flex-center;
+            gap: 1.5rem;
+            margin-right: 3rem;
+            margin-left: auto;
+        }
+
+        
+    }
     &__map {
         width: 85%;
         margin: 6rem auto;
