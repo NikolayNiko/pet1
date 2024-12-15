@@ -4,8 +4,6 @@
 
     &__payment {
         width: 100%;
-        
-        
 
         &-list {
             align-items: center;
@@ -13,16 +11,28 @@
             width: 50%;
             &-item {
                 width: 100%;
+                &-right {
+                    margin-right: 3rem;
+                    margin-left: auto;
+                }
+                &-sum {
+                    @include flex-center;
+                    margin-top: 0.3rem;
+                    padding-left: 1rem;
+                }
             }
         }
 
         &-adds {
             @include flex-center;
             gap: 1.5rem;
-            margin-right: 3rem;
-            margin-left: auto;
+        
         }
-
+        &-price{
+            &--count {
+                margin: 0 0 0 15px;
+            }
+        }
         
     }
     &__map {

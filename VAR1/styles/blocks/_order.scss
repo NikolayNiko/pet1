@@ -2,4 +2,63 @@
     margin: 0 auto;
     @include flex-center;
     flex-direction: column;
+
+    &__coupon {
+
+
+        width: 50%;
+        height: 5vw;
+        min-height: 42px;
+        @include flex-center;
+        gap: 8px;
+
+        &-input {
+            border: none;
+            border-radius: 10px;
+            background-color: var(--color-grey5);
+            flex: 8;
+            height: 100%;
+        }
+
+        &-btn {
+            flex: 2;
+            height: 100%;
+            border: none;
+            background-color: var(--color-fiolet);
+            // font-size: 18px;
+            @include fluid-text(11, 18);
+            font-family: var(--font-family-poppins);
+            color: var(--color-grey4);
+        }
+    }
+
+
+    &__check {
+        width: 50%;
+
+        &-list > * {
+            width: 100%;
+        }
+        &-items {
+            width: 100%;
+            // 
+            // flex-direction: row;
+
+            &-lgrey {
+                width: 100%; // Лінія на всю ширину контейнера
+                height: 2px; // Товщина лінії
+                border-bottom: 2px dashed var(--color-grey-contur); // Штрихова лінія
+                margin: 16px 0; // Відступи зверху та знизу
+                box-sizing: border-box;
+            }
+        }
+
+        &-items >:first-child {
+            @include flex-center;
+            justify-content: space-between;
+        }
+
+    }
+
+
 }
