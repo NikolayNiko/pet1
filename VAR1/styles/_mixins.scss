@@ -7,7 +7,7 @@
 
     &,
     &:hover {
-    text-decoration: none;
+        text-decoration: none;
     }
 }
 
@@ -19,9 +19,11 @@
 
 @mixin flex-center($isInline: false) {
     @if $isInline {
-    display: inline-flex;
-    } @else  {
-    display: flex;
+        display: inline-flex;
+    }
+
+    @else {
+        display: flex;
     }
 
     justify-content: center;

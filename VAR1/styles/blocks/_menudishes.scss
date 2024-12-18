@@ -1,49 +1,59 @@
-.menudishes{
+.menudishes {
     height: 725px;
     @include flex-center;
     flex-direction: column;
     justify-content: start;
     position: relative;
+
     @include mobile {
         height: auto;
     }
+
     &-line-gray2::after {
         margin-top: 120px;
+
         @include tablet {
             margin-top: 0;
         }
     }
+
     &__title {
         margin-top: 100px;
         margin-bottom: 76px;
         font-family: var(--font-family-poppins);
         font-weight: 600;
         text-shadow: 0 4px 4px #00000040;
+
         &-span {
             color: var(--color-fiolet);
         }
+
         @include tablet {
             margin-top: 71px;
             margin-bottom: 53px;
         }
+
         @include mobile {
             line-height: 24.5px;
         }
     }
+
     &__list {
         @include flex-center;
         column-gap: 20px;
         width: 90%;
+
         @include mobile {
             flex-wrap: wrap;
             column-gap: 20px;
             flex: 1 1 calc(50% - 20px);
             width: 100%;
         }
+
         &-card {
             @include flex-center;
             flex-direction: column;
-            box-shadow: 
+            box-shadow:
                 25px 100px 40px #e5e5e5b3,
                 0 4px 4px #00000040,
                 0 0 5px .2px #00000033,
@@ -55,66 +65,82 @@
             position: relative;
             box-sizing: border-box;
             background-color: white;
+
             @include tablet {
                 border-radius: 25px;
             }
+
             @include mobile {
                 flex: 1 1 calc(50% - 20px);
                 margin-bottom: 20px;
                 max-width: calc(47% - 20px);
             }
+
             &:last-child {
-                    @include mobile {
-                        display: none;
-                    }
+                @include mobile {
+                    display: none;
+                }
             }
-            &-time{
+
+            &-time {
                 font-family: var(--font-family-manrope);
                 font-weight: 400;
                 font-size: 17px;
                 color: var(--color-grey-text);
                 line-height: 26px;
+
                 @include tablet {
                     font-size: 12px;
                 }
+
                 @include mobile {
                     font-size: 11px;
                 }
             }
+
             &-time::after {
                 content: "•";
                 font-size: 15px;
                 font-weight: bold;
                 margin-left: 5px;
                 vertical-align: middle;
+
                 @include tablet {
                     font-size: 13px;
                 }
             }
-            &-score{
+
+            &-score {
                 font-family: var(--font-family-manrope);
                 font-weight: 400;
                 font-size: 17px;
                 color: var(--color-grey-text);
                 line-height: 26px;
                 margin-left: 5px;
+
                 @include tablet {
                     font-size: 12px;
                 }
             }
+
             &-score::before {
                 content: "";
                 display: inline-block;
-                width: 19px;  /* Задайте ширину SVG */
-                height: 19px; /* Задайте высоту SVG */
-                background-image: url('../../images/Star.svg'); /* Путь к вашему SVG */
+                width: 19px;
+                /* Задайте ширину SVG */
+                height: 19px;
+                /* Задайте высоту SVG */
+                background-image: url('../../images/Star.svg');
+                /* Путь к вашему SVG */
                 background-size: contain;
                 background-repeat: no-repeat;
                 margin-bottom: -3px;
+
                 @include tablet {
                     font-size: 13px;
                 }
             }
+
             &-like {
                 position: absolute;
                 top: 21px;
@@ -124,87 +150,108 @@
                 cursor: pointer;
                 padding: 0;
                 outline: none;
+
                 &-svg {
                     transition: transform 0.3s ease;
                 }
+
                 &-svg:hover {
                     transform: scale(1.2);
                 }
             }
+
             &-image {
                 margin: 26px auto 0;
+
                 @include desktop {
                     max-width: 95%;
                     margin-top: 25px;
                 }
             }
+
             &-title {
                 font-family: var(--font-family-poppins);
                 font-weight: 600;
                 font-size: 23px;
                 color: var(--color-black2);
                 text-shadow: 0 4px 4px #00000040;
+
                 @include tablet {
                     font-size: 16.4px;
                 }
+
                 @include mobile {
                     font-size: 16px;
                 }
             }
+
             &-discription {
                 margin-left: 15px;
                 width: 95%;
+
                 @include mobile {
                     width: 90%;
                 }
             }
+
             &-top {
                 font-size: 11.5px;
                 padding: 3px 8px 2px;
                 border-radius: 5px;
+
                 @include tablet {
                     font-size: 8px;
                     padding: 3px 6px 2px;
                     border-radius: 4px;
                 }
+
                 @include mobile {
                     font-size: 15px;
                     font-weight: 500;
                 }
             }
+
             &-bottom {
                 @include flex-center;
                 justify-content: start;
             }
+
             &-priceadd {
                 @include flex-center;
                 justify-content: space-between;
                 font-family: var(--font-family-manrope);
                 margin-bottom: 30px;
                 width: 85%;
+
                 @include tablet {
                     width: 80%;
                 }
+
                 @include mobile {
                     margin-bottom: 20px;
                 }
             }
-            &-price-big{
+
+            &-price-big {
                 font-weight: 700;
                 font-size: 26px;
-                color: var(--color-black2);  
+                color: var(--color-black2);
+
                 @include mobile {
                     font-size: 36px;
                 }
             }
-            &-price-little{
+
+            &-price-little {
                 font-weight: 700;
                 font-size: 19px;
                 color: var(--color-grey-text);
+
                 @include mobile {
                     font-size: 12px;
                 }
             }
+
             &-add {
                 font-family: var(--font-family-inter);
                 font-weight: 700;
@@ -220,13 +267,16 @@
                 justify-content: center;
                 padding: 0;
                 margin-right: -15px;
+
                 @include hover {
-                background-color: var(--color-white);
-                border: 2px solid var(--color-black);
-                &::after{
-                    background-color: var(--color-black);
+                    background-color: var(--color-white);
+                    border: 2px solid var(--color-black);
+
+                    &::after {
+                        background-color: var(--color-black);
                     }
                 }
+
                 &::after {
                     content: "";
                     display: inline-block;
@@ -240,6 +290,7 @@
         }
     }
 }
+
 .menu-menudishes__title {
     margin-top: 0;
 }

@@ -4,24 +4,28 @@
     position: relative;
     border-radius: var(--border-radius-buttom-mobile);
     background-color: var(--color-fiolet-medium);
+
     @include hover {
         background-color: var(--color-fiolet-medium);
     }
+
     &::before,
     &::after {
-    content: '';
-    position: absolute;
-    top: 49%;
-    left: 17%;
-    width: 65%;
-    height: 3px;
-    background-color: var(--color-black);
-    border-radius: 5px;
+        content: '';
+        position: absolute;
+        top: 49%;
+        left: 17%;
+        width: 65%;
+        height: 3px;
+        background-color: var(--color-black);
+        border-radius: 5px;
     }
+
     &::before {
-    rotate: 45deg;
+        rotate: 45deg;
     }
+
     &::after {
-    rotate: -45deg;
+        rotate: -45deg;
     }
 }

@@ -9,7 +9,8 @@
         background-color: var(--color-fiolet-medium);
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
         @include abs-center;
 
         content: '';

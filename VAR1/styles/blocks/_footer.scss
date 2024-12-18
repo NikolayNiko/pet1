@@ -7,21 +7,25 @@
     font-size: 18px;
     font-weight: 500;
     color: var(--colog-grey-middle-text);
+
     @include tablet {
         font-size: 12px;
         height: 245px;
         justify-content: space-evenly;
     }
+
     @include mobile {
         flex-direction: row;
         align-items: stretch;
         font-size: 14px;
         height: 426px;
     }
+
     &__top {
         @include flex-center;
         justify-content: space-between;
         width: 80%;
+
         @include mobile {
             flex-direction: column;
             justify-content: space-evenly;
@@ -30,14 +34,17 @@
             // margin-top: 55px;
             margin-left: 30px;
         }
+
         &-logo-image {
             @include mobile {
                 width: 100px;
             }
         }
+
         &-nav-list {
             @include flex-center;
             gap: 70px;
+
             @include mobile {
                 flex-direction: column;
                 align-items: flex-start;
@@ -45,16 +52,19 @@
             }
         }
     }
+
     &__bottom {
         @include flex-center;
         justify-content: space-between;
         width: 80%;
+
         @include mobile {
             position: relative;
             justify-content: flex-end;
             align-self: flex-start;
             margin-top: 55px;
         }
+
         &-left {
             @include mobile {
                 position: absolute;
@@ -63,10 +73,12 @@
                 max-width: 100%;
             }
         }
+
         &-social {
             @include mobile {
                 margin-top: 25px;
             }
+
             &-list {
                 @include flex-center;
                 gap: 54px;

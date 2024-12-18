@@ -465,22 +465,26 @@ a {
   color: inherit;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-weight: 600;
   font-size: clamp(46px, 5.2083333333vw, 75px);
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-weight: 700;
   font-size: clamp(30px, 3.5416666667vw, 51px);
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-weight: 600;
   font-size: clamp(30px, 3.125vw, 45px);
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-weight: 800;
   font-size: clamp(41px, 4.8611111111vw, 70px);
 }
@@ -1491,9 +1495,12 @@ h4, .h4 {
 .menueatly__restaurants-card-score::before {
   content: "";
   display: inline-block;
-  width: 19px; /* Задайте ширину SVG */
-  height: 19px; /* Задайте высоту SVG */
-  background-image: url("../../images/Star.svg"); /* Путь к вашему SVG */
+  width: 19px;
+  /* Задайте ширину SVG */
+  height: 19px;
+  /* Задайте высоту SVG */
+  background-image: url("../../images/Star.svg");
+  /* Путь к вашему SVG */
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: -3px;
@@ -1656,9 +1663,12 @@ h4, .h4 {
 .menudishes__list-card-score::before {
   content: "";
   display: inline-block;
-  width: 19px; /* Задайте ширину SVG */
-  height: 19px; /* Задайте высоту SVG */
-  background-image: url("../../images/Star.svg"); /* Путь к вашему SVG */
+  width: 19px;
+  /* Задайте ширину SVG */
+  height: 19px;
+  /* Задайте высоту SVG */
+  background-image: url("../../images/Star.svg");
+  /* Путь к вашему SVG */
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: -3px;
@@ -2326,8 +2336,10 @@ h4, .h4 {
 }
 
 .customer {
-  overflow: hidden; /* Отключаем горизонтальный скролл */
-  width: 100%; /* Полная ширина экрана */
+  overflow: hidden;
+  /* Отключаем горизонтальный скролл */
+  width: 100%;
+  /* Полная ширина экрана */
 }
 .customer__title {
   display: flex;
@@ -2362,11 +2374,14 @@ h4, .h4 {
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
-  width: 120%; /* Контейнер больше экрана на один блок */
+  width: 120%;
+  /* Контейнер больше экрана на один блок */
   gap: 45px;
-  left: 0; /* Выравниваем контейнер по левому краю */
+  left: 0;
+  /* Выравниваем контейнер по левому краю */
   margin-left: 105px;
-  position: relative; /* Обеспечиваем нормальное выравнивание */
+  position: relative;
+  /* Обеспечиваем нормальное выравнивание */
   /* Отступ между вторым и третьим элементом */
 }
 @media (max-width: 1023px) {
@@ -2944,7 +2959,8 @@ h4, .h4 {
   font-weight: 500;
   font-size: 20px;
 }
-.get50off__main-search-form-button-left, .get50off__main-search-form-button-right { /*active-button-fiolet по єтому классу переключать*/
+.get50off__main-search-form-button-left, .get50off__main-search-form-button-right {
+  /*active-button-fiolet по єтому классу переключать*/
   border: 3px solid var(--color-fiolet);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -3225,8 +3241,10 @@ input[type=range]::-moz-range-thumb {
 .get50off_navigation label[for=get50off_r1]:has(#get50off_r1:checked),
 .get50off_navigation label[for=get50off_r2]:has(#get50off_r2:checked),
 .get50off_navigation label[for=get50off_r3]:has(#get50off_r3:checked) {
-  background-color: var(--color-fiolet-main); /* Темнее */
-  width: 60px; /* Шире */
+  background-color: var(--color-fiolet-main);
+  /* Темнее */
+  width: 60px;
+  /* Шире */
 }
 
 .middle {
@@ -3252,7 +3270,7 @@ input[type=range]::-moz-range-thumb {
   width: 85vw;
 }
 .mainviewall__maindishes {
-  box-shadow: 6px 71px 36px rgba(229, 229, 229, 0.7019607843);
+  box-shadow: 6px 71px 36px rgba(229, 229, 229, 0.7);
   border-radius: 30px;
   overflow: hidden;
   margin-top: 6rem;
@@ -3372,9 +3390,12 @@ input[type=range]::-moz-range-thumb {
 .mainviewall__popular__list-card-score::before {
   content: "";
   display: inline-block;
-  width: 19px; /* Задайте ширину SVG */
-  height: 19px; /* Задайте высоту SVG */
-  background-image: url("../../images/Star.svg"); /* Путь к вашему SVG */
+  width: 19px;
+  /* Задайте ширину SVG */
+  height: 19px;
+  /* Задайте высоту SVG */
+  background-image: url("../../images/Star.svg");
+  /* Путь к вашему SVG */
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: -3px;
@@ -3861,6 +3882,7 @@ input[type=range]::-moz-range-thumb {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  margin-top: 90px;
 }
 .order__coupon-input {
   border: none;
@@ -3877,15 +3899,21 @@ input[type=range]::-moz-range-thumb {
   font-size: clamp(18px, 0.7638888889vw, 11px);
   font-family: var(--font-family-poppins);
   color: var(--color-grey4);
+  border-radius: 10px;
 }
 .order__check {
   width: 50%;
+  margin-top: 52px;
+}
+.order__check-list {
+  font-size: clamp(20px, 0.8333333333vw, 12px);
 }
 .order__check-list > * {
   width: 100%;
 }
 .order__check-items {
   width: 100%;
+  font-family: var(--font-family-poppins);
 }
 .order__check-items-lgrey {
   width: 100%;
@@ -3899,6 +3927,23 @@ input[type=range]::-moz-range-thumb {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+.order__check-total {
+  font-weight: 600;
+}
+.order__check-btn {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-fiolet);
+  font-size: clamp(18px, 0.7638888889vw, 11px);
+  font-family: var(--font-family-poppins);
+  color: var(--color-grey4);
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

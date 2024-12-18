@@ -4,29 +4,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     &-pagemenu {
         @include tablet {
             height: 500px;
         }
+
         @include mobile {
             margin-top: 65rem;
             margin-bottom: 50px;
         }
     }
+
     @include mobile {
         height: auto;
     }
+
     &__restaurants {
         @include flex-center;
         flex-direction: column;
         max-width: 92%;
+
         @include mobile {
             width: 95vw;
         }
+
         &-discription {
             margin: 9px auto 0 1.25rem;
             width: calc(100% - 2rem - 1.625rem);
         }
+
         &-title {
             font-family: var(--font-family-poppins);
             font-weight: 600;
@@ -34,27 +41,33 @@
             margin-bottom: 85px;
             margin-top: 215px;
             text-shadow: 0 4px 4px #00000040;
+
             & span {
                 color: var(--color-fiolet-text);
             }
+
             @include tablet {
                 font-size: 32px;
                 margin-bottom: 60px;
                 margin-top: 70px;
             }
+
             @include mobile {
                 text-align: center;
                 font-size: 30px;
             }
         }
+
         &-list {
             @include flex-center;
             column-gap: 30px;
             margin: 0 auto;
             width: 95vw;
+
             @include tablet {
                 column-gap: 22px;
             }
+
             @include mobile {
                 max-width: 100%;
                 width: 100%;
@@ -63,6 +76,7 @@
                 row-gap: 40px;
             }
         }
+
         &-card {
             @include flex-center;
             flex-direction: column;
@@ -71,38 +85,46 @@
             border-radius: 30px;
             overflow: hidden;
             width: 100%;
+
             &-image {
                 box-shadow: 0 4px 4px #0000001A;
                 width: 100%;
                 height: auto;
             }
+
             &-top {
                 font-size: 13px;
                 padding: 3px 8px 2px;
                 border-radius: 5px;
+
                 @include tablet {
                     border-radius: 4px;
                     font-size: 9px;
                     padding: 3px 6px 2px;
                 }
+
                 @include mobile {
                     font-size: 10px;
                 }
             }
+
             &-title {
                 font-family: var(--font-family-poppins);
                 font-weight: 600;
                 font-size: 26px;
                 margin-top: 10px;
                 margin-bottom: -12px;
+
                 @include tablet {
                     font-size: 18px;
                     line-height: 30px;
                 }
+
                 @include mobile {
                     font-size: 20px;
                 }
             }
+
             &-bookmark {
                 border-radius: 50%;
                 border: none;
@@ -113,6 +135,7 @@
                 margin-left: auto;
                 align-self: flex-end;
                 background-color: #fff;
+
                 @include tablet {
                     font-size: 28px;
                     width: 32px;
@@ -120,6 +143,7 @@
                     margin-right: -20px;
                 }
             }
+
             &-bookmark::after {
                 content: "";
                 display: inline-block;
@@ -135,6 +159,7 @@
                 margin-left: 15px;
                 border-radius: 50%;
                 border: none;
+
                 @include tablet {
                     font-size: 28px;
                     margin-left: -10px;
@@ -142,7 +167,8 @@
                     margin-right: 0;
                 }
             }
-            &-time{
+
+            &-time {
                 font-family: var(--font-family-manrope);
                 font-weight: 400;
                 font-size: 19px;
@@ -152,58 +178,71 @@
                 @include tablet {
                     font-size: 13px;
                 }
+
                 @include mobile {
                     font-size: 15px;
                 }
             }
+
             &-time::after {
                 content: "•";
                 font-size: 15px;
                 font-weight: bold;
                 margin-left: 5px;
                 vertical-align: middle;
+
                 @include tablet {
                     font-size: 13px;
                 }
             }
-            &-score{
+
+            &-score {
                 font-family: var(--font-family-manrope);
                 font-weight: 400;
                 font-size: 19px;
                 color: var(--color-grey-text);
                 line-height: 26px;
                 margin-left: 5px;
+
                 @include tablet {
                     font-size: 13px;
                 }
             }
+
             &-score::before {
                 content: "";
                 display: inline-block;
-                width: 19px;  /* Задайте ширину SVG */
-                height: 19px; /* Задайте высоту SVG */
-                background-image: url('../../images/Star.svg'); /* Путь к вашему SVG */
+                width: 19px;
+                /* Задайте ширину SVG */
+                height: 19px;
+                /* Задайте высоту SVG */
+                background-image: url('../../images/Star.svg');
+                /* Путь к вашему SVG */
                 background-size: contain;
                 background-repeat: no-repeat;
                 margin-bottom: -3px;
+
                 @include tablet {
                     font-size: 13px;
                 }
             }
         }
+
         &-bottom {
             @include flex-center;
             justify-content: start;
         }
     }
+
     &-line-gray2::after {
         margin-top: 120px;
+
         @include tablet {
             margin-top: 0;
         }
     }
 }
+
 .menu-menueatly__restaurants-title {
     margin-top: 0;
 }
-

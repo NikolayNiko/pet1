@@ -4,12 +4,12 @@
 
 .hidden-mobile {
     @include mobile {
-    display: none !important;
+        display: none !important;
     }
 }
 
 .visible-mobile {
     @include mobile-above {
-    display: none !important;
+        display: none !important;
     }
 }

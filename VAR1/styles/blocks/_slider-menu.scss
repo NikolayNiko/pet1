@@ -11,15 +11,18 @@
         color: var(--color-fiolet);
         overflow: visible;
         margin: 0 0 0 auto;
+
         @include tablet {
             margin-top: 3%;
         }
     }
+
     &__slider {
         width: 800px;
         height: 500px;
         overflow: hidden;
     }
+
     &_navigation {
         position: relative;
         bottom: 15%;
@@ -27,6 +30,7 @@
         transform: translateX(-50%);
         display: flex;
     }
+
     &_bar {
         width: 30px;
         height: 8px;
@@ -36,49 +40,62 @@
         border-radius: 55px;
         transition: all 0.4s ease;
     }
+
     &_bar:hover {
         opacity: 1;
-        transform:scale(1.1);
+        transform: scale(1.1);
     }
+
     &_bar:active {
         opacity: 1;
-        transform:scale(1.1);
+        transform: scale(1.1);
         background-color: var(--color-fiolet);
         width: 60px;
     }
+
     input[name="r"] {
         position: absolute;
         visibility: hidden;
     }
+
     &__slides {
         width: 400%;
         height: 100%;
         display: flex;
+
         &-img {
             width: 100%;
             height: 100%;
         }
     }
+
     &__slide {
         width: 25%;
         transition: all 0.6s ease;
     }
 }
-#get50off_r1:checked ~ .s1 {
+
+#get50off_r1:checked~.s1 {
     margin-left: 0;
 }
-#get50off_r2:checked ~ .s1 {
+
+#get50off_r2:checked~.s1 {
     margin-left: -25%;
 }
-#get50off_r3:checked ~ .s1 {
+
+#get50off_r3:checked~.s1 {
     margin-left: -50%;
 }
+
 .get50off_navigation label[for="get50off_r1"]:has(#get50off_r1:checked),
 .get50off_navigation label[for="get50off_r2"]:has(#get50off_r2:checked),
-.get50off_navigation label[for="get50off_r3"]:has(#get50off_r3:checked){
-  background-color: var(--color-fiolet-main); /* Темнее */
-  width: 60px; /* Шире */
+.get50off_navigation label[for="get50off_r3"]:has(#get50off_r3:checked) {
+    background-color: var(--color-fiolet-main);
+    /* Темнее */
+    width: 60px;
+    /* Шире */
 }
+
 .middle {
     position: relative;
     top: 35%;
@@ -95,5 +112,3 @@
         margin-top: -2.5rem;
     }
 }
-
-

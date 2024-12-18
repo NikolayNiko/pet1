@@ -9,19 +9,22 @@
     background-color: var(--color-fiolet-main);
     border: var(--border);
     border-radius: var(--border-radius-buttom-top);
+
     @include hover {
-    color: var(--color-black);
-    background-color: var(--color-white);
+        color: var(--color-black);
+        background-color: var(--color-white);
     }
+
     &-login {
-    color: var(--color-black);
-    background-color: var(--color-white);
-    border: var(--color-white);
-    margin-left: auto;
-    width: 121px;
-    @include hover {
-        color: var(--color-white);
-        background-color: var(--color-fiolet-main);
+        color: var(--color-black);
+        background-color: var(--color-white);
+        border: var(--color-white);
+        margin-left: auto;
+        width: 121px;
+
+        @include hover {
+            color: var(--color-white);
+            background-color: var(--color-fiolet-main);
         }
     }
 }

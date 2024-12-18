@@ -1,32 +1,40 @@
 .hero {
     padding: 49px 51px 85px 103px;
+
     @include tablet {
         margin-top: 25px;
     }
+
     @include mobile {
         padding: 0;
     }
-    &__main{
+
+    &__main {
         display: flex;
         justify-content: space-between;
         align-items: start;
         justify-content: space-evenly;
+
         @include mobile {
             flex-direction: column;
             align-items: center;
         }
     }
+
     &__body {
         display: flex;
         flex-direction: column;
         margin-top: 80px;
+
         @include tablet {
             margin-top: 65px;
         }
+
         @include mobile {
             align-items: center;
         }
     }
+
     &__title {
         font-family: var(--font-family-poppins);
         font-weight: 600;
@@ -36,21 +44,25 @@
         text-shadow: 0 4px 4px var(--color-black);
         max-width: 567px;
         margin: 16px 0 18px 0;
+
         @include tablet {
             font-size: 53px;
             letter-spacing: -2px;
         }
+
         @include mobile {
             text-align: center;
             max-width: 416px;
             line-height: 1.2;
         }
+
         &-span {
             @include tablet {
                 color: var(--color-fiolet-text);
             }
         }
     }
+
     &__discrition {
         font-family: var(--font-family-inter);
         font-weight: 400;
@@ -62,72 +74,89 @@
         max-width: 480px;
         margin-bottom: 53px;
         padding-left: 5px;
+
         @include tablet {
             font-size: 13px;
             margin-bottom: 23px;
         }
+
         @include mobile {
             text-align: center;
         }
+
         &-bonus {
             opacity: 0.9;
             color: var(--color-fiolet-main);
             text-shadow: 2px 2px 2px var(--color-grey-light-text2);
         }
     }
+
     &__buttons {
         display: flex;
-        &-get{
+
+        &-get {
             margin-right: 18px;
             width: 156px;
             border-radius: var(--border-radius-buttom-middle);
+
             @include hover {
                 color: var(--color-fiolet-main);
                 background-color: var(--color-white);
-                }
+            }
+
             @include tablet {
                 padding-inline: 0;
                 height: 41px;
                 font-size: 12px;
                 width: 110px;
             }
+
             @include mobile {
                 border-radius: var(--border-radius-buttom-mobile);
             }
         }
+
         &-go {
-                color: var(--color-fiolet-main);
-                background-color: var(--color-white);
-                border: 1px solid var(--color-fiolet-main);
-                width: 156px;
-                border-radius: var(--border-radius-buttom-middle);
-                    @include hover {
-                    color: var(--color-white);
-                    background-color: var(--color-fiolet-main);
-                    }
-                @include tablet {
-                    height: 41px;
-                    font-size: 12px;
-                    width: 110px;
-                }
-                @include mobile {
-                    border-radius: var(--border-radius-buttom-mobile);
-                }
+            color: var(--color-fiolet-main);
+            background-color: var(--color-white);
+            border: 1px solid var(--color-fiolet-main);
+            width: 156px;
+            border-radius: var(--border-radius-buttom-middle);
+
+            @include hover {
+                color: var(--color-white);
+                background-color: var(--color-fiolet-main);
+            }
+
+            @include tablet {
+                height: 41px;
+                font-size: 12px;
+                width: 110px;
+            }
+
+            @include mobile {
+                border-radius: var(--border-radius-buttom-mobile);
+            }
         }
     }
-    &__body-stars{
+
+    &__body-stars {
         @include flex-center;
         justify-content: start;
         margin-top: 33px;
+
         @include tablet {
             margin-top: 10px;
         }
+
         &-green {
             margin-right: 20px;
         }
+
         &-gold {
             margin-right: 9px;
         }
+
         &-text {
             font-family: var(--font-family-jakarta);
             font-size: 16px;
@@ -145,6 +174,7 @@
             height: auto;
             margin: auto;
         }
+
         @include mobile {
             max-width: 94%;
             margin-top: 47px;
