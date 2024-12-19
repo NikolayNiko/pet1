@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +8,39 @@
     <link rel="stylesheet" href="./VAR1/styles/css/styles.css">
     <title>eatly</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__inner">
             <a href="index.html" class="header__logo logo">
-                <img 
-                src="./VAR1/images/logo.svg" 
-                alt="eatly" 
-                class="logo__image"
-                width="112"
-                height="42"
-                loading="lazy"
-                >
+                <img src="./VAR1/images/logo.svg" alt="eatly" class="logo__image" width="112" height="42"
+                    loading="lazy">
             </a>
             <nav class="header__menu">
                 <ul class="header__menu-list hidden-mobile">
-                    <li class="header__menu-item"
-                        >
+                    <li class="header__menu-item">
                         <a href="menu.html" class="header__menu-link">Menu</a>
                     </li>
-                    <li class="header__menu-item"
-                        >
+                    <li class="header__menu-item">
                         <a href="/" class="header__menu-link">Blog</a>
                     </li>
-                    <li class="header__menu-item"
-                        >
+                    <li class="header__menu-item">
                         <a href="pricing.html" class="header__menu-link">Pricing</a>
                     </li>
-                    <li class="header__menu-item"
-                        >
+                    <li class="header__menu-item">
                         <a href="about.html" class="header__menu-link">Contact</a>
                     </li>
                 </ul>
             </nav>
-            <button 
-                class="header__button button button-login hidden-mobile"
-                title="Name of button in header for login"
-                type="button"
-                onclick="location.href='sign.html'" 
-                aria-label="Перейти к форме входа"
-                >Login
+            <button class="header__button button button-login hidden-mobile" title="Name of button in header for login"
+                type="button" onclick="location.href='sign.html'" aria-label="Перейти к форме входа">Login
             </button>
-            <button
-                class="header__button button button-signup hidden-mobile"
-                title="Name of button in header for signup"
-                type="button"
-                onclick="location.href='sign.html'" 
-                aria-label="Перейти к форме входа"
-                >Sign Up
+            <button class="header__button button button-signup hidden-mobile"
+                title="Name of button in header for signup" type="button" onclick="location.href='sign.html'"
+                aria-label="Перейти к форме входа">Sign Up
             </button>
-            <button 
-                class="button__burger-menu burger-button visible-mobile"
-                title="Buton to turn of button"
-                type="button"
-                onclick="mobileOverlay.showModal()"
-                >
+            <button class="button__burger-menu burger-button visible-mobile" title="Buton to turn of button"
+                type="button" onclick="mobileOverlay.showModal()">
                 <span class="visually-hidden">Open navigation menu</span>
             </button>
         </div>
@@ -76,25 +55,26 @@
                     <input type="radio" name="r" id="get50off_r1" checked>
                     <input type="radio" name="r" id="get50off_r2">
                     <input type="radio" name="r" id="get50off_r3">
-                
-                <div class="get50off__slide s1">
-                    <img src=".//VAR1/images/sliderMenu/menuSlider1.svg" alt="Slider1" class="get50off__slides-img">
-                </div>
-                <div class="get50off__slide">
-                    <img src=".//VAR1/images/sliderMenu/menuSlider2.svg" alt="Slider2" class="get50off__slides-img">
-                </div>
-                <div class="get50off__slide">
-                    <img src=".//VAR1/images/sliderMenu/menuSlider3.svg" alt="Изображение" class="get50off__slides-img">
-                </div>
+
+                    <div class="get50off__slide s1">
+                        <img src=".//VAR1/images/sliderMenu/menuSlider1.svg" alt="Slider1" class="get50off__slides-img">
+                    </div>
+                    <div class="get50off__slide">
+                        <img src=".//VAR1/images/sliderMenu/menuSlider2.svg" alt="Slider2" class="get50off__slides-img">
+                    </div>
+                    <div class="get50off__slide">
+                        <img src=".//VAR1/images/sliderMenu/menuSlider3.svg" alt="Изображение"
+                            class="get50off__slides-img">
+                    </div>
                 </div>
                 <div class="get50off_navigation">
-                <label for="get50off_r1" class="get50off_bar"></label>
-                <label for="get50off_r2" class="get50off_bar"></label>
-                <label for="get50off_r3" class="get50off_bar"></label>
-                <!-- <label for="r4" class="get50off_bar"></label> -->
+                    <label for="get50off_r1" class="get50off_bar"></label>
+                    <label for="get50off_r2" class="get50off_bar"></label>
+                    <label for="get50off_r3" class="get50off_bar"></label>
+                    <!-- <label for="r4" class="get50off_bar"></label> -->
                 </div>
             </div>
-            
+
             <!-- <div class="get50off__main">
                 <h1 class="get50off__main-title">50% OFF
                 </h1>
@@ -120,50 +100,30 @@
                         <ul class="get50off__main-apply-category-list">
                             <li class="get50off__main-apply-category-items" data-category="pizza">
                                 <a href="/">
-                                    <img 
-                                    src="./VAR1/images/category/Pizza.svg" 
-                                    alt="Category of pizza" 
-                                    class="get50off__main-apply-category-img"
-                                    width="35"
-                                    height="35"
-                                    loading="lazy">
+                                    <img src="./VAR1/images/category/Pizza.svg" alt="Category of pizza"
+                                        class="get50off__main-apply-category-img" width="35" height="35" loading="lazy">
                                 </a>
                                 <p class="get50off__main-apply-category-discription">Pizza</p>
                             </li>
-                            <li class="get50off__main-apply-category-items action-category-menu" data-category="asian"> 
+                            <li class="get50off__main-apply-category-items action-category-menu" data-category="asian">
                                 <!-- // второй класс для выделения активного состояния -->
                                 <a href="/">
-                                    <img 
-                                    src="./VAR1/images/category/Hotdog.svg" 
-                                    alt="Category of asian food" 
-                                    class="get50off__main-apply-category-img"
-                                    width="35"
-                                    height="35"
-                                    loading="lazy">
+                                    <img src="./VAR1/images/category/Hotdog.svg" alt="Category of asian food"
+                                        class="get50off__main-apply-category-img" width="35" height="35" loading="lazy">
                                 </a>
                                 <p class="get50off__main-apply-category-discription">Asian</p>
                             </li>
                             <li class="get50off__main-apply-category-items" data-category="donat">
                                 <a href="/">
-                                    <img 
-                                    src="./VAR1/images/category/Doughnut.svg" 
-                                    alt="Category of donat" 
-                                    class="get50off__main-apply-category-img"
-                                    width="35"
-                                    height="35"
-                                    loading="lazy">
+                                    <img src="./VAR1/images/category/Doughnut.svg" alt="Category of donat"
+                                        class="get50off__main-apply-category-img" width="35" height="35" loading="lazy">
                                 </a>
                                 <p class="get50off__main-apply-category-discription">Donat</p>
                             </li>
                             <li class="get50off__main-apply-category-items" data-category="icecream">
                                 <a href="/">
-                                    <img 
-                                    src="./VAR1/images/category/Icecream.svg" 
-                                    alt="About folowers" 
-                                    class="get50off__main-apply-category-img"
-                                    width="35"
-                                    height="35"
-                                    loading="lazy">
+                                    <img src="./VAR1/images/category/Icecream.svg" alt="About folowers"
+                                        class="get50off__main-apply-category-img" width="35" height="35" loading="lazy">
                                 </a>
                                 <p class="get50off__main-apply-category-discription">Ice</p>
                             </li>
@@ -183,12 +143,7 @@
                     </div>
                     <div class="get50off__main-apply-price">
                         <h4 class="get50off__main-apply-price-title">Price</h4>
-                        <input 
-                            class="get50off__main-apply-price-range"
-                            type="range" 
-                            min="0" 
-                            max="1000" 
-                            value="230">
+                        <input class="get50off__main-apply-price-range" type="range" min="0" max="1000" value="230">
                         <ul class="get50off__main-apply-price-range-list">
                             <li class="get50off__main-apply-price-range-list-value">$0</li>
                             <li class="get50off__main-apply-price-range-list-value">$25</li>
@@ -203,23 +158,13 @@
                     </button>
                 </div>
                 <div class="get50off__main-search">
-                    <form 
-                        name="formSearch"
-                        action="#" 
-                        class="get50off__main-search-form">
-                        <input 
-                            type="search" 
-                            name="search" 
-                            class="get50off__main-search-form-input"
+                    <form name="formSearch" action="#" class="get50off__main-search-form">
+                        <input type="search" name="search" class="get50off__main-search-form-input"
                             placeholder="Search">
                         <div class="get50off__main-search-form-buttons">
-                            <button 
-                                class="get50off__main-search-form-button-left"
-                                name="button" 
+                            <button class="get50off__main-search-form-button-left" name="button"
                                 type="button">Food</button>
-                            <button 
-                                class="get50off__main-search-form-button-right active-button-fiolet" 
-                                name="button" 
+                            <button class="get50off__main-search-form-button-right active-button-fiolet" name="button"
                                 type="button">Resturent</button>
                         </div>
                     </form>
@@ -230,70 +175,50 @@
         <section class="menueatly menueatly-pagemenu">
             <div class="menueatly__restaurants">
                 <a href="mainviewall.html" class="viewall menu-viewall">View All</a>
-                <h3 class="menueatly__restaurants-title menu-menueatly__restaurants-title">Our Top <span>Restaurants</span></h3>
+                <h3 class="menueatly__restaurants-title menu-menueatly__restaurants-title">Our Top
+                    <span>Restaurants</span>
+                </h3>
                 <ul class="menueatly__restaurants-list">
-                    <li class="menueatly__restaurants-card"
-                        >
-                        
-                            <img 
-                                src="./VAR1/images/ResturentImage1.svg" 
-                                alt="Restaurants card number 1" 
-                                width="396"
-                                height="176"
-                                loading="lazy"
-                                class="menueatly__restaurants-card-image">
+                    <li class="menueatly__restaurants-card">
+
+                        <img src="./VAR1/images/ResturentImage1.svg" alt="Restaurants card number 1" width="396"
+                            height="176" loading="lazy" class="menueatly__restaurants-card-image">
 
                         <div class="menueatly__restaurants-discription">
                             <div class="menueatly__restaurants-card-top card-top-base card-top1">Healthy</div>
                             <div class="menueatly__restaurants-card-title">The Chicken King</div>
-                            
+
                             <div class="menueatly__restaurants-bottom">
                                 <div class="menueatly__restaurants-card-time">24min</div>
                                 <div class="menueatly__restaurants-card-score">4.8</div>
-                                
-                                <button 
-                                    class="menueatly__restaurants-card-bookmark" 
-                                    title="Make a bookmark"
+
+                                <button class="menueatly__restaurants-card-bookmark" title="Make a bookmark"
                                     type="button">
                                 </button>
                             </div>
                         </div>
                     </li>
-                    <li class="menueatly__restaurants-card"
-                        >
-                        
-                            <img 
-                                src="./VAR1/images/ResturentImage2.svg" 
-                                alt="Restaurants card number 2"
-                                width="396"
-                                height="176"
-                                loading="lazy"
-                                class="menueatly__restaurants-card-image">
+                    <li class="menueatly__restaurants-card">
+
+                        <img src="./VAR1/images/ResturentImage2.svg" alt="Restaurants card number 2" width="396"
+                            height="176" loading="lazy" class="menueatly__restaurants-card-image">
                         <div class="menueatly__restaurants-discription">
                             <div class="menueatly__restaurants-card-top card-top-base card-top2">Trending</div>
                             <div class="menueatly__restaurants-card-title">The Burger King</div>
                             <div class="menueatly__restaurants-bottom">
                                 <div class="menueatly__restaurants-card-time">24min</div>
                                 <div class="menueatly__restaurants-card-score">4.9</div>
-                                
-                                <button 
-                                    class="menueatly__restaurants-card-bookmark" 
-                                    title="Make a bookmark"
+
+                                <button class="menueatly__restaurants-card-bookmark" title="Make a bookmark"
                                     type="button">
                                 </button>
                             </div>
                         </div>
                     </li>
-                    <li class="menueatly__restaurants-card"
-                        >
-                        
-                            <img 
-                                src="./VAR1/images/ResturentImage3.svg" 
-                                alt="Restaurants card number 3" 
-                                width="396"
-                                height="176"
-                                loading="lazy"
-                                class="menueatly__restaurants-card-image">
+                    <li class="menueatly__restaurants-card">
+
+                        <img src="./VAR1/images/ResturentImage3.svg" alt="Restaurants card number 3" width="396"
+                            height="176" loading="lazy" class="menueatly__restaurants-card-image">
                         <div class="menueatly__restaurants-discription">
                             <div class="menueatly__restaurants-card-top card-top-base card-top1">Healthy</div>
                             <div class="menueatly__restaurants-card-title">The Burger King</div>
@@ -301,10 +226,8 @@
                             <div class="menueatly__restaurants-bottom">
                                 <div class="menueatly__restaurants-card-time">24min</div>
                                 <div class="menueatly__restaurants-card-score">4.8</div>
-                                
-                                <button 
-                                    class="menueatly__restaurants-card-bookmark" 
-                                    title="Make a bookmark"
+
+                                <button class="menueatly__restaurants-card-bookmark" title="Make a bookmark"
                                     type="button">
                                 </button>
                             </div>
@@ -312,34 +235,21 @@
                     </li>
                 </ul>
             </div>
-            
+
         </section>
         <div class="line-gray2 menueatly-line-gray2"> </div>
         <section class="menudishes">
             <a href="mainviewall.html" class="viewall">View All</a>
-            <h3 class="menudishes__title menu-menudishes__title">Our Top <span class="menudishes__title-span">Dishes</span></h3>
+            <h3 class="menudishes__title menu-menudishes__title">Our Top <span
+                    class="menudishes__title-span">Dishes</span></h3>
             <ul class="menudishes__list">
-                <li class="menudishes__list-card"
-                    >
-                    <button 
-                        class="menudishes__list-card-like" 
-                        title="Make it a favorite"
-                        type="button">
-                        <img
-                            src="./VAR1/images/heart.svg" 
-                            alt="Like diches"
-                            class="menudishes__list-card-like-svg"
-                            width="22"
-                            height="18"
-                            loading="lazy">
+                <li class="menudishes__list-card">
+                    <button class="menudishes__list-card-like" title="Make it a favorite" type="button">
+                        <img src="./VAR1/images/heart.svg" alt="Like diches" class="menudishes__list-card-like-svg"
+                            width="22" height="18" loading="lazy">
                     </button>
-                    <img 
-                    src="./VAR1/images/Food_Image1.svg" 
-                    alt="Top dishes card number 1" 
-                    width="201"
-                    height="208"
-                    loading="lazy"
-                    class="menudishes__list-card-image">
+                    <img src="./VAR1/images/Food_Image1.svg" alt="Top dishes card number 1" width="201" height="208"
+                        loading="lazy" class="menudishes__list-card-image">
                     <div class="menudishes__list-card-discription">
                         <div class="menudishes__list-card-top card-top-base card-top1">Healthy</div>
                         <div class="menudishes__list-card-title">Chicken Hell</div>
@@ -353,35 +263,18 @@
                                 <span class="menudishes__list-card-price-big">$14</span>
                                 <span class="menudishes__list-card-price-little">.99</span>
                             </div>
-                            <button 
-                                type="submit" 
-                                title="Добавить в корзину"
-                                class="menudishes__list-card-add">
+                            <button type="submit" title="Добавить в корзину" class="menudishes__list-card-add">
                             </button>
                         </div>
                     </div>
                 </li>
-                <li class="menudishes__list-card"
-                    >
-                    <button 
-                        class="menudishes__list-card-like" 
-                        title="Make it a favorite"
-                        type="button">
-                        <img
-                            src="./VAR1/images/heart.svg" 
-                            alt="Like diches"
-                            class="menudishes__list-card-like-svg"
-                            width="22"
-                            height="18"
-                            loading="lazy">
+                <li class="menudishes__list-card">
+                    <button class="menudishes__list-card-like" title="Make it a favorite" type="button">
+                        <img src="./VAR1/images/heart.svg" alt="Like diches" class="menudishes__list-card-like-svg"
+                            width="22" height="18" loading="lazy">
                     </button>
-                    <img 
-                        src="./VAR1/images/Food_Image2.svg" 
-                        alt="Top dishes card number 1" 
-                        width="201"
-                        height="208"
-                        loading="lazy"
-                        class="menudishes__list-card-image">
+                    <img src="./VAR1/images/Food_Image2.svg" alt="Top dishes card number 1" width="201" height="208"
+                        loading="lazy" class="menudishes__list-card-image">
                     <div class="menudishes__list-card-discription">
                         <div class="menudishes__list-card-top card-top-base card-top2">Trending</div>
                         <div class="menudishes__list-card-title">
@@ -396,35 +289,18 @@
                                 <span class="menudishes__list-card-price-big">$13</span>
                                 <span class="menudishes__list-card-price-little">.99</span>
                             </div>
-                            <button 
-                                type="submit" 
-                                title="Добавить в корзину"
-                                class="menudishes__list-card-add">
+                            <button type="submit" title="Добавить в корзину" class="menudishes__list-card-add">
                             </button>
                         </div>
                     </div>
                 </li>
-                <li class="menudishes__list-card"
-                    >
-                    <button 
-                        class="menudishes__list-card-like" 
-                        title="Make it a favorite"
-                        type="button">
-                        <img
-                            src="./VAR1/images/heart.svg" 
-                            alt="Like diches"
-                            class="menudishes__list-card-like-svg"
-                            width="22"
-                            height="18"
-                            loading="lazy">
+                <li class="menudishes__list-card">
+                    <button class="menudishes__list-card-like" title="Make it a favorite" type="button">
+                        <img src="./VAR1/images/heart.svg" alt="Like diches" class="menudishes__list-card-like-svg"
+                            width="22" height="18" loading="lazy">
                     </button>
-                    <img 
-                    src="./VAR1/images/Food_Image3.svg" 
-                    alt="Top dishes card number 1" 
-                    width="201"
-                    height="208"
-                    loading="lazy"
-                    class="menudishes__list-card-image">
+                    <img src="./VAR1/images/Food_Image3.svg" alt="Top dishes card number 1" width="201" height="208"
+                        loading="lazy" class="menudishes__list-card-image">
                     <div class="menudishes__list-card-discription">
                         <div class="menudishes__list-card-top card-top-base card-top3">Supreme</div>
                         <div class="menudishes__list-card-title">Swe Dish</div>
@@ -438,35 +314,18 @@
                                 <span class="menudishes__list-card-price-big">$15</span>
                                 <span class="menudishes__list-card-price-little">.99</span>
                             </div>
-                            <button 
-                                type="submit" 
-                                title="Добавить в корзину"
-                                class="menudishes__list-card-add">
+                            <button type="submit" title="Добавить в корзину" class="menudishes__list-card-add">
                             </button>
                         </div>
                     </div>
                 </li>
-                <li class="menudishes__list-card"
-                    >
-                    <button 
-                        class="menudishes__list-card-like" 
-                        title="Make it a favorite"
-                        type="button">
-                        <img
-                            src="./VAR1/images/heart.svg" 
-                            alt="Like diches"
-                            class="menudishes__list-card-like-svg"
-                            width="22"
-                            height="18"
-                            loading="lazy">
+                <li class="menudishes__list-card">
+                    <button class="menudishes__list-card-like" title="Make it a favorite" type="button">
+                        <img src="./VAR1/images/heart.svg" alt="Like diches" class="menudishes__list-card-like-svg"
+                            width="22" height="18" loading="lazy">
                     </button>
-                    <img 
-                    src="./VAR1/images/Food_Image4.svg" 
-                    alt="Top dishes card number 1" 
-                    width="201"
-                    height="208"
-                    loading="lazy"
-                    class="menudishes__list-card-image">
+                    <img src="./VAR1/images/Food_Image4.svg" alt="Top dishes card number 1" width="201" height="208"
+                        loading="lazy" class="menudishes__list-card-image">
                     <div class="menudishes__list-card-discription">
                         <div class="menudishes__list-card-top card-top-base card-top1">Healthy</div>
                         <div class="menudishes__list-card-title">Burger King</div>
@@ -480,32 +339,18 @@
                                 <span class="menudishes__list-card-price-big">$12</span>
                                 <span class="menudishes__list-card-price-little">.99</span>
                             </div>
-                            <button 
-                                type="submit" 
-                                title="Добавить в корзину"
-                                class="menudishes__list-card-add">
+                            <button type="submit" title="Добавить в корзину" class="menudishes__list-card-add">
                             </button>
                         </div>
                     </div>
                 </li>
-                <li class="menudishes__list-card"
-                    >
+                <li class="menudishes__list-card">
                     <button class="menudishes__list-card-like" type="button">
-                        <img
-                            src="./VAR1/images/heart.svg" 
-                            alt="Like diches"
-                            class="menudishes__list-card-like-svg"
-                            width="22"
-                            height="18"
-                            loading="lazy">
+                        <img src="./VAR1/images/heart.svg" alt="Like diches" class="menudishes__list-card-like-svg"
+                            width="22" height="18" loading="lazy">
                     </button>
-                    <img 
-                    src="./VAR1/images/Food_Image5.svg" 
-                    alt="Top dishes card number 1" 
-                    width="201"
-                    height="208"
-                    loading="lazy"
-                    class="menudishes__list-card-image">
+                    <img src="./VAR1/images/Food_Image5.svg" alt="Top dishes card number 1" width="201" height="208"
+                        loading="lazy" class="menudishes__list-card-image">
                     <div class="menudishes__list-card-discription">
                         <div class="menudishes__list-card-top card-top-base card-top2">Trending</div>
                         <div class="menudishes__list-card-title">Swe Dish</div>
@@ -519,10 +364,7 @@
                                 <span class="menudishes__list-card-price-big">$19</span>
                                 <span class="menudishes__list-card-price-little">.99</span>
                             </div>
-                            <button 
-                                type="submit" 
-                                title="Добавить в корзину"
-                                class="menudishes__list-card-add">
+                            <button type="submit" title="Добавить в корзину" class="menudishes__list-card-add">
                             </button>
 
                         </div>
@@ -532,11 +374,13 @@
         </section>
         <div class="line-gray2 menudishes-line-gray2"></div>
         <section class="accordion">
-            <h3 class="accordion-title">Frequently Asked 
-                <span class="accordion-title-span">Questions</span></h3>
+            <h3 class="accordion-title">Frequently Asked
+                <span class="accordion-title-span">Questions</span>
+            </h3>
             <details class="accordion-details">
                 <summary class="accordion-summary">How long does delivery take?</summary>
-                <p>You Can Get Information By Contacting Our Support Team Have 24/7 Service.<br> Whats The Difference Between Free And Paid Plan ?</p>
+                <p>You Can Get Information By Contacting Our Support Team Have 24/7 Service.<br> Whats The Difference
+                    Between Free And Paid Plan ?</p>
             </details>
             <details class="accordion-details">
                 <summary class="accordion-summary">How Does It Work ?</summary>
@@ -559,14 +403,8 @@
             <div class="footer__top">
                 <div class="footer__top-logo">
                     <a href="index.html">
-                        <img 
-                            src="./VAR1/images/logo.svg" 
-                            alt="Icon to Home Page" 
-                            class="footer__top-logo-image"
-                            width="151"
-                            height="57"
-                            loading="lazy"
-                        >
+                        <img src="./VAR1/images/logo.svg" alt="Icon to Home Page" class="footer__top-logo-image"
+                            width="151" height="57" loading="lazy">
                     </a>
                 </div>
                 <nav class="footer__top-nav">
@@ -585,50 +423,26 @@
                     <ul class="footer__bottom-social-list">
                         <li class="footer__bottom-social-list-item">
                             <a href="#">
-                                <img 
-                                    src="./VAR1/images/socialcon/iconInstagramm.svg" 
-                                    alt="Icon to Instagramm" 
-                                    class="footer__bottom-social-list-item-icon"
-                                    width="22"
-                                    height="22"
-                                    loading="lazy"
-                                >
+                                <img src="./VAR1/images/socialcon/iconInstagramm.svg" alt="Icon to Instagramm"
+                                    class="footer__bottom-social-list-item-icon" width="22" height="22" loading="lazy">
                             </a>
                         </li>
                         <li class="footer__bottom-social-list-item">
                             <a href="#">
-                                <img 
-                                    src="./VAR1/images/socialcon/iconLincendin.svg" 
-                                    alt="Icon to Lincendin" 
-                                    class="footer__bottom-social-list-item-icon"
-                                    width="22"
-                                    height="21"
-                                    loading="lazy"
-                                >
+                                <img src="./VAR1/images/socialcon/iconLincendin.svg" alt="Icon to Lincendin"
+                                    class="footer__bottom-social-list-item-icon" width="22" height="21" loading="lazy">
                             </a>
                         </li>
                         <li class="footer__bottom-social-list-item">
                             <a href="#">
-                                <img 
-                                    src="./VAR1/images/socialcon/iconFacebook.svg" 
-                                    alt="Icon to Facebook" 
-                                    class="footer__bottom-social-list-item-icon"
-                                    width="10"
-                                    height="22"
-                                    loading="lazy"
-                                >
+                                <img src="./VAR1/images/socialcon/iconFacebook.svg" alt="Icon to Facebook"
+                                    class="footer__bottom-social-list-item-icon" width="10" height="22" loading="lazy">
                             </a>
                         </li>
                         <li class="footer__bottom-social-list-item">
                             <a href="#">
-                                <img 
-                                    src="./VAR1/images/socialcon/iconTwitter.svg" 
-                                    alt="Icon to Twitter" 
-                                    class="footer__bottom-social-list-item-icon"
-                                    width="22"
-                                    height="18"
-                                    loading="lazy"
-                                >
+                                <img src="./VAR1/images/socialcon/iconTwitter.svg" alt="Icon to Twitter"
+                                    class="footer__bottom-social-list-item-icon" width="22" height="18" loading="lazy">
                             </a>
                         </li>
                     </ul>
@@ -638,71 +452,44 @@
 
         </footer>
     </main>
-    <dialog 
-        class="mobile-overlay visible-mobile" 
-        id="mobileOverlay">
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
         <div class="mobile-overlay__top">
-            <a 
-                href="index.html" 
-                class="mobile-overlay__logo">
-                    <img 
-                    src="./VAR1/images/logo.svg" 
-                    alt="eatly" 
-                    class="logo__image"
-                    width="112"
-                    height="42"
-                    loading="lazy"
-                    >
+            <a href="index.html" class="mobile-overlay__logo">
+                <img src="./VAR1/images/logo.svg" alt="eatly" class="logo__image" width="112" height="42"
+                    loading="lazy">
             </a>
-        <form 
-            action="#" 
-            class="mobile-overlay__close-button-wrapper" method="dialog">
-            <button 
-                class="mobile-overlay__close-button cross-button"
-                title="Button for close all"
-                type="submit"
-                >
-                <span class="visually-hidden">Close navigation menu</span>
-            </button>
-        </form>
+            <form action="#" class="mobile-overlay__close-button-wrapper" method="dialog">
+                <button class="mobile-overlay__close-button cross-button" title="Button for close all" type="submit">
+                    <span class="visually-hidden">Close navigation menu</span>
+                </button>
+            </form>
         </div>
         <div class="mobile-overlay__body">
             <ul class="mobile-overlay__list">
-                <li class="mobile-overlay__item"
-                    >
+                <li class="mobile-overlay__item">
                     <a href="menu.html" class="mobile-overlay__item">Menu</a>
                 </li>
-                <li class="mobile-overlay__item"
-                    >
+                <li class="mobile-overlay__item">
                     <a href="/" class="mobile-overlay__item">Blog</a>
                 </li>
-                <li class="mobile-overlay__item"
-                    >
+                <li class="mobile-overlay__item">
                     <a href="pricing.html" class="mobile-overlay__item">Pricing</a>
                 </li>
-                <li class="mobile-overlay__item"
-                    >
+                <li class="mobile-overlay__item">
                     <a href="about.html" class="mobile-overlay__item">Contact</a>
                 </li>
             </ul>
-            <button 
-                class="mobile-overlay mobile-overlay__button mobile-overlay__button-login"
-                title="Mobile overlay button for login"
-                type="button"
-                onclick="location.href='sign.html'" 
-                aria-label="Перейти к форме входа"
-                >Login
+            <button class="mobile-overlay mobile-overlay__button mobile-overlay__button-login"
+                title="Mobile overlay button for login" type="button" onclick="location.href='sign.html'"
+                aria-label="Перейти к форме входа">Login
             </button>
-            <button
-                class="mobile-overlay mobile-overlay__button mobile-overlay__button-signup"
-                title="Mobile overlay button for signup"
-                type="button"
-                onclick="location.href='sign.html'" 
-                aria-label="Перейти к форме входа"
-                >Sign Up
+            <button class="mobile-overlay mobile-overlay__button mobile-overlay__button-signup"
+                title="Mobile overlay button for signup" type="button" onclick="location.href='sign.html'"
+                aria-label="Перейти к форме входа">Sign Up
             </button>
         </div>
 
     </dialog>
 </body>
+
 </html>

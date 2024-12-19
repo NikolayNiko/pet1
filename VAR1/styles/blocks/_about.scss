@@ -1,7 +1,4 @@
 .about {
-    // width: 50%;
-    
-
     &__payment {
         width: 100%;
 
@@ -9,12 +6,16 @@
             align-items: center;
             margin: 0 auto;
             width: 50%;
+
             &-item {
                 width: 100%;
+                height: 11vw;
+
                 &-right {
                     margin-right: 3rem;
                     margin-left: auto;
                 }
+
                 &-sum {
                     @include flex-center;
                     margin-top: 0.3rem;
@@ -26,18 +27,20 @@
         &-adds {
             @include flex-center;
             gap: 1.5rem;
-        
+
         }
-        &-price{
+
+        &-price {
             &--count {
                 margin: 0 0 0 15px;
             }
         }
-        
     }
+
     &__map {
         width: 85%;
         margin: 6rem auto;
+
         &-image {
             width: 100%;
             margin: 0 auto;
