@@ -1,6 +1,6 @@
 .control {
     @include flex-center;
-    margin: 100px 50px;
+    margin: 6rem 2rem;
 
     @include tablet {
         margin-top: 75px;
@@ -17,12 +17,12 @@
         flex-direction: column;
         align-items: start;
         height: 466px;
-        flex: 0 1 calc(55% - 20px);
+        flex: 5;
 
         @include tablet {
             height: 327px;
-            max-width: 75vw;
-            flex: 0 1 calc(50% - 55px);
+            // max-width: 75vw;
+            // flex: 5;
         }
 
         &-title {
@@ -165,16 +165,17 @@
         @include flex-center;
         flex-direction: column;
         align-items: stretch;
-        width: 56%;
+        // width: 56%;
         box-shadow: 0 4px 23px #00000040;
         padding: 46px 2rem;
         background-color: #fff;
         position: relative;
+        flex: 5;
 
         @include tablet {
             border-radius: 18px;
             padding: 32px 26px;
-            flex: 0 1 calc(50% - 55px);
+            // flex: 0 1 calc(50% - 55px);
         }
 
         @include mobile {
@@ -237,6 +238,7 @@
 
         &-top {
             @include flex-center;
+            justify-content: space-around;
             align-items: stretch;
             margin-bottom: 45px;
         }

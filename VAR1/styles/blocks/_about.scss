@@ -19,27 +19,61 @@
                 &-sum {
                     @include flex-center;
                     margin-top: 0.3rem;
-                    padding-left: 1rem;
+                    // padding-left: 1rem;
                 }
             }
         }
 
         &-adds {
             @include flex-center;
-            gap: 1.5rem;
+            gap: .5rem;
 
         }
 
-        &-price {
-            &--count {
-                margin: 0 0 0 15px;
-            }
+        // &-price {
+        //     // &--count {
+        //     //     // margin: 0 0 0 15px;
+        //     // }
+        // }
+        &-btn {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 9px;
+            @include flex-center;
+
+        }
+        &-minus {
+            background-color: white;
+
+        }
+        &-plus {
+            background-color: black;
         }
     }
+    &__payment::before {
+        content: "";
+        width: 60px;
+        height: 50px;
+        @include flex-center;
+        background-image: url(/VAR1/images/Illustration01.svg);
+        margin: 0 22vw 0 auto;
 
+        @include desktop {
+            margin-right: 20vw;
+        }
+
+        @include mobile {
+            margin-right: 16vw;
+        }
+
+    }
     &__map {
         width: 85%;
-        margin: 6rem auto;
+        margin: 6rem auto 3rem;
+
+        @include mobile {
+            width: 100vw;
+        }
 
         &-image {
             width: 100%;
@@ -47,4 +81,5 @@
             height: auto;
         }
     }
+
 }

@@ -14,9 +14,16 @@
         &-input {
             border: none;
             border-radius: 10px;
-            background-color: var(--color-grey5);
+            
             flex: 8;
             height: 100%;
+
+            &-icon {
+                background: url(/VAR1/images/minusplus/icon.svg) no-repeat 30px center;
+                background-color: var(--color-grey5);
+                padding-left: 4.5rem;
+                background-size: 30px;
+            }
         }
 
         &-btn {
@@ -34,6 +41,7 @@
     &__check {
         width: 50%;
         margin-top: 52px;
+        position: relative;
 
         &-list {
             @include fluid-text(12, 20);
@@ -78,5 +86,35 @@
             color: var(--color-grey4);
             margin-top: 60px;
         }
+    }
+
+    &__check::before {
+        content: "";
+        display: inline-block;
+        width: 8.2rem;
+        height: 3rem;
+        background-image: url(/VAR1/images/Vector14.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scaleX(-1) rotate(-55deg);
+        position: relative;
+        top: 13rem;
+        left: -7.5rem;
+
+    }
+
+    &__check::after {
+        content: "";
+        display: inline-block;
+        width: 8.2rem;
+        height: 3rem;
+        background-image: url(/VAR1/images/Vector14.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(-55deg);
+        position: relative;
+        top: -7rem;
+        right: -100%;
+
     }
 }
