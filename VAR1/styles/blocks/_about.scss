@@ -7,13 +7,30 @@
             margin: 0 auto;
             width: 50%;
 
+            @include mobile {
+                width: 81%;
+            }
+
             &-item {
                 width: 100%;
-                height: 11vw;
+                height: 12vw;
+
+                @include mobile {
+                    height: 16vw;
+                }
+
+                @include mobile-s {
+                    height: 25vw;
+                }
+
 
                 &-right {
                     margin-right: 3rem;
                     margin-left: auto;
+
+                    @include mobile {
+                        margin-right: 1rem;
+                    }
                 }
 
                 &-sum {
@@ -30,11 +47,6 @@
 
         }
 
-        // &-price {
-        //     // &--count {
-        //     //     // margin: 0 0 0 15px;
-        //     // }
-        // }
         &-btn {
             width: 2.5rem;
             height: 2.5rem;
@@ -61,25 +73,36 @@
         @include desktop {
             margin-right: 20vw;
         }
-
-        @include mobile {
-            margin-right: 16vw;
+        @include tablet {
+            margin-right: 18vw;
         }
-
+        @include mobile {
+            margin-right: 2vw;
+            margin-top: -25vw;
+        }
     }
     &__map {
         width: 85%;
         margin: 6rem auto 3rem;
+        
 
         @include mobile {
             width: 100vw;
+            position: relative;
+            left: -52%;
+                width: 200%;
         }
-
         &-image {
             width: 100%;
             margin: 0 auto;
             height: auto;
-        }
-    }
 
+            @include mobile{
+                // position: relative;
+                // left: -50%;
+                // width: 200%;
+            }
+        }
+
+    }
 }

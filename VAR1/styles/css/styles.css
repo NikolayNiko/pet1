@@ -3576,13 +3576,33 @@ input[type=range]::-moz-range-thumb {
   margin: 0 auto;
   width: 50%;
 }
+@media (max-width: 767px) {
+  .about__payment-list {
+    width: 81%;
+  }
+}
 .about__payment-list-item {
   width: 100%;
-  height: 11vw;
+  height: 12vw;
+}
+@media (max-width: 767px) {
+  .about__payment-list-item {
+    height: 16vw;
+  }
+}
+@media (max-width: 480px) {
+  .about__payment-list-item {
+    height: 25vw;
+  }
 }
 .about__payment-list-item-right {
   margin-right: 3rem;
   margin-left: auto;
+}
+@media (max-width: 767px) {
+  .about__payment-list-item-right {
+    margin-right: 1rem;
+  }
 }
 .about__payment-list-item-sum {
   display: flex;
@@ -3625,9 +3645,15 @@ input[type=range]::-moz-range-thumb {
     margin-right: 20vw;
   }
 }
+@media (max-width: 1023px) {
+  .about__payment::before {
+    margin-right: 18vw;
+  }
+}
 @media (max-width: 767px) {
   .about__payment::before {
-    margin-right: 16vw;
+    margin-right: 2vw;
+    margin-top: -25vw;
   }
 }
 .about__map {
@@ -3637,6 +3663,9 @@ input[type=range]::-moz-range-thumb {
 @media (max-width: 767px) {
   .about__map {
     width: 100vw;
+    position: relative;
+    left: -52%;
+    width: 200%;
   }
 }
 .about__map-image {
@@ -3644,7 +3673,6 @@ input[type=range]::-moz-range-thumb {
   margin: 0 auto;
   height: auto;
 }
-
 .sign {
   display: flex;
   height: 100vh;
