@@ -1,0 +1,84 @@
+.blogmain {
+    &__articles {
+            @include flex-center;
+            flex-direction: row;
+
+        &-list {
+            @include flex-center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1vw;
+
+            &-item{
+                
+                border-radius: 1rem;
+                box-shadow: 0 12px 30px #00000040,
+                0 30px 420px #4646460D;
+                max-width: 27vw;
+
+                @include mobile {
+                    min-width: 85%;
+                }
+                
+                &-content {
+                    @include flex-center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    min-height: 20vw;
+                    margin: 17px 13px 21px;
+                    width: 100%;
+
+                }
+                &-image {
+                    @include mobile {
+                        width: 80vw;
+                        height: 80vw;
+                    }
+                }
+                &-title {
+                    font-family: var(--font-family-poppins);
+                    @include fluid-text(22, 15);
+                    font-weight: 600;
+                    align-self: start;
+                    margin-top: 1rem;
+                }
+                &-discription {
+                    @include flex-center;
+                    font-family: var(--font-family-poppins);
+                    margin-top: 1rem;
+                }
+                &-autor {
+                    margin-left: 1rem;
+                }
+                &-autortext {
+                    font-weight: 400;
+                }
+                &-autorname {
+                    font-weight: 500;
+                }
+                &-dataarticl {
+                    font-weight: 400;
+                    margin-left: 4rem;
+                }
+            }
+        }
+        &-title {
+            font-family: var(--font-family-poppins);
+            font-weight: 600;
+            @include fluid-text(32, 25);
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 6rem;
+
+        }
+        &-title span {
+            color: var(--color-fiolet);
+        }
+    }
+    &__get50 {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+}

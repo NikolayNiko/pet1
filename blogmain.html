@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./VAR1/styles/css/styles.css">
+    <title>eatly</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo logo">
+                <img src="./VAR1/images/logo.svg" alt="eatly" class="logo__image" width="112" height="42"
+                    loading="lazy">
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu-list hidden-mobile">
+                    <li class="header__menu-item">
+                        <a href="menu.html" class="header__menu-link">Menu</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="blogmain.html" class="header__menu-link">Blog</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="pricing.html" class="header__menu-link">Pricing</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="about.html" class="header__menu-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button button button-login hidden-mobile" title="Name of button in header for login"
+                type="button" onclick="location.href='sign.html';" aria-label="Перейти к форме входа">Login
+            </button>
+            <button class="header__button button button-signup hidden-mobile"
+                title="Name of button in header for signup" type="button" onclick="location.href='sign.html';"
+                aria-label="Перейти к форме входа">Sign Up
+            </button>
+            <button class="button__burger-menu burger-button visible-mobile" title="Buton to turn of button"
+                type="button" onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+
+    </header>
+    <div class="line-gray2"> </div>
+    <main class="content blogmain">
+        <section class="get50">
+            <div class="get50__main blogmain__get50">
+                <div class="get50__main-title">GET 50%
+                </div>
+                <form action="#" method="post" class="get50__main-formfield">
+                    <label for="inputEmail" class="get50__main-formfield-label">
+                    </label>
+                    <input type="email" id="inputEmail" name="user-email" required
+                        placeholder="Enter Your Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        oninvalid="this.setCustomValidity('Пожалуйста, введите корректный email')"
+                        oninput="this.setCustomValidity('')" class="get50__main-formfield-input">
+                    <button class="get50__main-formfield-btn">SUBSCRIBE</button>
+                </form>
+                <img src="./VAR1/images/Food_Image3.svg" alt="About folowers" class="get50__main-imagemain" width="276"
+                    height="276" loading="lazy">
+            </div>
+        </section>
+        <h1 class="blogmain__articles-title">Latest <span>Articles</span></h1>
+        <section class="blogmain__articles">
+            
+            <ul class="blogmain__articles-list">
+                <li class="blogmain__articles-list-item">
+                    <div class="blogmain__articles-list-item-content">
+                        <img 
+                            src="/VAR1/images/articles/1.svg" 
+                            alt="" 
+                            class="blogmain__articles-list-item-image"
+                            width="310" 
+                            height="273"
+                            loading="lazy">
+                        <h3 class="blogmain__articles-list-item-title">How To Order Food ?</h3>
+                        <div class="blogmain__articles-list-item-discription">
+                            <img 
+                                src="/VAR1/images/articles/avatar1.svg" 
+                                alt=""
+                                class="blogmain__articles-list-item-avatar" 
+                                width="44" 
+                                height="44"
+                                loading="lazy">
+                            <div class="blogmain__articles-list-item-autor">
+                                <p class="blogmain__articles-list-item-autortext">Written By</p>
+                                <p class="blogmain__articles-list-item-autorname">Perperzon</p>
+
+                            </div>
+                            <div class="blogmain__articles-list-item-dataarticl">15 DEC, 2022</div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="blogmain__articles-list-item">
+                    <div class="blogmain__articles-list-item-content">
+                        <img 
+                            src="/VAR1/images/articles/2.svg" 
+                            alt="" class="blogmain__articles-list-item-image" 
+                            width="310" 
+                            height="273"
+                            loading="lazy">
+                        <h3 class="blogmain__articles-list-item-title">How To Track The Order ?</h3>
+                        <div class="blogmain__articles-list-item-discription">
+                            <img   
+                                src="/VAR1/images/articles/avatar1.svg" 
+                                alt=""
+                                class="blogmain__articles-list-item-avatar"
+                                width="44" 
+                                height="44"
+                                loading="lazy">
+                            <div class="blogmain__articles-list-item-autor">
+                                <p class="blogmain__articles-list-item-autortext">Written By</p>
+                                <p class="blogmain__articles-list-item-autorname">Perperzon</p>
+
+                            </div>
+                            <div class="blogmain__articles-list-item-dataarticl">15 DEC, 2022</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="blogmain__articles-list-item">
+                    <div class="blogmain__articles-list-item-content">
+                        <img 
+                            src="/VAR1/images/articles/3.svg" 
+                            alt="" 
+                            class="blogmain__articles-list-item-image"
+                            width="310" 
+                            height="273"
+                            loading="lazy">
+                        <h3 class="blogmain__articles-list-item-title">How To Manage Cards ?</h3>
+                        <div class="blogmain__articles-list-item-discription">
+                            <img 
+                                src="/VAR1/images/articles/avatar1.svg" 
+                                alt=""
+                                class="blogmain__articles-list-item-avatar" 
+                                width="44" 
+                                height="44"
+                            loading="lazy">
+                            <div class="blogmain__articles-list-item-autor">
+                                <p class="blogmain__articles-list-item-autortext">Written By</p>
+                                <p class="blogmain__articles-list-item-autorname">Perperzon</p>
+
+                            </div>
+                            <div class="blogmain__articles-list-item-dataarticl">15 DEC, 2022</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="blogmain__articles-list-item">
+                    <div class="blogmain__articles-list-item-content">
+                        <img 
+                            src="/VAR1/images/articles/4.svg" 
+                            alt="" 
+                            class="blogmain__articles-list-item-image"
+                            width="310" 
+                            height="273"
+                            loading="lazy">
+                        <h3 class="blogmain__articles-list-item-title">Tips & Tricks For Business</h3>
+                        <div class="blogmain__articles-list-item-discription">
+                            <img 
+                                src="/VAR1/images/articles/avatar1.svg" 
+                                alt=""
+                                class="blogmain__articles-list-item-avatar" 
+                                width="44" 
+                                height="44"
+                                loading="lazy">
+                            <div class="blogmain__articles-list-item-autor">
+                                <p class="blogmain__articles-list-item-autortext">Written By</p>
+                                <p class="blogmain__articles-list-item-autorname">Perperzon</p>
+
+                            </div>
+                            <div class="blogmain__articles-list-item-dataarticl">15 DEC, 2022</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="blogmain__articles-list-item">
+                    <div class="blogmain__articles-list-item-content">
+                        <img   
+                            src="/VAR1/images/articles/5.svg" 
+                            alt="" 
+                            class="blogmain__articles-list-item-image"
+                            width="310" 
+                            height="273"
+                            loading="lazy">
+                        <h3 class="blogmain__articles-list-item-title">How To Control Money ?</h3>
+                        <div class="blogmain__articles-list-item-discription">
+                            <img 
+                                src="/VAR1/images/articles/avatar1.svg" 
+                                alt=""
+                                class="blogmain__articles-list-item-avatar" 
+                                width="44" 
+                                height="44"
+                                loading="lazy">
+                            <div class="blogmain__articles-list-item-autor">
+                                <p class="blogmain__articles-list-item-autortext">Written By</p>
+                                <p class="blogmain__articles-list-item-autorname">Perperzon</p>
+
+                            </div>
+                            <div class="blogmain__articles-list-item-dataarticl">15 DEC, 2022</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="blogmain__articles-list-item">
+                    <div class="blogmain__articles-list-item-content">
+                        <img 
+                            src="/VAR1/images/articles/6.svg" 
+                            alt="" 
+                            class="blogmain__articles-list-item-image"
+                            width="310" 
+                            height="273"
+                            loading="lazy">
+                        <h3 class="blogmain__articles-list-item-title">Top 5 Business Ideas</h3>
+                        <div class="blogmain__articles-list-item-discription">
+                            <img 
+                                src="/VAR1/images/articles/avatar1.svg" 
+                                alt=""
+                                class="blogmain__articles-list-item-avatar"
+                                width="44" 
+                                height="44"
+                                loading="lazy">
+                            <div class="blogmain__articles-list-item-autor">
+                                <p class="blogmain__articles-list-item-autortext">Written By</p>
+                                <p class="blogmain__articles-list-item-autorname">Perperzon</p>
+
+                            </div>
+                            <div class="blogmain__articles-list-item-dataarticl">15 DEC, 2022</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- стрелки слайдера -->
+        </section>
+        <section class="accordion">
+            <h3 class="accordion-title">Frequently Asked
+                <span class="accordion-title-span">Questions</span>
+            </h3>
+            <details class="accordion-details">
+                <summary class="accordion-summary">How long does delivery take?</summary>
+                <p>You Can Get Information By Contacting Our Support Team Have 24/7 Service.<br> Whats The Difference
+                    Between Free And Paid Plan ?</p>
+            </details>
+            <details class="accordion-details">
+                <summary class="accordion-summary">How Does It Work ?</summary>
+                <p>Ответ на вопрос 2.</p>
+            </details>
+            <details class="accordion-details">
+                <summary class="accordion-summary">How does your food delivery service work?</summary>
+                <p>Ответ на вопрос 3.</p>
+            </details>
+            <details class="accordion-details">
+                <summary class="accordion-summary">What payment options do you accept?</summary>
+                <p>Ответ на вопрос 3.</p>
+            </details>
+            <details class="accordion-details">
+                <summary class="accordion-summary">Do you offer discounts or promotions?</summary>
+                <p>Ответ на вопрос 3.</p>
+            </details>
+        </section>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__top-logo">
+                    <a href="index.html">
+                        <img src="./VAR1/images/logo.svg" alt="Icon to Home Page" class="footer__top-logo-image"
+                            width="151" height="57" loading="lazy">
+                    </a>
+                </div>
+                <nav class="footer__top-nav">
+                    <ul class="footer__top-nav-list">
+                        <li class="footer__top-nav-list-item"><a href="blogmain.html">Blog</a></li>
+                        <li class="footer__top-nav-list-item"><a href="pricing.html">Pricing</a></li>
+                        <li class="footer__top-nav-list-item"><a href="about.html">About Us</a></li>
+                        <li class="footer__top-nav-list-item"><a href="about.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="line-gray2 mainviewall__popular-line-gray2"> </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-left"><a href="/">2023 EATLY All Rights Reserved.</a></div>
+                <div class="footer__bottom-social">
+                    <ul class="footer__bottom-social-list">
+                        <li class="footer__bottom-social-list-item">
+                            <a href="#">
+                                <img src="./VAR1/images/socialcon/iconInstagramm.svg" alt="Icon to Instagramm"
+                                    class="footer__bottom-social-list-item-icon" width="22" height="22" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__bottom-social-list-item">
+                            <a href="#">
+                                <img src="./VAR1/images/socialcon/iconLincendin.svg" alt="Icon to Lincendin"
+                                    class="footer__bottom-social-list-item-icon" width="22" height="21" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__bottom-social-list-item">
+                            <a href="#">
+                                <img src="./VAR1/images/socialcon/iconFacebook.svg" alt="Icon to Facebook"
+                                    class="footer__bottom-social-list-item-icon" width="10" height="22" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__bottom-social-list-item">
+                            <a href="#">
+                                <img src="./VAR1/images/socialcon/iconTwitter.svg" alt="Icon to Twitter"
+                                    class="footer__bottom-social-list-item-icon" width="22" height="18" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </footer>
+    </main>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <div class="mobile-overlay__top">
+            <a href="index.html" class="mobile-overlay__logo">
+                <img src="./VAR1/images/logo.svg" alt="eatly" class="logo__image" width="112" height="42"
+                    loading="lazy">
+            </a>
+            <form action="#" class="mobile-overlay__close-button-wrapper" method="dialog">
+                <button class="mobile-overlay__close-button cross-button" title="Button for close all" type="submit">
+                    <span class="visually-hidden">Close navigation menu</span>
+                </button>
+            </form>
+        </div>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="menu.html" class="mobile-overlay__item">Menu</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="blogmain.html" class="mobile-overlay__item">Blog</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="pricing.html" class="mobile-overlay__item">Pricing</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="about.html" class="mobile-overlay__item">Contact</a>
+                </li>
+            </ul>
+            <button class="mobile-overlay mobile-overlay__button mobile-overlay__button-login"
+                title="Mobile overlay button for login" type="button" onclick="location.href='sign.html'"
+                aria-label="Перейти к форме входа">Login
+            </button>
+            <button class="mobile-overlay mobile-overlay__button mobile-overlay__button-signup"
+                title="Mobile overlay button for signup" type="button" onclick="location.href='sign.html'"
+                aria-label="Перейти к форме входа">Sign Up
+            </button>
+        </div>
+
+    </dialog>
+</body>
+
+</html>
