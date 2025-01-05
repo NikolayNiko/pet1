@@ -78,9 +78,11 @@
 
 .pricing__price-table {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); // Три колонки однакової ширини
+    grid-template-columns: 1fr 25% 25%; // Три колонки однакової ширини
     grid-template-rows: repeat(12, auto); // Дванадцять рядків
-    gap: 16px; // Відступи між елементами
+    // gap: 16px; // Відступи між елементами
+    row-gap: 1rem;
+    column-gap: 5rem;
 
     & > .row-divider {
         grid-column: 1 / -1; // Лінія через всю ширину
@@ -92,6 +94,7 @@
     & > .cell {
         padding: 8px;
         text-align: center;
+        // @include flex-center;
 
         &.first-column {
             text-align: left; // Вирівнювання тексту по лівому краю
@@ -99,7 +102,8 @@
         }
         &.first-row {
             font-weight: 600;
-            font-size: 40px;
+            // font-size: 40px;
+            @include fluid-text(40, 25);
             text-align: left;
             margin-top: 1.5rem;
         }
@@ -107,6 +111,12 @@
             text-align: left;
             font-weight: 500;
         }
+        &.third-row {
+            display: inline-flex; // Вирівнювання елементів по горизонталі
+            align-items: flex-end; // Вирівнювання за нижнім краєм
+            gap: 2px; // Мінімальна відстань між елементами (регулюється)
+        }
+
     }
 
     & > .icon {
@@ -121,6 +131,7 @@
             border-radius: 50%;
             width: 36px;
             height: 36px;
+            // margin: 0 auto; // відстп зліва - центрація
         }
 
         &.check {
@@ -129,6 +140,7 @@
             border-radius: 50%;
             width: 36px;
             height: 36px;
+            // margin: 0 auto; // відстп зліва - центрація
         }
     }
 
@@ -151,5 +163,20 @@
             color: var(--color-fiolet);
         }
         }
+    }
+    &-currency{
+        font-weight: 600;
+        font-size: 17px;
+        align-self: flex-start;
+    }
+    &-taxed {
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 1;
+    }
+    &-period {
+        font-weight: 500;
+        font-size: 11px;
+        align-self: flex-end; // Переміщення до нижнього краю
     }
 }

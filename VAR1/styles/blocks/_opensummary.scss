@@ -1,0 +1,64 @@
+details {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 16px 0;
+
+    summary {
+        display: flex; // Розміщення елементів у рядок
+        align-items: center;
+        cursor: pointer; // Індикатор клікабельності
+        list-style: none; // Видалення стандартної стилізації
+        padding: 8px;
+        border: 1px solid #ccc; // Сіра рамка
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        gap: 8px; // Відстань між текстом і шевроном
+
+        &::marker {
+            display: none; // Приховує стандартний маркер
+        }
+
+        .chevron {
+            margin-left: auto; // Шеврон переміщується вправо
+            width: 12px;
+            height: 12px;
+            border: solid #555; // Колір шеврона
+            border-width: 0 2px 2px 0; // Лінії для шеврона
+            transform: rotate(45deg); // Закритий вигляд
+            transition: transform 0.3s ease; // Анімація при відкритті/закритті
+        }
+
+        &:hover {
+            background-color: #e6e6e6; // Світло-сірий фон при наведенні
+        }
+    }
+
+    &[open] .chevron {
+        transform: rotate(-135deg); // Відкритий вигляд
+    }
+
+    .icon-mobile {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #6a0dad; // Фіолетове коло
+        color: #fff; // Біла галочка
+        font-size: 14px;
+        margin-right: 8px; // Відступ справа від іконки
+    }
+
+    
+    .summary__block {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 8px; // Відступ між рядками
+    }
+
+    .text-mobile {
+        display: inline-block;
+        margin-left: 8px; // Відступ від іконки до тексту
+    }
+}
