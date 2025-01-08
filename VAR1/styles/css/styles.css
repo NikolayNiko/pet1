@@ -4298,4 +4298,14 @@ details .text-mobile {
   margin-left: 8px;
 }
 
+.forget__header {
+  margin-bottom: 0;
+}
+.forget__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */

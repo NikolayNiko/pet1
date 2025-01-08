@@ -1,0 +1,11 @@
+.forget {
+
+    &__header {
+        margin-bottom: 0;
+    }
+
+    &__main {
+        @include flex-center;
+        flex-direction: column;
+    }
+}
